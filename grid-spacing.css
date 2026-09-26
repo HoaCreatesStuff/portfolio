@@ -1,0 +1,31 @@
+/* Master-grid geometry: gutter = outer margin = 35% of one 12-column track. */
+:root {
+  --grid-column-count:12;
+  --grid-gutter-to-column-ratio:.35;
+  --grid-spacing-min:22px;
+  --grid-spacing-max:56px;
+  --grid-geometry-units:calc(var(--grid-column-count) + ((var(--grid-column-count) - 1) * var(--grid-gutter-to-column-ratio)) + (2 * var(--grid-gutter-to-column-ratio)));
+  --grid-spacing:clamp(var(--grid-spacing-min), calc(100vw * var(--grid-gutter-to-column-ratio) / var(--grid-geometry-units)), var(--grid-spacing-max));
+
+  /* Shared source of truth for page layouts and the development grid overlay. */
+  --grid-columns:12;
+  --grid-gutter:calc(var(--grid-spacing) * 1.2);
+  --page-margin:var(--grid-gutter);
+  --grid-track-size:calc((100vw - (var(--page-margin) * 2) - ((var(--grid-columns) - 1) * var(--grid-gutter))) / var(--grid-columns));
+
+  /* Legacy aliases retained for the existing layout CSS. */
+  --pad:var(--page-margin);
+  --gutter:var(--grid-gutter);
+}
+
+@media (max-width:1023px) {
+  :root { --grid-columns:8; }
+}
+
+@media (max-width:767px) {
+  :root { --grid-columns:4; }
+}
+
+@media (max-width:479px) {
+  :root { --grid-columns:1; }
+}

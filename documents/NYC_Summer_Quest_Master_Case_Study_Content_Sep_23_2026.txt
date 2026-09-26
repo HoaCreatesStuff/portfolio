@@ -1,0 +1,359 @@
+NYC SUMMER QUEST
+Portfolio Case Study · Current Version
+September 23, 2026
+
+================================================================================
+00 · OVERVIEW
+================================================================================
+
+SUMMER QUEST
+
+I wasn't trying to build an app. I was trying to solve a harder problem: getting people off their couches and out into an 80-degree New York summer. Together.
+
+It all started with a party.
+
+To me, birthdays aren't really about being celebrated but an excuse to celebrate life with the people I love. So instead of organizing one gathering, I designed and launched NYC Summer Quest: a month-long social game that turned New York City into a shared playground for two different friend groups.
+
+The app was the delivery mechanism.
+The experience was the product.
+
+Role
+Product & Experience Designer
+
+Timeline
+July–August 2026
+
+Type
+Independent 0→1 Product
+
+Platform
+Mobile-first PWA
+
+Dev
+AI-assisted with Codex
+
+Status
+Live · Post-launch evaluation
+
+Impact
+182 quests completed
+65% involved friends
+25/25 quests explored
+
+
+================================================================================
+01 · THE PROBLEM
+================================================================================
+
+The celebration outgrew the party.
+
+I don't really do birthday parties. So when my friend Erika suggested a joint celebration, I wanted to make it memorable, bigger-than-life, and more than a one-off gathering.
+
+Go big or go home, right?
+
+The first idea was a **month-long bingo game**. It got both of us excited, but it had a problem: people could *play to win* without actually exploring. A static card also gave them no feedback, no sense of progress, and nothing connecting one adventure to the next.
+
+The bingo morphed into a scavenger hunt. I knew scavenger-hunt apps already existed. That wasn't really the point.
+
+I wasn't trying to build a better scavenger-hunt platform. I was trying to **make this summer feel a little more special for my friends**. There was a difference between *“download this app and play with me”* and *“I made this for you. Go live your best summer.”*
+
+Instead of asking for gifts, I made one.
+
+So I turned the static image into a **mobile-first web app** with its own visual world, rules, progression, and memory of what happened along the way.
+
+Building it myself gave me another challenge I wanted: *learn AI-assisted development* and see whether I could take an idea all the way from product strategy to a working launch instead of stopping at a prototype.
+
+Once I started designing the game, **the birthday problem became something bigger.**
+
+The idea came from a pattern I knew well: wanting to see friends, explore more of the city, and do all the things we kept saying we'd do, while busy schedules quietly let those plans disappear.
+
+Summer Quest started with a hunch: **What if “we should hang out sometime” came with something specific to actually do?**
+
+STARTING ASSUMPTIONS
+
+For the first edition, the players were **New Yorkers in their 20s–40s**, with very different levels of familiarity with the city, from New York natives and long-time residents to bright-eyed newcomers.
+
+Within that group, Summer Quest would test three bets:
+
+1. People could participate more easily without coordinating schedules or progressing together.
+2. Quests could create enough momentum to turn vague intentions into concrete activities.
+3. Separate adventures could still feel connected without everyone following the same path.
+
+That left me with the question shaping the rest of the product:
+
+How do you design a shared experience when everyone participates differently?
+
+
+================================================================================
+02 · THE PRINCIPLES
+================================================================================
+
+One shared experience. Many ways to live it.
+
+The hard part wasn't coming up with 25 things to do. It was **designing a game that could survive people's actual lives**.
+
+My friends lived in different neighborhoods, kept different schedules, and had wildly different appetites for commitment. If everyone had to play the same way, at the same pace, with the same people, I would have rebuilt the exact coordination problem I was trying to escape.
+
+So five principles shaped the system.
+
+Five principles. One game that could bend, twist and turn.
+
+Each protected the experience from a different way it could fall apart: too much coordination, too much pressure, too much app, too little connection, or a month of adventures that disappeared as soon as they were checked off.
+
+---
+
+A. SHARED DIDN'T MEAN SYNCHRONIZED.
+
+**Being part of the same game didn't require following the same path.** People could choose any quest, at any time, and fold several into plans already in motion. A quick weekend dabble and a summer-long strategic run were both valid ways to play.
+
+**Tradeoff:** I gave up control over pacing and sequence so the game could fit around real life.
+
+---
+
+B. INVITATION, NOT DEPENDENCY.
+
+I wanted Summer Quest to **create reasons to do things with people**, without requiring people in order to do them. Participants could go alone, bring different friends, or fold a quest into plans they already had.
+
+**Tradeoff:** Making solo play easy meant accepting that some adventures might never become social ones.
+
+---
+
+C. MOMENTUM, NOT PRESSURE.
+
+The game needed enough structure to make progress **feel satisfying without turning everyone's summer into a scoreboard**. Points made an adventure count. Ranks made accumulated progress visible. Friend bonuses rewarded the social behavior I wanted to encourage.
+
+**Tradeoff:** I gave up some of competition's motivational pull to keep progress personal.
+
+---
+
+D. ADVENTURE BIGGER THAN INTERFACE.
+
+The important action was happening in New York, **not on a screen**.
+
+The app needed to answer **“What could I do?”**, make the next step obvious, then politely get out of the way. I didn't need proof that somebody stood at the correct latitude for twelve seconds or half an hour. I needed the product to give them a reason to go.
+
+**Tradeoff:** Less verification meant less certainty about what people actually did.
+
+---
+
+E. COMPLETION SHOULD LEAVE SOMETHING BEHIND.
+
+Checking off a quest wasn't enough. Twenty-five isolated activities could still feel like twenty-five unrelated activities. I wanted each one to leave a trace so separate adventures could gradually become **a record of one particular summer**.
+
+**Tradeoff:** Adding a memory layer risked making a lightweight game feel like homework, so reflection had to stay optional and low-pressure.
+
+---
+
+The game loop was not the value loop.
+
+The mechanics created momentum:
+
+**Quest → Complete → Score → Progress → Next quest**
+
+But points and ranks weren't what I actually wanted people to take away from Summer Quest.
+
+The value happened mostly after the phone went away:
+
+**Prompt → Invite → Experience → Memory → Another experience**
+
+**The game loop kept people moving. The value loop made moving worthwhile.**
+
+
+================================================================================
+03 · THE DESIGN
+================================================================================
+
+The important action was never tapping "Submit."
+
+It was going somewhere, trying something new, or inviting someone along.
+
+---
+
+GAMEPLAY
+
+Real life set the pace, not the game.
+
+Summer Quest had to work across different schedules, neighborhoods, interests, and levels of commitment. If I required everyone to progress together, I would have recreated the coordination problem I was trying to escape.
+
+So quests could happen in any order, at any pace, with different people, folded into plans participants already wanted to make. Several could even cluster into one outing instead of requiring separate trips.
+
+I gave up control over the path so **the game could fit around real life** instead of real life fitting around the game.
+
+---
+
+BEHAVIORAL DESIGN
+
+Reward the behavior, not the popularity contest.
+
+Summer Quest needed enough game structure to create momentum, but not so much that people optimized for points instead of experiences.
+
+So I used scoring to reflect both effort and the behaviors I wanted to encourage: harder quests carried more value, bringing friends earned a bonus, and that bonus was capped so network size never became the easiest path to winning. Identity-based ranks (Summer Rookie, Neighborhood Explorer, City Adventurer, NYC Insider, Social Legend) gave progress a sense of achievement without introducing a public leaderboard where comparison became the point.
+
+**The game rewarded participation**, not competition.
+
+Scoring system evolution:
+- Stage 1 · Everything equal — Base 5; Friend +2
+- Stage 2 · Bonus added — Base 5; Bonus +2; Friend +2
+- Stage 3 · Weighted + bounded — Base 5 / 7 / 10; Bonus +1 / +2 / +3 / +5; Friend +2 per friend, capped at +10
+
+---
+
+SOCIAL EXPERIENCE
+
+Invitation, not requirement.
+
+Flexibility solved scheduling. It didn't automatically solve who you did it with, and requiring teams or synchronized play would have made participation harder in exactly the way I'd designed around.
+
+So social stayed an invitation, not a requirement. Friend bonuses rewarded shared outings without making anyone dependent on a team. People could bring different friends, join plans already in motion, or go alone when that made more sense.
+
+I wasn't building a social network. I was building **more reasons to end up in the same place as someone else**.
+
+---
+
+EXPERIENCE ARCHITECTURE
+
+Completing the quest was never the finish line.
+
+Getting people to finish quests was only part of the challenge. I wanted those experiences to become memories people would actually return to.
+
+My first idea was to let completed tiles on the board turn into participants’ own photos. It made completed quests easier to spot, but it also made the board emotionally noisier at exactly the moment it needed to be fastest: **What should I do next?**
+
+So I **separated planning from remembering**. The **Adventure Board** stayed lightweight, built for choosing a quest on the go. Each completion unlocked a short, prewritten reflection, adding another small layer of discovery and reward while giving the memory some shape. The **Summer Journal** then became the place those adventures could turn into a time capsule of the whole summer. At the end of the experience, the **Photo Keepsake** turned that story into something people could save, share, or print afterward.
+
+**Memory stayed central to the experience. It just needed its own layer.**
+
+---
+
+PRODUCT STRATEGY
+
+The MVP got better every time I removed something.
+
+Before building, I mapped the features I was considering against two questions: **How much value would this add to the core experience, and how much complexity would it introduce?**
+
+That made the tradeoffs clearer. Some features were essential to test the experience. Others could wait, and a few simply didn’t earn their complexity.
+
+I kept the MVP focused on the smallest system that could support participation, motivation, memory, and learning.
+
+BUILD FIRST
+- Quest board
+- Lightweight onboarding
+- Scoring + ranks
+- Mobile PWA
+- Journal
+- Keepsake
+- Basic usage analytics
+
+CONSIDER LATER
+- Expanded analytics
+- Live leaderboard
+- Accounts / login
+- Cloud sync
+- Messaging
+- GPS verification
+- Community board
+
+NON-ESSENTIAL
+- Video support
+- Activity suggestions
+
+---
+
+SUPPORTING DECISIONS
+
+TRUST & RISK
+
+Trust over verification.
+
+The meaningful cost of cheating was tiny; the friction of policing people was much larger. So I used an honor system instead. For a casual game between friends, the product provided structure. The honor system left room for people to play it their way.
+
+---
+
+EXPERIENCE STRUCTURE
+
+One moment of suggested convergence.
+
+I designed most of Summer Quest to be asynchronous and flexible so my extended friend circle could celebrate with me even if they couldn't physically show up. The birthday gathering created an opportunity to collaborate with other players for group quests.
+
+---
+
+SYSTEMS THINKING
+
+Design with reuse in mind.
+
+I separated the reusable game structure from the birthday-specific content so quests, themes, rewards, and shared moments could change independently. That didn't prove Summer Quest was reusable. It made reuse testable.
+
+
+================================================================================
+04 · THE REALITY CHECK
+================================================================================
+
+How a birthday game became a live behavioral study
+
+The game worked, but not exactly how I expected.
+
+I designed Summer Quest so people could share one experience without having to participate the same way. Then I watched them interpret that freedom thirteen different ways.
+
+---
+
+13 players took 13 different paths.
+
+No two players completed the same combination of quests. Some played mostly solo. Others regularly brought friends. Some completed only a few quests, others nearly filled the board.
+
+**79.5% of Phase 1 completions happened before August 16.**
+
+By the time the birthday arrived, the game had already been unfolding across different neighborhoods, schedules, and social circles for weeks.
+
+Shared did not have to mean synchronized.
+
+5 REPRESENTATIVE PLAYER JOURNEYS
+- High participation player — Nearly filled the board through sustained participation. 23 of 25 quests completed.
+- Mostly solo player — Completed many quests, mostly on her own. 19 of 25 quests completed.
+- Joined late player — Joined later and still built meaningful momentum. 14 of 25 quests completed.
+- Frequently social player — Often turned quests into shared outings. 15 of 25 quests completed.
+- Post-finale surge player — Became much more active after the finale. 25 of 25 quests completed.
+
+---
+
+Some players played a different game than I designed.
+
+The honor system assumed good faith. Most players earned that assumption, but a few tested its edges. At least 2 players matched quests to things they had already done long before the game started. A few interpreted prompts loosely enough that the photos barely resembled the original brief.
+
+---
+
+The Journal worked at different depths.
+
+Every completed quest already came with a prewritten reflection, so even someone focused mainly on the game could still end up with a meaningful story of the summer. Some added short captions, while others treated it more like a diary, making that same record much more personal. All three behaviors appeared in use.
+
+The **same system could function as an automatically assembled memory or a more authored one**, depending on how much someone wanted to add.
+
+Participant quote placeholders:
+- “Placeholder participant quote about discovering the summer in one place.”
+- “Placeholder participant quote about adding photos and personal captions.”
+- “Placeholder participant quote about returning to the Journal later.”
+
+---
+
+People kept playing after the birthday.
+
+August 16 was designed as a **midpoint reward** and an easy opportunity to do quests together. The group chat lit up, photo keepsakes were exchanged, and prizes were given around the picnic table.
+
+Afterward, **a handful of players kept playing over the following weeks**. One friend came to the picnic, got excited seeing everyone's photos, and started playing that day. She finished her whole board two weeks later.
+
+Version 1 worked. What's next?
+
+
+================================================================================
+05 · THE POTENTIAL
+================================================================================
+
+One game. A reusable system.
+
+Summer Quest was made for one birthday, but **the structure underneath it was not**. Swap the quests, theme, rewards, and shared moments, and the same system could support a different activity experience. Several survey respondents expressed interest in future versions, and a few people came to me directly asking for more.
+
+The first version deliberately avoided a public leaderboard because I did not want competition to pressure people into playing at the same pace. But one survey theme also suggested that **seeing others' progress could create more motivation** without necessarily forcing the same pace. That's a hypothesis worth testing.
+
+I would also **tighten what counts as a completion, distinguish newly prompted activities from retrospective ones, and make the memory layer do more** with the experiences people collect. Whether those changes improve the system is the next experiment.
+
+The most interesting part of Summer Quest was not any individual quest. It was **the system underneath** it: a lightweight way to give people ideas for what to do, create momentum around actually doing them, and make separate adventures feel part of something shared.
+
+================================================================================

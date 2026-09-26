@@ -1,0 +1,84 @@
+.hero-grid { width:100%; margin:0; padding:0; gap:0; }
+.project-details-band { grid-column:8 / span 2; grid-row:2; width:100%; margin:0; padding:0; background:transparent; }
+.project-details-band .details { display:grid; grid-template-columns:min-content minmax(0,1fr); column-gap:var(--space-8); row-gap:0; align-items:baseline; }
+.project-details-band .details dd { margin:0; }
+.project-details-band .details-divider { position:relative; display:block; grid-column:1 / -1; min-height:1px; margin:0; padding-block:var(--space-8); }
+.project-details-band .details-divider[hidden] { display:none; }
+.project-details-band .details-divider::before { content:""; position:absolute; top:50%; right:0; left:0; border-top:1px solid color-mix(in srgb,var(--color-ink) 25%,transparent); }
+.opening-story {
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:repeat(var(--grid-columns),minmax(0,1fr));
+  column-gap:var(--gutter);
+  row-gap:var(--space-block);
+  width:calc(100% - (var(--pad) * 2));
+  margin:0 auto;
+  padding:var(--space-major-break) 0;
+}
+.opening-story-heading { grid-column:1 / span 7; }
+.opening-story-heading h2:not(.heading) { margin:0; }
+.opening-copy { grid-column:5 / span 3; grid-row:2; width:100%; max-width:none; margin:0; }
+.opening-copy > .accent-note:first-child { margin-top:0; }
+.opening-story .project-details-band,
+.opening-story .project-details-band .details,
+.opening-story .project-details-band .details dd,
+.opening-story .impact-metric { margin:0; padding:0; }
+
+@media (max-width:1024px) {
+  .project-details-band { grid-column:6 / span 3; grid-row:2; }
+  .project-details-band .details { grid-template-columns:min-content minmax(0,1fr); }
+  .opening-story { grid-template-columns:repeat(8,minmax(0,1fr)); }
+  .opening-story-heading { grid-column:1 / span 6; }
+  .opening-copy { grid-column:1 / span 4; }
+}
+
+@media (max-width:640px) {
+  .project-details-band { grid-column:1 / -1; grid-row:auto; }
+  .project-details-band .details { grid-template-columns:min-content minmax(0,1fr); }
+  .opening-story { grid-template-columns:repeat(4,minmax(0,1fr)); padding:var(--space-major-break) 0; }
+  .opening-story-heading,.opening-copy { grid-column:1 / -1; }
+  .opening-copy { margin-top:0; }
+}
+
+/* Temporary opening-grid diagnostic: remove .grid-diagnostic when inspection is complete. */
+.grid-diagnostic { position:relative; }
+.grid-diagnostic::before {
+  --grid-diagnostic-track:calc((100% - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter) - var(--gutter)) / 12);
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:4;
+  pointer-events:none;
+  background-image:linear-gradient(to right, color-mix(in srgb,var(--color-primary) 10%,transparent) 0 var(--grid-diagnostic-track), transparent var(--grid-diagnostic-track));
+  background-size:calc(var(--grid-diagnostic-track) + var(--gutter)) 100%;
+}
+.grid-diagnostic::before { display:none; }
+body.bounds-debug-enabled .grid-diagnostic .hero-image,
+body.bounds-debug-enabled .grid-diagnostic .opening-story-heading,
+body.bounds-debug-enabled .grid-diagnostic .opening-copy,
+body.bounds-debug-enabled .grid-diagnostic .project-details-band { position:relative; outline:2px dashed var(--debug-bounds-color); outline-offset:-2px; }
+body.bounds-debug-enabled .grid-diagnostic .hero-image::after,
+body.bounds-debug-enabled .grid-diagnostic .opening-story-heading::after,
+body.bounds-debug-enabled .grid-diagnostic .opening-copy::after,
+body.bounds-debug-enabled .grid-diagnostic .project-details-band::after {
+  position:absolute;
+  z-index:5;
+  top:6px;
+  left:6px;
+  padding:2px 4px;
+  background:var(--color-paper);
+  color:var(--debug-bounds-color);
+  font-family:var(--font-body);
+  font-size:var(--type-metadata);
+  font-weight:var(--type-weight-medium);
+  line-height:var(--type-metadata-line-height);
+  white-space:nowrap;
+}
+body.bounds-debug-enabled .grid-diagnostic .hero-image::after { content:"hero: master cols 1–12"; }
+body.bounds-debug-enabled .grid-diagnostic .opening-story-heading::after { content:"story heading: master cols 3–9"; }
+body.bounds-debug-enabled .grid-diagnostic .opening-copy::after { content:"opening-copy: master cols 4–7"; }
+body.bounds-debug-enabled .grid-diagnostic .project-details-band::after { content:"summary: master cols 9–11"; }
+body.bounds-debug-enabled .grid-diagnostic .project-details-band::after { top:calc(-1 * (var(--space-16) + var(--space-8))); }
+
+/* Hero breakout remains independent of the master grid while retaining its aspect treatment. */
+.hero-image { width:100vw; margin-inline:calc((100% - 100vw) / 2); }

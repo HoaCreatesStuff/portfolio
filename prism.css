@@ -1,0 +1,71 @@
+/* Prism opening alignment on the twelve-column desktop grid. */
+@media (min-width:1024px) {
+  .prism-page .opening-story-heading { grid-column:2 / 12; }
+  .prism-page .opening-copy { grid-column:3 / 11; }
+  .prism-page .project-details-band { grid-column:3 / 11; }
+
+  body.prism-page.bounds-debug-enabled .grid-diagnostic .opening-story-heading::after {
+    content:"story heading: master cols 2–11";
+  }
+  body.prism-page.bounds-debug-enabled .grid-diagnostic .opening-copy::after {
+    content:"opening-copy: master cols 3–10";
+  }
+  body.prism-page.bounds-debug-enabled .grid-diagnostic .project-details-band::after {
+    content:"summary: master cols 3–10";
+  }
+}
+
+/* One editorial metadata block, with a shared rhythm across both halves. */
+.prism-page .prism-summary {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:var(--space-16) var(--gutter);
+  min-width:0;
+}
+.prism-page .prism-summary .details {
+  grid-template-columns:25% minmax(0,1fr);
+  min-width:0;
+}
+.prism-page .prism-summary .details dd { overflow-wrap:anywhere; }
+
+@media (min-width:768px) {
+  .prism-page .prism-summary {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:repeat(7,auto);
+    row-gap:0;
+  }
+  .prism-page .prism-summary .details {
+    grid-row:1 / 8;
+    grid-template-rows:subgrid;
+  }
+  .prism-page .prism-summary .details:first-child { grid-column:1; }
+  .prism-page .prism-summary .details:last-child { grid-column:2; }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .prism-page .prism-summary { grid-column:1 / -1; }
+}
+@media (max-width:767px) {
+  .prism-page .prism-summary { grid-column:1 / -1; }
+}
+
+/* Keep Prism's nested opening grid independent of PerformaMatch's intro layout. */
+body.prism-page .hero-grid {
+  width:100%;
+  margin:0;
+  gap:0;
+}
+body.prism-page .hero-grid > .opening-story {
+  grid-column:1 / -1;
+  grid-row:auto;
+  grid-template-columns:repeat(var(--grid-columns),minmax(0,1fr));
+  width:calc(100% - (var(--pad) * 2));
+  margin:0 auto;
+  padding:var(--space-major-break) 0;
+}
+body.prism-page .opening-story > .opening-story-heading { grid-row:1; }
+body.prism-page .opening-story > .opening-copy { grid-row:2; }
+body.prism-page .opening-story > .project-details-band { grid-row:3; }
+@media (min-width:1024px) {
+  body.prism-page .opening-story > .opening-copy,
+  body.prism-page .opening-story > .project-details-band { grid-column:3 / 11; }
+}

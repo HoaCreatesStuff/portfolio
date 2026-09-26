@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NYC Summer Quest — a case study by Kathy." />
+    <title>NYC Summer Quest — Kathy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926-link-hover" />
+    <link rel="stylesheet" href="grid-spacing.css" />
+    <link rel="stylesheet" href="spacing-tokens.css" />
+    <link rel="stylesheet" href="debug-toolbar.css" />
+    <link rel="stylesheet" href="problem-evolution.css" />
+    <link rel="stylesheet" href="supporting-decisions.css" />
+    <link rel="stylesheet" href="opening-section.css" />
+    <link rel="stylesheet" href="debug-overlay.css" />
+    <link rel="stylesheet" href="summer-quest-typography.css" />
+    <link rel="stylesheet" href="display-font.css" />
+    <link rel="stylesheet" href="debug-fonts.css" />
+    <link rel="stylesheet" href="chapter-one-intro.css" />
+    <link rel="stylesheet" href="responsive-grid.css" />
+    <link rel="stylesheet" href="case-study-footer.css" />
+    <script src="debug-font-registry.js" defer></script>
+    <script src="debug-toolbar.js" defer></script>
+    <script src="supporting-decisions.js" defer></script>
+    <script src="product-prioritization.js" defer></script>
+    <script src="principles-panel.js" defer></script>
+    <script src="activity-timeline-embed.js" defer></script>
+    <script src="assets/interactive/shared-game-different-journeys/data.js" defer></script>
+    <script src="representative-player-journeys.js" defer></script>
+      <script src="contact-navigation.js" defer></script>
+  </head>
+  <body class="summer-quest-page" data-display-font="salute" data-accent-font="debug-accent-missele">
+    <aside class="debug-toolbar" aria-label="Development debug controls">
+      <button type="button" data-debug-toggle="grid" aria-pressed="false">Grid</button>
+      <button type="button" data-debug-toggle="bounds" aria-pressed="false">Bounds</button>
+      <label class="debug-toolbar-display">Display
+        <select data-display-font aria-label="Display font">
+          <option value="salute">Salute</option>
+          <option value="gloock">Gloock</option>
+        </select>
+      </label>
+      <label class="debug-toolbar-display">Accent
+        <select data-accent-font aria-label="Accent font">
+          <option value="esthentic-demo">Esthentic DEMO</option>
+        </select>
+      </label>
+      <button type="button" data-debug-hide aria-label="Hide debug toolbar" title="Hide debug toolbar">×</button>
+    </aside>
+    <header class="site-header page-grid">
+      <a class="site-logo" href="index.html" aria-label="Hoa, pronounced hwa, home"><img class="site-logo__mark" src="assets/logo-mark.svg" alt="" /><span class="site-logo__identity"><img class="site-logo__type" src="assets/logo-type.svg" alt="Hoa" /><span class="site-logo__pronunciation type-caption" aria-hidden="true">/hwa/</span></span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="page-grid hero-grid grid-diagnostic">
+        <img class="hero-image" src="assets/images/summer-quest/summer-quest.jpg" alt="NYC Summer Quest" />
+
+        <section class="opening-story" aria-labelledby="story-heading">
+          <div class="opening-story-heading">
+            <p class="type-label">Summer Quest</p>
+            <h2 id="story-heading" class="heading">I wasn't trying to build an app. I was trying to solve a harder problem: getting people off their couches and out into an 80-degree New York summer. Together.</h2>
+          </div>
+          <div class="opening-copy editorial-flow type-body">
+              <p class="accent-note">It all started with a party.</p>
+              <p>To me, birthdays aren't really about being celebrated but an excuse to celebrate life with the people I love. So instead of organizing one gathering, I designed and launched NYC Summer Quest: a month-long social game that turned New York City into a shared playground for two different friend groups.</p>
+              <p><b>The app was the delivery mechanism. <br>The experience was the product.</b></p>
+          </div>
+          <aside class="project-details-band" aria-label="Project details">
+            <dl class="details">
+              <dt>Role</dt><dd class="type-body">Product &amp; Experience Designer</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Timeline</dt><dd class="type-body">July–August 2026</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Type</dt><dd class="type-body">Independent 0→1 Product</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Platform</dt><dd class="type-body">Mobile-first PWA</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Dev</dt><dd class="type-body">AI-assisted with Codex</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Status</dt><dd class="type-body">Live · Post-launch evaluation</dd>
+              <div class="details-divider" aria-hidden="true"></div>
+              <dt>Impact</dt><dd class="type-body"><p class="impact-metric"><span class="metric-value">182</span> quests completed<br><span class="metric-value">65%</span> involved friends<br><span class="metric-value">25/25</span> quests explored</p></dd>
+            </dl>
+          </aside>
+        </section>
+      </div>
+
+      <section class="chapter chapter-problem">
+        <div class="page-grid">
+          <div class="chapter-lockup chapter-problem-lockup">
+            <h2 class="chapter-lockup__number" aria-hidden="true">01</h2>
+            <div class="chapter-lockup__content">
+              <p class="type-label">The problem</p>
+              <h2 class="chapter-lockup__headline heading">The celebration outgrew the party.</h2>
+            </div>
+          </div>
+          <div class="chapter-problem-content">
+            <div class="chapter-problem-intro editorial-flow type-body">
+              <p>I don't really do birthday parties. So when my friend Erika suggested a joint celebration, I wanted to make it memorable, bigger-than-life, and more than a one-off gathering.</p>
+              <p class="accent-note">Go big or go home, right?</p>
+              <p>The first idea was a <strong>month-long bingo game</strong>. It got both of us excited, but it had a problem: people could <em>play to win</em> without actually exploring. A static card also gave them no feedback, no sense of progress, and nothing connecting one adventure to the next.</p>
+              <p>The bingo morphed into a scavenger hunt. I knew scavenger-hunt apps already existed. That wasn't really the point.</p>
+              <p>I wasn't trying to build a better scavenger-hunt platform. I was trying to <strong>make this summer feel a little more special for my friends</strong>. There was a difference between <em>“download this app and play with me”</em> and <em>“I made this for you. Go live your best summer.”</em></p>
+            </div>
+            <div class="chapter-problem-intro editorial-flow type-body">
+              <h3 class="type-heading-xxs">Instead of asking for gifts, I made one.</h3>
+              <p>So I turned the static image into a <strong>mobile-first web app</strong> with its own visual world, rules, progression, and memory of what happened along the way.</p>
+              <p>Building it myself gave me another challenge I wanted: <em>learn AI-assisted development</em> and see whether I could take an idea all the way from product strategy to a working launch instead of stopping at a prototype.</p>
+              <p>Once I started designing the game, <strong>the birthday problem became something bigger.</strong></p>
+            </div>
+            <div class="chapter-problem-question-visual"><img src="assets/images/summer-quest/01%20problem%20evolution.svg" alt="Summer Quest problem evolution"></div>
+            <div class="chapter-problem-intro editorial-flow type-body">
+              <p>The idea came from a pattern I knew well: wanting to see friends, explore more of the city, and do all the things we kept saying we'd do, while busy schedules quietly let those plans disappear.</p>
+              <p>Summer Quest started with a hunch: <strong>What if “we should hang out sometime” came with something specific to actually do?</strong></p>
+            </div>
+            <section class="assumptions chapter-problem-assumptions text-box">
+              <p class="type-label">Starting assumptions</p>
+              <div class="assumptions-copy editorial-flow">
+              <p>For the first edition, the players were <strong>New Yorkers in their 20s–40s</strong>, with very different levels of familiarity with the city, from New York natives and long-time residents to bright-eyed newcomers.</p>
+              <p>Within that group, Summer Quest would test three bets:</p>
+                <ol>
+                  <li>People could participate more easily without coordinating schedules or progressing together.</li>
+                  <li>Quests could create enough momentum to turn vague intentions into concrete activities.</li>
+                  <li>Separate adventures could still feel connected without everyone following the same path.</li>
+                </ol>
+              </div>
+            </section>
+            <p class="chapter-problem-question">That left me with the question shaping the rest of the product:</p>
+            <p class="chapter-problem-question question-repeat">How do you design a shared experience when everyone participates differently?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter principles">
+        <div class="page-grid">
+          <div class="chapter-lockup chapter-standard-lockup principles-lockup">
+            <h2 class="chapter-lockup__number" aria-hidden="true">02</h2>
+            <div class="chapter-lockup__content">
+              <p class="type-label">The principles</p>
+              <h2 class="chapter-lockup__headline heading">One shared experience. Many ways to live it.</h2>
+            </div>
+          </div>
+          <div class="chapter-copy principles-intro">
+            <div class="reading-copy editorial-flow"><p>The hard part wasn't coming up with 25 things to do. It was <b>designing a game that could survive people's actual lives</b>.</p><p>My friends lived in different neighborhoods, kept different schedules, and had wildly different appetites for commitment. If everyone had to play the same way, at the same pace, with the same people, I would have rebuilt the exact coordination problem I was trying to escape.</p><p>So five principles shaped the system.</p></div>
+          </div>
+          <script id="summer-quest-principles-copy" type="application/json">
+            {
+              "panel": {
+                "ui": {
+                  "tradeoff": "Tradeoff",
+                  "showAll": "Show all",
+                  "collapseAll": "Collapse all"
+                },
+                "overview": {
+                  "label": "Overview",
+                  "title": "Five principles. One system built to bend.",
+                  "body": "Each protected the experience from a different way it could fall apart: too much coordination, too much pressure, too much app, too little connection, or a bunch of completed quests that never added up to anything more."
+                },
+                "principles": [
+                  { "id": "shared", "title": "Shared didn't mean synchronized.", "body": "Being part of the same game didn't require following the same path. People could choose any quest, at any time, and a quick weekend dabble or a summer-long run were both valid ways to play.", "tradeoff": "Less control over how the game unfolded." },
+                  { "id": "invitation", "title": "Being social is an invitation.", "body": "Summer Quest should create reasons to do things <strong>with people</strong>, without making other people a requirement. Players could go alone, bring different friends, or fold a quest into plans already happening.", "tradeoff": "Less focus on social connection." },
+                  { "id": "momentum", "title": "Progress should motivate, not pressure.", "body": "The game needed enough structure to make progress feel satisfying without turning everyone's summer into a scoreboard. Points, ranks, and friend bonuses could keep people moving, but never at the cost of making victory the point.", "tradeoff": "Less motivation from competition." },
+                  { "id": "adventure", "title": "The adventure is bigger than the interface.", "body": "The product existed to support what happened <strong>outside the app, on the streets of NYC</strong>. It needed to make the next step clear, then politely disappear while someone went out and lived their summer.", "tradeoff": "Less in-app engagement and utility." },
+                  { "id": "memory", "title": "Each completion should tell a story.", "body": "The game had its own world and personality, but the experience inside it belonged to each player. Every completed quest should add another piece to their version of the summer: where they went, who came along, what they noticed, and how much of it they wanted to remember.", "tradeoff": "Less authorship over the storyline." }
+                ]
+              },
+              "diagram": {
+                "center": { "label": "How could one shared experience work for people living different lives?" },
+                "principles": [
+                  {
+                    "id": "shared",
+                    "label": "Shared > Synchronized",
+                    "caption": "People could choose any quest, at any time, and play at their own depth.",
+                    "tradeoff": "Less control over how the game unfolded.",
+                    "children": [
+                      { "label": "All Quests Open", "detail": "People could choose what felt possible instead of waiting for a prescribed next step." },
+                      { "label": "Any Order", "detail": "Progress did not depend on following a prescribed sequence." },
+                      { "label": "Flexible Timing", "detail": "Progress could follow a person's own energy, neighborhood, and calendar." },
+                      { "label": "Existing Plans", "detail": "Several quests could fold into plans already in motion." }
+                    ]
+                  },
+                  {
+                    "id": "invitation",
+                    "label": "Invitation > Dependency",
+                    "caption": "Create reasons to do things with people without making other people a requirement.",
+                    "tradeoff": "Less focus on social connection.",
+                    "children": [
+                      { "label": "Solo or Social", "detail": "Participation worked alone or with whoever already made sense for the outing." },
+                      { "label": "Friend Bonuses", "detail": "Shared outings were rewarded without becoming required." },
+                      { "label": "No Fixed Teams", "detail": "People could bring different friends to different adventures." },
+                      { "label": "Independent Progress", "detail": "Nobody depended on another person's schedule or progress to keep playing." }
+                    ]
+                  },
+                  {
+                    "id": "momentum",
+                    "label": "Momentum > Pressure",
+                    "caption": "Make progress satisfying without making victory the point.",
+                    "tradeoff": "Less motivation from competition.",
+                    "children": [
+                      { "label": "Weighted Points", "detail": "Different quest values made effort visible and each adventure count." },
+                      { "label": "Identity Ranks", "detail": "Identity-based milestones made progress feel personal instead of competitive." },
+                      { "label": "Capped Friend Bonuses", "detail": "Social play was rewarded without letting network size become the easiest route to win." },
+                      { "label": "No Leaderboard", "detail": "Removed public comparison so each person could set their own pace." }
+                    ]
+                  },
+                  {
+                    "id": "adventure",
+                    "label": "Adventure > Interface",
+                    "caption": "Make the next step clear, then disappear while someone lived their summer.",
+                    "tradeoff": "Less in-app engagement and utility.",
+                    "children": [
+                      { "label": "Mobile-First PWA", "detail": "Fast entry on a phone without another high-maintenance digital space." },
+                      { "label": "Honor System", "detail": "Trusted people to interpret the game instead of adding friction to prove participation." },
+                      { "label": "No GPS", "detail": "The experience did not require location tracking to verify an adventure." },
+                      { "label": "Low Friction", "detail": "The app made the next step obvious, then got out of the way." }
+                    ]
+                  },
+                  {
+                    "id": "memory",
+                    "label": "Story > completion",
+                    "caption": "Let each completed quest add another piece to the player's version of the summer.",
+                    "tradeoff": "Less authorship over the storyline.",
+                    "children": [
+                      { "label": "Optional Captions", "detail": "People could add their own words without making reflection mandatory." },
+                      { "label": "Reflection Unlocks", "detail": "Every completion left a trace without requiring anyone to write." },
+                      { "label": "Summer Journal", "detail": "Separate adventures accumulated into a record of one particular summer." },
+                      { "label": "Photo Keepsake", "detail": "The finished story became something people could save, share, or print." }
+                    ]
+                  }
+                ]
+              }
+            }
+          </script>
+          <div class="principles-module">
+            <div class="principles-interactive" aria-label="Interactive map of five design principles and their product decisions">
+              <iframe src="assets/interactive/design-principles-map/index.html" title="Summer Quest design principles interactive map" loading="lazy"></iframe>
+            </div>
+            <aside class="principle-panel" aria-live="polite" aria-atomic="true">
+              <div class="principle-panel__utility">
+                <p class="principle-panel__instruction">Hover to preview · click to unpack</p>
+                <ul class="principle-panel__legend" aria-label="Diagram levels">
+                  <li><span class="principle-panel__dot principle-panel__dot--core" aria-hidden="true"></span>The question</li>
+                  <li><span class="principle-panel__dot principle-panel__dot--principle" aria-hidden="true"></span>The principles</li>
+                  <li><span class="principle-panel__dot principle-panel__dot--decision" aria-hidden="true"></span>The decisions</li>
+                </ul>
+                <button type="button" class="principle-panel__show-all" id="principle-show-all" hidden>Show all</button>
+              </div>
+              <div class="principle-panel__header">
+                <p class="type-label" id="principle-panel-number">Principle A</p>
+                <div class="principle-panel__controls">
+                  <button type="button" class="principle-panel__button" id="principle-previous" aria-label="Previous principle">←</button>
+                  <button type="button" class="principle-panel__button" id="principle-next" aria-label="Next principle">→</button>
+                </div>
+              </div>
+              <div class="principle-panel__content" id="principle-panel-content">
+                <h3 id="principle-panel-title">Shared didn't mean synchronized.</h3>
+                <p id="principle-panel-body">Being part of the same game didn't require following the same path. People could choose any quest, at any time, and a quick weekend dabble or a summer-long run were both valid ways to play.</p>
+                <p class="principle-panel__overview-instruction type-metadata" id="principle-panel-overview-instruction" hidden>Use the arrows to move through the 5 principles.</p>
+                <div class="principle-panel__tradeoff"><p class="type-label">Tradeoff</p><p id="principle-panel-tradeoff">Less control over how the game unfolded.</p></div>
+              </div>
+            </aside>
+          </div>
+          <div class="chapter-copy principles-value-loop"><div class="reading-copy editorial-flow type-body">
+            <h3 class="type-heading-xxs">The game loop was not the value loop.</h3>
+            <p>The game mechanics created momentum: choose a quest, complete it, earn points, see progress, then pick the next one. That loop mattered because it gave people enough structure to keep moving.</p>
+            <p>But the mechanics were never the value on their own. The part I actually cared about happened mostly after the phone went away: a prompt became an invitation, the invitation became an experience, and the experience became something worth remembering.</p>
+            <p><strong>The game loop kept people moving. The value loop made moving worthwhile.</strong></p>
+          </div></div>
+        </div>
+      </section>
+
+      <section class="chapter design">
+        <div class="page-grid">
+          <div class="chapter-lockup chapter-standard-lockup">
+            <h2 class="chapter-lockup__number" aria-hidden="true">03</h2>
+            <div class="chapter-lockup__content">
+              <p class="type-label">The design</p>
+              <h2 class="chapter-lockup__headline heading">The important action was never tapping "Submit."</h2>
+              <p class="chapter-lockup__subhead type-subtitle-sm">It was going somewhere, trying something new, or inviting someone along.</p>
+            </div>
+          </div>
+          <div class="chapter-copy"><div class="reading-copy editorial-flow"><p hidden>So I kept every design decision focused on one question: does this get people into the experience, or does it keep them in the app?</p></div></div>
+        </div>
+      </section>
+
+      <section class="design-decisions">
+        <article class="design-hero"><div class="page-grid"><div class="hero-decision hero-decision--text-left"><div class="hero-decision__text editorial-flow"><p class="type-label">Gameplay</p><h3>Real life set the pace, not the game.</h3><p>Summer Quest had to work across different schedules, neighborhoods, interests, and levels of commitment. So <strong>24 of the 25 quests were open from the start</strong>, with no prescribed route or pace. People could choose what fit that day, bring whoever happened to be around, and knock out several quests in one outing if the stars, subway schedule, and group chat happened to align. The finale quest was the <i>exception</i>: it stayed locked behind a secret code and was saved for the birthday gathering as one designed moment of discovery.</p><p>The <strong>Adventure Board</strong> became home base: enough structure to see what was possible, choose something, and move on. Completion worked on an <b>honor system</b> rather than GPS checks or proof-heavy verification. For a casual game between friends, the friction of policing participation mattered more than the risk of someone bending the rules.</p><p>I gave up control over the path so <strong>the game could fit around real life instead of dictating it.</strong></p></div><div class="hero-decision__visual"><img class="hero-gameplay-image" src="assets/images/summer-quest/hero-01.jpg" alt="Summer Quest gameplay experience"></div></div></div></article>
+        <article class="design-hero"><div class="page-grid"><div class="hero-decision hero-decision--visual-left"><div class="hero-decision__text editorial-flow"><p class="type-label">Behavioral design</p><h3>Reward the behavior, not the popularity contest.</h3><p>My first scoring system was intentionally simple: every quest was worth the same. But equal points didn't reflect equal effort, and an uncapped social bonus could easily reward having the largest friend group more than actually doing interesting things.</p><p>So the system evolved into weighted quest values, bounded bonuses, and identity-based ranks. Harder adventures earned more; bringing friends added points, but only up to a cap; and progress moved through ranks instead of a public leaderboard. <strong>The game needed enough reward to sustain momentum without making winning the ultimate goal.</strong></p></div><div class="hero-decision__visual"><div class="hero-scoring-evolution" role="group" aria-label="Summer Quest scoring system evolution"><div class="hero-scoring-evolution__header"><span>Scoring system evolution</span><span>Same 0–10 pt scale</span></div><section class="hero-scoring-stage hero-scoring-stage--one"><p class="hero-scoring-stage__label">Stage 1</p><p class="hero-scoring-stage__summary">Everything equal</p><div class="hero-scoring-row"><span class="hero-scoring-row__label">Base</span><span class="hero-score-track hero-score-track--base"><span class="hero-score-fill" style="--score-width:50%"><span class="hero-score-endpoint">5</span></span></span></div><div class="hero-scoring-row"><span class="hero-scoring-row__label">Friend</span><span class="hero-score-track hero-score-track--friend"><span class="hero-score-fill" style="--score-width:20%"><span class="hero-score-endpoint">+2</span></span></span></div></section><section class="hero-scoring-stage hero-scoring-stage--two"><p class="hero-scoring-stage__label">Stage 2</p><p class="hero-scoring-stage__summary">Bonus added</p><div class="hero-scoring-row"><span class="hero-scoring-row__label">Base</span><span class="hero-score-track hero-score-track--base"><span class="hero-score-fill" style="--score-width:50%"><span class="hero-score-endpoint">5</span></span></span></div><div class="hero-scoring-row"><span class="hero-scoring-row__label">Bonus</span><span class="hero-score-track hero-score-track--bonus"><span class="hero-score-fill" style="--score-width:20%"><span class="hero-score-endpoint">+2</span></span></span></div><div class="hero-scoring-row"><span class="hero-scoring-row__label">Friend</span><span class="hero-score-track hero-score-track--friend"><span class="hero-score-fill" style="--score-width:20%"><span class="hero-score-endpoint">+2</span></span></span></div></section><section class="hero-scoring-stage hero-scoring-stage--three"><p class="hero-scoring-stage__label">Stage 3</p><p class="hero-scoring-stage__summary">Weighted + bounded</p><div class="hero-scoring-row"><span class="hero-scoring-row__label">Base</span><span class="hero-score-marker-line hero-score-marker-line--base"><span class="hero-score-marker hero-score-marker--50">5</span><span class="hero-score-marker hero-score-marker--70">7</span><span class="hero-score-marker hero-score-marker--100">10</span></span></div><div class="hero-scoring-row"><span class="hero-scoring-row__label">Bonus</span><span class="hero-score-marker-line hero-score-marker-line--bonus"><span class="hero-score-marker hero-score-marker--10">+1</span><span class="hero-score-marker hero-score-marker--20">+2</span><span class="hero-score-marker hero-score-marker--30">+3</span><span class="hero-score-marker hero-score-marker--50">+5</span></span></div><div class="hero-scoring-row"><span class="hero-scoring-row__label">Friend</span><span class="hero-score-friend"><span class="hero-score-segments" aria-label="Five friend segments, capped at plus ten"><span></span><span></span><span></span><span></span><span></span></span><span class="hero-score-friend__note hero-score-friend__note--start">+2 / friend</span><span class="hero-score-friend__note hero-score-friend__note--end">cap +10</span></span></div></section></div></div></div></div></article>
+        <article class="design-hero"><div class="page-grid"><div class="hero-decision hero-decision--text-left"><div class="hero-decision__text editorial-flow"><p class="type-label">Social experience</p><h3>Invitation, not requirement.</h3><p>I wanted Summer Quest to make it easier to do things together, but forcing people into teams would have recreated the scheduling problem I was trying to escape. So social participation became something the game encouraged without depending on it.</p><p>A quest could happen alone, with one friend, or with five different people who had nothing to do with the last quest. Friend bonuses added a small nudge toward inviting someone without turning another person's availability into a blocker. I wasn't trying to build another place to socialize online. I was trying to create <strong>more reasons to end up in the same place as someone else.</strong></p></div><div class="hero-decision__visual"><img class="hero-social-image" src="assets/images/summer-quest/hero%2003.png" alt="Summer Quest social experience"></div></div></div></article>
+        <article class="design-hero"><div class="page-grid"><div class="hero-decision hero-decision--visual-left hero-decision--experience-architecture"><div class="hero-decision__text editorial-flow"><p class="type-label">Experience architecture</p><h3>Separate planning from remembering.</h3><p>My first idea was to turn completed quest tiles into participants' own photos. It made progress visible, but it also made the Adventure Board noisier at exactly the moment it needed to answer one question quickly: <strong>What should I do next?</strong></p><p>So I split the jobs. The <strong>Adventure Board</strong> stayed lightweight and forward-looking. Completing a quest unlocked a short reflection as a small discovery moment, while the <strong>Summer Journal</strong> gave photos and captions somewhere to accumulate into a record of the summer. The <strong>Photo Keepsake</strong> then turned that story into something people could save or print afterward. <strong>Memory stayed central to the experience. It just needed its own layer.</strong></p><img class="hero-decision__inline-visual" src="assets/images/summer-quest/hero-04.png" alt="Adventure Board, Summer Journal, and Photo Keepsake experience layers"></div></div></div></article>
+        <article class="design-hero"><div class="page-grid"><div class="hero-decision hero-decision--text-left hero-decision--product-strategy"><div class="hero-decision__text editorial-flow"><p class="type-label">Product strategy</p><h3>Build less. Leave room for more.</h3><p>Before building, I mapped possible features against two questions: <strong>How much value does this add to the experience, and how much complexity does it introduce?</strong> That helped separate what I needed to test from what merely sounded useful.</p><p>The first version stayed focused on participation, motivation, memory, and learning. At the same time, I kept the game structure separate from the birthday-specific content so quests, themes, rewards, and shared moments could change later without rebuilding everything.</p></p></div><div class="hero-decision__visual hero-decision__visual--prioritization"><div class="mvp-prioritization-matrix" data-prioritization-chart role="group" aria-label="Summer Quest feature prioritization matrix"></div></div></div></div></article>
+      </section>
+
+      <section class="chapter supporting-decisions" hidden><div class="page-grid"><div class="chapter-marker supporting-decisions-header"><button class="supporting-decisions-toggle" type="button" aria-expanded="false" aria-controls="supporting-decisions-list"><span class="type-label">Supporting decisions</span><svg class="supporting-decisions-toggle__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" /></svg></button></div><div class="supporting-list" id="supporting-decisions-list">
+        <article class="supporting-decision-row"><p class="type-label">Trust &amp; Risk</p><h3 class="supporting-decision-title type-decision-heading">Trust over verification.</h3><div class="supporting-decision-panel" id="supporting-decision-01" hidden><p class="supporting-decision-summary type-body">The meaningful cost of cheating was tiny; the friction of policing people was much larger. So I used an honor system instead. For a casual game between friends, the product provided structure. The honor system left room for people to play it their way.</p></div></article>
+        <article class="supporting-decision-row"><p class="type-label">Experience Structure</p><h3 class="supporting-decision-title type-decision-heading">One moment of suggested convergence.</h3><div class="supporting-decision-panel" id="supporting-decision-02" hidden><p class="supporting-decision-summary type-body">I designed most of Summer Quest to be asynchronous and flexible so my extended friend circle could celebrate with me even if they couldn't physically show up. The birthday gathering created an opportunity to collaborate with other players for group quests.</p></div></article>
+        <article class="supporting-decision-row"><p class="type-label">Systems Thinking</p><h3 class="supporting-decision-title type-decision-heading">Design with reuse in mind.</h3><div class="supporting-decision-panel" id="supporting-decision-03" hidden><p class="supporting-decision-summary type-body">I separated the reusable game structure from the birthday-specific content so quests, themes, rewards, and shared moments could change independently. That didn't prove Summer Quest was reusable. It made reuse testable.</p></div></article>
+      </div></div></section>
+
+      <section class="chapter outcomes">
+        <div class="page-grid">
+          <div class="chapter-lockup chapter-standard-lockup">
+            <h2 class="chapter-lockup__number" aria-hidden="true">04</h2>
+            <div class="chapter-lockup__content">
+              <p class="type-label">The Reality Check</p>
+              <h2 class="chapter-lockup__headline heading">How a birthday game became a live behavioral study</h2>
+              <p class="chapter-lockup__subhead type-subtitle-sm">The game worked, but not exactly how I expected.</p>
+            </div>
+          </div>
+          <div class="outcomes-visual"><img src="assets/images/summer-quest/04%20picnic.jpeg" alt="Summer Quest picnic"></div>
+          <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
+            <p>I designed Summer Quest so people could share one experience without having to participate the same way. Then I watched them interpret that freedom thirteen different ways.</p>
+            <div class="outcomes-paths-evidence">
+              <div class="outcomes-paths-copy editorial-flow">
+                <h3 class="type-subtitle-lg">13 players took 13 different paths.</h3>
+                <p>No two players completed the same combination of quests. Some played mostly solo. Others regularly brought friends. Some completed only a few quests, others nearly filled the board.</p>
+                <p class="type-subtitle-xs">79.5% of Phase 1 completions happened before August 16.</p>
+                <p>By the time the birthday arrived, the game had already been unfolding across different neighborhoods, schedules, and social circles for weeks.</p>
+                <h3 class="type-subtitle-xs">Shared did not have to mean synchronized.</h3>
+              </div>
+              <section class="journey-evidence" aria-labelledby="journey-evidence-title" data-representative-journeys>
+                <div class="journey-evidence__header">
+                  <p class="journey-evidence__eyebrow type-label" id="journey-evidence-title">5 representative player journeys</p>
+                  <p class="journey-evidence__legend type-label"><span aria-hidden="true"></span> = friends</p>
+                </div>
+                <div class="journey-evidence__list"></div>
+              </section>
+            </div>
+          </div></div>
+          <section class="chapter-copy outcomes-finding outcomes-finding--social"><div class="reading-copy editorial-flow type-body">
+            <h3 class="type-subtitle-lg">Social worked better as an invitation than a requirement.</h3>
+            <p>About <strong>65% of recorded quests involved friends</strong>, even though almost every quest could be completed solo.</p>
+            <p>I included two deliberately group-based quests to test the opposite model. <strong>Human Pyramid was completed only once, by three players.</strong> The finale quest was designed to happen at the birthday party, and most, but not all, of the players who were there attempted it.</p>
+            <p>The contrast was telling: people frequently chose to bring others when socializing was optional, while quests that <em>required</em> coordination saw far less participation.</p>
+            <p><strong>Making solo play valid did not make the experience less social. It made being social easier to choose.</strong></p>
+          </div></section>
+          <section class="chapter-copy outcomes-finding outcomes-finding--trust"><div class="reading-copy editorial-flow type-body">
+            <h3 class="type-subtitle-lg">Trust kept the game light. It also stretched the rules.</h3>
+            <p>I chose an honor system because verification would have added more friction than value. Most people played within the spirit of the game, but a few interpreted that freedom <em>very</em> far outside the box.</p>
+            <p>At least two players matched quests to experiences that happened before launch date, while others submitted completions that barely matched the original prompt.</p>
+            <p>The principle still held: <strong>trust was the right default. But flexibility needed clearer boundaries around what counted.</strong></p>
+          </div></section>
+          <section class="chapter-copy outcomes-finding outcomes-finding--journal"><div class="reading-copy editorial-flow type-body">
+            <h3 class="type-subtitle-lg">The memory layer worked without turning everyone into a novelist.</h3>
+            <p>I wanted people to caption their adventures and make the story fully their own. I also designed for the likelihood that most people wouldn't.</p>
+            <p><strong>42% of completed quests included a participant-written caption.</strong> That made the prewritten reflections important: every completion still added something to the summer story, while captions gave people who wanted more control another layer of authorship.</p>
+            <p>Some players barely added anything. Others made the Journal distinctly their own.</p>
+            <p><strong>The memory layer did not need equal effort from everyone to work.</strong></p>
+            <div class="journal-quote-cards" aria-label="Participant quotes about the Summer Journal">
+              <figure class="journal-quote-card">
+                <blockquote class="type-heading-xxs">“I enjoyed seeing my adventures collected in one place, but it wasn’t a major part.”</blockquote>
+                <figcaption><strong class="type-label">No-caption user</strong><span class="type-metadata">Visual archival won over written reflection</span></figcaption>
+              </figure>
+              <figure class="journal-quote-card">
+                <blockquote class="type-heading-xxs">“I treated the captions almost like Instagram, just a little context for the moment.”</blockquote>
+                <figcaption><strong class="type-label">Light journal user</strong><span class="type-metadata">Short captions worked as memory cues</span></figcaption>
+              </figure>
+              <figure class="journal-quote-card">
+                <blockquote class="type-heading-xxs">“My ultimate goal was the summer diary... I have the caption, the photo, and the structure all in one place.”</blockquote>
+                <figcaption><strong class="type-label">Authored memory user</strong><span class="type-metadata">Journaling became the long-term value</span></figcaption>
+              </figure>
+            </div>
+          </div></section>
+          <section class="chapter-copy outcomes-finding outcomes-finding--continued"><div class="reading-copy editorial-flow type-body">
+            <h3 class="type-subtitle-lg">People kept playing after the birthday.</h3>
+            <p>August 16 was designed as a <strong>midpoint milestone</strong> and an opportunity to do quests together. The group chat lit up, photo keepsakes were exchanged, and prizes were given around the picnic table.</p>
+            <p>Afterward, <strong>a handful of players kept playing over the following weeks</strong>. One friend came to the picnic, got excited seeing everyone's photos, and started playing that day. She finished her whole board two weeks later.</p>
+            <p>The sample was small, but <strong>the birthday did not function as a finish line.</strong></p>
+            <figure class="outcomes-activity-timeline">
+              <iframe src="assets/interactive/summer-quest-activity-dot-timeline/index.html" title="Summer Quest activity timeline showing completions, app opens, and journal reviews from July 24 through August 31" loading="lazy"></iframe>
+            </figure>
+          </div></section>
+        </div>
+      </section>
+
+      <section class="chapter potential">
+        <div class="page-grid">
+          <div class="chapter-lockup chapter-standard-lockup">
+            <h2 class="chapter-lockup__number" aria-hidden="true">05</h2>
+            <div class="chapter-lockup__content">
+              <p class="type-label">The Lessons</p>
+              <h2 class="chapter-lockup__headline heading">One game. A reusable system.</h2>
+            </div>
+          </div>
+          <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
+            <p>Shipping Summer Quest made the tradeoffs real. <strong>Flexibility worked</strong>, but lightweight structure had limits. Some players wanted more visibility into what others were doing, while the honor system showed me that <strong>creativity is great for adventures, less so for interpreting the rules.</strong></p>
+            <p>The Journal confirmed something I already suspected. I <em>wanted</em> people to narrate their adventures and get that little emotional payoff from looking back at their summer. I also knew most people probably wouldn't, which is why I carefully crafted reflections for every quest and bonus. Captions became <strong>optional authorship, not homework the memory layer depended on.</strong></p>
+            <p>After launch, I looked at the market more seriously. I already knew scavenger-hunt apps existed and shared many of the same mechanics. What interested me was something more specific: <strong>highly tailored experiences built around a particular group, place, occasion, or story.</strong>That made the reusable system underneath Summer Quest much more interesting. The quests, theme, rewards, visual world, and memory content could all change while the core participation model stayed intact. Same skeleton, completely different experience.</p>
+            <p>A second experiment would test where more structure actually earns its place: <strong>more social visibility without more pressure, clearer completion boundaries without heavy verification, and deeper personalization without asking players to do more work.</strong></p>
+            <p>I am not writing a business proposal for my passion project just yet. But <strong>Summer Quest proved the bespoke concept is worth testing beyond a birthday.</strong></p>
+            <p>And, perhaps more importantly, it delivered my most social birthday yet.</p>
+          </div></div>
+        </div>
+      </section>
+    </main>
+    <footer class="case-study-footer">
+      <nav class="case-study-footer__nav" aria-label="More case studies">
+        <a class="case-study-footer__link" href="prism.html">&lt; PREVIOUS: CoachCare Prism</a>
+        <a class="case-study-footer__link" href="performaMatch.html">NEXT: PerformaMatch &gt;</a>
+      </nav>
+    </footer>
+    <div class="master-grid-debug" aria-hidden="true">
+      <span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span>
+      <span>C7</span><span>C8</span><span>C9</span><span>C10</span><span>C11</span><span>C12</span>
+    </div>
+  </body>
+</html>

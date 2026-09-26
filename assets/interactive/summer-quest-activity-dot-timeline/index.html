@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Standalone Summer Quest activity dot-timeline prototype." />
+    <title>Summer Quest activity timeline — prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../../grid-spacing.css" />
+    <link rel="stylesheet" href="../../../spacing-tokens.css" />
+    <link rel="stylesheet" href="../../../display-font.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="sq-activity-timeline" aria-labelledby="activity-timeline-title">
+      <section class="sq-activity-timeline__figure" aria-label="Quest completions, app opens, and journal reviews by day from July 24 through August 31">
+        <div class="sq-activity-timeline__key-stack">
+          <h1 id="activity-timeline-title">Activity Timeline</h1>
+          <ul class="sq-activity-timeline__key" aria-label="Data colors">
+            <li class="sq-activity-timeline__key-item sq-activity-timeline__key-item--completions">Quest completions</li>
+            <li class="sq-activity-timeline__key-item sq-activity-timeline__key-item--app">App opens</li>
+            <li class="sq-activity-timeline__key-item sq-activity-timeline__key-item--journal">Journal reviews</li>
+          </ul>
+        </div>
+        <div class="sq-activity-timeline__scroll" tabindex="0" aria-label="Scroll horizontally to view daily activity">
+          <div class="sq-activity-timeline__canvas">
+            <div class="sq-activity-timeline__plot" id="activityPlot"></div>
+          </div>
+        </div>
+        <p class="sq-activity-timeline__mobile-note">Swipe to explore each day.</p>
+        <div class="sq-activity-timeline__sr-only" id="activityTable"></div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

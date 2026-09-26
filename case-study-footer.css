@@ -1,0 +1,53 @@
+.case-study-footer {
+  width:100%;
+  margin-top:calc(var(--space-160) - var(--space-major-break));
+}
+
+.case-study-footer__nav {
+  width:calc(100% - (var(--pad) * 2));
+  margin-inline:auto;
+  padding-block:var(--space-24) var(--space-48);
+  border-top:1px solid color-mix(in srgb,var(--color-ink) 30%,transparent);
+  display:flex;
+  justify-content:space-between;
+  gap:var(--space-24);
+}
+
+.case-study-footer__link {
+  max-width:48%;
+  color:var(--color-ink);
+  font-family:var(--font-body);
+  font-size:var(--type-control);
+  font-weight:var(--type-weight-semibold);
+  line-height:var(--type-control-line-height);
+  text-decoration:none;
+}
+
+.case-study-footer__link:last-child { text-align:right; }
+.case-study-footer__link:hover,
+.case-study-footer__link:focus-visible { color:var(--color-primary); }
+.case-study-footer__link:focus-visible { outline:1px solid var(--color-primary); outline-offset:4px; }
+
+/* Keep the rotary as the scroll endpoint while showing its footer below the stage. */
+.performa-match-page:has(.chapter-preview.is-enhanced) {
+  position:relative;
+}
+.performa-match-page:has(.chapter-preview.is-enhanced) > main {
+  display:flow-root;
+}
+.performa-match-page:has(.chapter-preview.is-enhanced) .chapter-preview {
+  margin-bottom:max(
+    calc(var(--space-160) + var(--preview-footer-adjustment, 0px)),
+    calc(var(--preview-footer-height, 0px) + var(--space-16))
+  );
+}
+.performa-match-page:has(.chapter-preview.is-enhanced) > .case-study-footer {
+  position:absolute;
+  bottom:0;
+  margin-top:0;
+}
+
+@media (max-width:640px) {
+  .case-study-footer__nav { padding-block:var(--space-16) var(--space-24); }
+  .case-study-footer__link { font-size:var(--type-metadata); line-height:var(--type-metadata-line-height); }
+}

@@ -1,0 +1,1040 @@
+KATHY PORTFOLIO VISUAL DIRECTION
+Operational design brief for a mid-level UX / Product Design portfolio
+Updated: September 15, 2026
+
+
+============================================================
+01. PURPOSE
+============================================================
+
+This document is the source of truth for how Kathy's portfolio should look,
+move, connect, and stage information.
+
+It supersedes the earlier direction centered on a mostly calm editorial shell.
+The new system keeps the rigor, readability, and project-specific worlds, but
+raises the level of art direction.
+
+The portfolio should not look like a sequence of tasteful content sections or
+a stack of isolated campaign viewports. It should read like an authored online
+magazine: one continuous argument with deliberately concentrated moments of
+visual disruption.
+
+
+============================================================
+02. NORTH STAR
+============================================================
+
+PRIMARY DIRECTION
+
+    STRUCTURED EDITORIAL DESIGN
+    WITH EXPRESSIVE DISRUPTION
+
+OPERATING PRINCIPLE
+
+    CONTINUOUS EDITORIAL NARRATIVE
+    WITH CONCENTRATED VISUAL DISRUPTION
+
+    MAGAZINE FIRST.
+    CAMPAIGN MOMENT SECOND.
+
+SUPPORTING FORMULA
+
+    EDITORIAL STORYTELLING
+    + GRAPHIC-SYSTEM THINKING
+    + PRODUCT RIGOR
+
+POSITIONING INTENT
+
+    Product-design rigor presented with creative-agency art direction.
+
+The differentiating tension is:
+
+    expressive visual craft x analytical product thinking
+
+The desired impression is not merely:
+
+    "A Product Designer with good visual taste."
+
+It is:
+
+    "A visual storyteller who thinks in product systems, behavior,
+    evidence, and consequences."
+
+Or, more bluntly:
+
+    A graphic-designer brain operating inside product-design logic.
+
+
+============================================================
+03. THE PORTFOLIO'S JOB
+============================================================
+
+Within approximately five seconds, a recruiter should understand:
+
+- Kathy is a Product Designer.
+- She has shipped real work.
+- She handles complex product systems and ambiguous problems.
+- She has unusually strong visual craft and storytelling ability.
+- CoachCare is the flagship professional proof.
+- Summer Quest demonstrates ownership, behavioral thinking, and live learning.
+- PerformaMatch demonstrates research synthesis and strategic framing.
+
+After deeper reading, a hiring manager should understand:
+
+- which decisions Kathy owned
+- what evidence changed her thinking
+- what tradeoffs she made
+- what changed because of the work
+- how she operates with constraints and collaborators
+- what working with her might feel like
+
+The visual system must accelerate that understanding. It must never make the
+reader solve a design escape room to discover Kathy's job title.
+
+
+============================================================
+04. GOVERNANCE: WHAT CONTROLS WHAT
+============================================================
+
+THE PORTFOLIO SYSTEM CONTROLS
+
+- navigation
+- master grid
+- typography roles
+- spacing logic
+- metadata and annotation behavior
+- interaction principles
+- accessibility
+- content functions
+- presentation scales
+- continuous editorial spine
+- recurring composition families
+
+THE PROJECT SYSTEM CONTROLS
+
+- project palette and atmosphere
+- photography and image treatment
+- project-specific graphic metaphor
+- illustration language
+- data-art direction
+- intensity of expression
+
+The shell creates recognition. The project creates character.
+
+The structure must work in black and white. Project color adds atmosphere and
+meaning; it does not carry hierarchy by itself.
+
+
+============================================================
+05. CORE VISUAL BEHAVIORS
+============================================================
+
+1. STRONG GRID, BROKEN DELIBERATELY
+
+The grid should be rigorous enough that misalignment, overlap, cropping, and
+edge-breaking feel intentional. Random placement is not expressive design.
+It is merely evidence that CSS has won.
+
+
+2. TYPOGRAPHY IS SPATIAL
+
+Words may be oversized, cropped, stacked, repeated, faded, interrupted by
+imagery, or placed across fields. Important line breaks should be composed,
+not surrendered to accidental browser wrapping.
+
+Typography can function as:
+
+- narrative
+- shape
+- texture
+- hierarchy
+- transition
+- navigation
+- negative space
+
+
+3. ARTIFACTS ARE STAGED
+
+Screenshots, photographs, research fragments, diagrams, quotes, and metrics
+should be treated like exhibits. They should be given scale, distance, and
+context instead of being poured into identical cards.
+
+
+4. EXTREME HIERARCHY
+
+Use dramatic contrast:
+
+- monumental claim vs. micro metadata
+- full-field image vs. tiny caption
+- dense evidence vs. deliberate emptiness
+- hero metric vs. supporting interpretation
+
+Avoid a page where every element lives at the same polite medium scale.
+
+
+5. ONE DOMINANT IDEA PER EDITORIAL UNIT
+
+Every meaningful unit needs a clear protagonist: one claim, artifact, metric,
+image, or decision. The unit may be shorter or longer than a viewport and may
+remain visibly connected to the units around it. Supporting material may be
+complex, but the entry point must be obvious.
+
+Do not confuse hierarchy with pagination. A dominant idea does not require a
+full-screen enclosure.
+
+
+6. DENSITY FLUCTUATES
+
+The portfolio should move between sparse and dense states:
+
+    statement -> evidence -> artifact -> clarity -> statement
+
+Do not distribute visual intensity evenly. If every section performs a heroic
+entrance, none of them matters.
+
+
+7. FUNCTIONAL UI BEHAVES SIMPLY
+
+Navigation, accordions, buttons, galleries, tabs, and forms should be direct,
+predictable, and accessible. The surrounding composition carries expression.
+Not every component needs a theatrical backstory.
+
+
+8. IMAGERY MAY DOMINATE
+
+When a photograph or artifact already proves the point, let it carry the beat.
+Do not narrate over evidence that can speak for itself.
+
+
+9. INTERRUPTION MUST HAVE A JOB
+
+A line, crop, handwritten mark, offset label, floating image, or motion event
+must clarify emphasis, sequence, relationship, or character. Decorative noise
+is not a system.
+
+
+10. EVERY PROJECT NEEDS A GRAPHIC METAPHOR
+
+The strongest project world is built from one concept that can extend across:
+
+- typography
+- diagrams
+- data
+- imagery
+- transitions
+- motion
+- interaction
+
+Take the logic from references, not their costume.
+
+
+============================================================
+06. EXPRESSION AND PACING
+============================================================
+
+PORTFOLIO-WIDE CHARACTER
+
+    approximately 75% rigorous / 25% unruly
+
+Do not spread the 25% evenly. Concentration creates contrast.
+
+CASE-STUDY PRESENTATION SCALE
+
+    65–75%  RUNNING EDITORIAL FLOW
+    20–30%  FEATURE COMPOSITIONS
+     5–10%  IMMERSIVE MOMENTS
+
+These percentages are directional, not quotas. Immersive moments are a maximum,
+not an obligation. A chapter can succeed without one.
+
+Summer Quest may use the highest case-study intensity. Even there, reserve
+immersive treatment for the hero, a true reframe, and/or a major outcome.
+CoachCare should use the same system with substantially more restraint.
+
+
+============================================================
+07. TWO AXES: CONTENT FUNCTION x PRESENTATION SCALE
+============================================================
+
+Do not treat content function and visual scale as the same decision. A statement
+can be an inline feature. Product evidence can temporarily become immersive.
+Choose each axis independently.
+
+
+AXIS A — CONTENT FUNCTION
+
+01. STATEMENT
+
+Purpose:
+- chapter thesis
+- major reframe
+- product principle
+- hero outcome
+- closing argument
+
+Behavior:
+- conclusion-led language
+- one clear claim or number
+- may use extreme scale contrast
+- may remain embedded inside the article flow
+- does not automatically require a full viewport
+
+
+02. EDITORIAL EVIDENCE
+
+Purpose:
+- research insight
+- behavior pattern
+- decision rationale
+- quote + context
+- metric + interpretation
+- comparison or turning point
+
+Behavior:
+- evidence and explanation share one unit
+- captions and annotations remain attached to their source
+- visual hierarchy reflects claim -> evidence -> meaning
+- may use a project-specific graphic device
+
+
+03. PRODUCT CLARITY
+
+Purpose:
+- explain what was designed
+- compare before / after
+- show an interaction or state change
+- document product architecture
+- make a complex workflow understandable
+
+Behavior:
+- controlled reading order
+- readable body copy
+- legible screens
+- explicit annotation
+- restrained motion
+- minimal overlap
+
+
+AXIS B — PRESENTATION SCALE
+
+01. RUNNING
+
+The default online-magazine flow. Text, evidence, images, quotes, and captions
+share one continuous article spine. Units size themselves to their content,
+not to the viewport.
+
+02. FEATURE
+
+A stronger composition within the continuous article. It may expand across the
+grid, change background, enlarge typography, or stage an artifact, but it keeps
+visual continuity with what comes before and after.
+
+03. IMMERSIVE
+
+A rare hero-scale event used for a project opening, decisive reframe, major
+outcome, or closing argument. It may approach or occupy a viewport when the idea
+has earned that scale.
+
+The case study should usually move:
+
+    running -> feature -> running -> running -> feature -> running
+
+not:
+
+    viewport -> viewport -> viewport -> recruiter requests extraction
+
+
+============================================================
+08. EDITORIAL SPINE + FOUR COMPOSITION FAMILIES
+============================================================
+
+THE BASE LAYER — EDITORIAL SPINE
+
+The Editorial Spine is the continuous structure beneath every case study. It
+preserves a stable place for narrative, context, evidence, captions, and expanded
+visuals so the reader always knows where to return after an interruption.
+
+The spine is not a fifth expressive composition family. It is the operating
+system. The four families below are feature or immersive behaviors applied
+selectively inside it.
+
+A. MONUMENT / POSTER
+
+One phrase, question, quote, or metric dominates the scene.
+
+Best for:
+- project thesis
+- chapter transition
+- outcome
+- major reframe
+- 404, footer, or other shell moments
+
+
+B. STAGE
+
+An atmospheric outer field contains one controlled inner canvas.
+
+Best for:
+- complex UX artifacts
+- research synthesis
+- system diagrams
+- product explanation
+- a hero datum with supporting evidence
+
+
+C. COLLISION
+
+Typography, imagery, and/or artifacts occupy the same physical space.
+
+Best for:
+- project transitions
+- split digital / real-world narratives
+- About page
+- major quotes
+- participant or contextual photography
+
+Overlap must reinforce the idea. It is not permission to reduce legibility.
+
+
+D. EXHIBITION / SCATTER
+
+A small number of artifacts are deliberately placed across a large field.
+
+Best for:
+- UI showcase
+- research materials
+- journal or keepsake artifacts
+- project index
+- Playground
+
+This is not a masonry gallery. Distance, scale, and placement create the story.
+
+COMPOSITION RULE
+
+Monument, Stage, Collision, and Exhibition should interrupt the magazine, not
+replace it. The surrounding article must remain perceptually connected before,
+during, and after the feature.
+
+
+============================================================
+09. GRID AND RESPONSIVE SYSTEM
+============================================================
+
+MASTER GRID
+
+- Wide desktop: 12-column editorial grid
+- Standard desktop: remain 12 columns with tighter compositions
+- Tablet: 8-column simplified editorial grid
+- Mobile: 4-column utility grid
+- Narrow mobile: single-column reading flow
+
+Current desktop foundation:
+
+- fluid grid
+- 48px outer margins
+- 24px gutters
+- no fixed desktop max-width
+- local reading measures preserved for long-form text
+
+EDITORIAL SPINE ZONES
+
+- outer gutter: chapter marker, progress, or sparse global metadata
+- context rail: dates, participant IDs, methods, sources, and figure labels
+- main reading column: claim, reasoning, interpretation, and decisions
+- evidence rail: quote, metric, annotation, or concise supporting context
+- expanded field: screens, photographs, diagrams, charts, and staged artifacts
+
+The main reading column is the anchor. Supporting elements may occupy adjacent
+zones or expand across the grid, but the reader should be able to find the
+narrative again without searching.
+
+ONLINE READING RULE
+
+Do not flow body copy through multiple newspaper columns. Print can ask the eye
+to jump upward and sideways. A scrolling interface should preserve one primary
+vertical reading path.
+
+CONTINUITY RULES
+
+- ordinary units size to content; they do not default to 100vh
+- do not use scroll snapping in case-study bodies
+- preserve the established spacing rhythm between related units
+- allow the next heading, image, or caption to enter before the current view ends
+- keep captions and evidence visually attached to the argument they support
+- use recurring rules, routes, fields, or background transitions across modules
+- treat most chapter changes as bands, rules, type shifts, or color changes
+- reserve full-screen chapter intermissions for genuinely major narrative turns
+
+The grid governs alignment; it does not require every element to fill a tidy
+rectangle.
+
+RESPONSIVE PRINCIPLE
+
+Do not shrink a desktop spread. Recompose it.
+
+On smaller screens:
+
+- preserve the dominant idea
+- preserve reading order
+- convert overlap into sequence when necessary
+- reduce decorative interruptions before reducing clarity
+- keep type dramatic, but prevent destructive wrapping
+- move edge labels into horizontal metadata
+- stack evidence beside its interpretation, not several screens away
+- preserve generous space without manufacturing endless scroll
+
+
+============================================================
+10. TYPOGRAPHY
+============================================================
+
+Typography carries much of the art direction.
+
+ROLES
+
+DISPLAY / NARRATIVE
+- hero language
+- project titles
+- chapter theses
+- turning points
+- selected quotes and metrics
+
+BODY / PRODUCT
+- reasoning
+- product explanation
+- navigation
+- controls
+- captions
+- evidence interpretation
+
+MICRO / METADATA
+- dates
+- participant IDs
+- role and scope
+- units
+- figure labels
+- annotations
+- evidence source
+
+ACCENT / HUMAN MARK
+- sparse handwritten notes
+- arrows
+- asides
+- optional personality
+
+The accent face must never carry comprehension-critical content.
+
+Use scale contrast aggressively, but use tiny type only where the information
+is genuinely secondary. Body copy remains comfortably readable.
+
+Typeface assignments belong to the typography source of truth. Current system:
+
+- Salute: primary display
+- Gloock: display fallback if licensing requires it
+- Figtree: body, UI, metadata, labels, and diagrams
+- Plus Jakarta Sans: body/UI fallback
+- Esthentic DEMO: sparse accent
+- Baby Boston: accent alternative
+
+Belaine has been reconsidered for the hero but is not yet a locked replacement
+for Salute. Do not silently change the global system based on one attractive
+mockup. That is how font coups happen.
+
+
+============================================================
+11. COLOR SYSTEM
+============================================================
+
+CANONICAL BRAND COLORS
+
+- Primary / Deep Magenta: #A13F68
+- Secondary / Indigo: #3D3A66
+- Accent / Antique Gold: #8C6018
+
+ATMOSPHERIC EDITORIAL FIELDS
+
+- Lilac: #C5B8D6
+- Atmospheric Blue: #B4C7D9
+- Atmospheric Pink: #DDB9C5
+- Butter: #EBD9A4
+- Apricot: #F2B07F
+
+COLOR BEHAVIOR
+
+- Use Ink, Ground, one atmospheric field, and one brand accent as a common
+  composition limit.
+- Deploy the full palette across the portfolio, not inside every viewport.
+- Use color semantically and compositionally, not as confetti.
+- Project palettes may bend the shell, but navigation and hierarchy remain
+  recognizable.
+- Never depend on color alone for hierarchy, state, or meaning.
+
+Atmosphere should feel warm, expressive, modern, and slightly unexpected.
+Avoid beige luxury cosplay, generic startup gradients, and rainbow soup.
+
+
+============================================================
+12. IMAGERY AND ARTIFACT TREATMENT
+============================================================
+
+PHOTOGRAPHY
+
+- allow large, cinematic crops
+- crop for narrative tension, not merely subject visibility
+- let images enter or leave the viewport when continuation matters
+- use high-contrast photography when it strengthens the composition
+- give full images later when an earlier crop intentionally withholds context
+- do not depend on photography to create every change in rhythm
+- let diagrams, UI, research fragments, typography, and data perform equivalent
+  editorial roles in evidence-heavy case studies
+
+PRODUCT SCREENS
+
+- show them large enough to inspect
+- annotate only the decision-relevant region
+- avoid endless device mockups
+- avoid three identical cards merely because three screens exist
+- use an exhibition or stage when physical presence matters
+
+RESEARCH MATERIAL
+
+- treat evidence as material: excerpts, fragments, patterns, annotations
+- keep source and interpretation distinct
+- connect evidence visibly to the decision it caused
+- avoid decorative quote cards, affinity-map wallpaper, and persona theater
+
+DATA
+
+- metrics may become visual protagonists
+- pair every metric with what it means
+- avoid generic KPI-card rows
+- allow one hero analytical visual to inherit the project's graphic metaphor
+- preserve quantitative accuracy and readable labels
+
+CONTINUOUS ARTICLE CADENCE
+
+A common passage may use:
+
+    conclusion-led subheading
+    -> two or three short paragraphs
+    -> quote or metric entering from the evidence rail
+    -> expanded visual crossing several columns
+    -> caption and interpretation
+    -> narrative resumes on the same spine
+
+This is a pattern, not a mandatory template. Vary the rhythm without abandoning
+the reading path.
+
+
+============================================================
+13. MOTION AND INTERACTION
+============================================================
+
+MOTION PRINCIPLE
+
+    ALIVE, NOT BUSY.
+
+Motion should do at least one of four jobs:
+
+- REVEAL: bring information into focus
+- TRANSITION: connect narrative spaces
+- TRANSFORM: show relationships between states
+- ORIENT: explain where content came from or where it went
+
+Use motion for:
+
+- chapter transitions
+- before / after state changes
+- progressive diagrams
+- relationship reveals
+- artifact entrances when sequence matters
+- project preview reactions
+- subtle atmospheric movement
+- typographic or image transformations tied to meaning
+
+Avoid:
+
+- scroll hijacking
+- cursor obstacles
+- permanent floating clutter
+- mandatory intro sequences
+- motion that delays comprehension
+- decoration that exists only because it can move
+- effects that fail without a fallback
+
+Respect reduced-motion preferences. The meaning must survive if motion fails.
+
+SIGNATURE BRAND INTERACTION
+
+The HOA logomark may spin on hover while the pronunciation /hwa/ reveals from
+left to right near the wordmark at 50% of the system Ink color. The delay should
+feel intentional and discovery-based, not sluggish. Keyboard focus receives an
+equivalent state; reduced motion removes the spin but preserves the label.
+
+
+============================================================
+14. PROJECT-SPECIFIC ART DIRECTION
+============================================================
+
+COACHCARE — CONTROLLED SYSTEMS
+
+Role in portfolio:
+Flagship proof of professional maturity, systems thinking, prioritization, and
+design within a constrained product ecosystem.
+
+Visual behavior:
+
+- most disciplined case-study world
+- Product Clarity and Stage dominate
+- crisp UI, system diagrams, measured hierarchy
+- information density is allowed, but staged calmly
+- restrained palette and sparse expressive moments
+- show consequence and operational logic before visual polish
+
+Working graphic metaphor:
+
+    fragmented work -> coordinated action
+
+Possible recurring material:
+
+- rails
+- connected states
+- task / signal paths
+- controlled modular fields
+
+Avoid generic healthcare gradients, a dashboard collage, or making mature work
+look less serious in order to prove the portfolio has personality.
+
+
+SUMMER QUEST — ACCUMULATED CITY MEMORY
+
+Role in portfolio:
+Strongest proof of full ownership, behavioral design, shipping, live learning,
+and the relationship between a digital tool and a real-world experience.
+
+Visual behavior:
+
+- most expressive case study
+- Statement, Collision, and Exhibition used confidently
+- NYC photography may dominate entire beats
+- illustrated map fragments, journal artifacts, quest imagery, and participant
+  evidence should share one world
+- charts should feel native to the experience, not like analytics software
+  wearing lipstick
+
+Graphic metaphor:
+
+    individual paths accumulate into a shared city memory
+
+Recurring material may include:
+
+- routes and connective lines
+- dots and time markers
+- overlapping participant paths
+- map fragments
+- image interruptions
+- layered real-world and digital evidence
+
+Use the motif to represent movement, sequence, social connection, different
+journeys, and accumulated memory. Do not sprinkle unrelated cute symbols merely
+to make the page playful.
+
+The portfolio system governs presentation and structure. The Summer Quest
+system governs project-specific color, illustration, photography, and flavor.
+
+
+PERFORMAMATCH — EVIDENCE BECOMES A MODEL
+
+Role in portfolio:
+Proof of foundational research, pattern recognition, synthesis, and strategic
+product direction.
+
+Visual behavior:
+
+- investigative and editorial
+- restrained atmosphere
+- evidence fragments become structured patterns
+- quotes, diagrams, and models carry more weight than final UI
+- annotations remain precise and source-aware
+
+Graphic metaphor:
+
+    fragments -> patterns -> product direction
+
+Use progressive structure to show how raw evidence changed the model of the
+problem. Avoid detective-board cosplay, theatrical red strings, or pretending
+research is rigorous merely because it has many sticky notes.
+
+
+ABOUT — PERSONALITY WITH EVIDENCE
+
+- use the locked 25% Observer / 35% Maker / 40% Curious Cat framing
+- allow spatial typography, image interruption, and more personal motion
+- show interests as evidence of how Kathy notices and makes, not as a hobby list
+- keep professional history scannable; the current CoachCare role may open by
+  default in the experience accordion
+
+
+PLAYGROUND — CONTROLLED FREEDOM
+
+- may use the highest shell-level experimentation
+- each project can have its own visual behavior
+- labels and entry points remain obvious
+- experiments should reinforce curiosity, culture, behavior, or making
+- do not let breadth dilute the three core case studies
+
+
+============================================================
+15. HOMEPAGE DIRECTION
+============================================================
+
+The homepage is the Projects page. It should not add a redundant index before
+the work.
+
+CURRENT HIERARCHY
+
+1. CoachCare — dominant flagship
+2. Summer Quest — expressive secondary project
+3. PerformaMatch — concise research-led teaser
+
+Do not place the projects in identical cards.
+
+Use asymmetric editorial staging while preserving a fast scan:
+
+- quiet universal header
+- clear HOA identity
+- immediate Product Designer signal
+- strong CoachCare dominance
+- project worlds that feel distinct
+- concise teaser copy
+- clear click targets
+
+The user should identify Kathy as a Product Designer and find at least two
+clickable projects within approximately five seconds.
+
+
+============================================================
+16. CASE-STUDY STRUCTURE AND NAVIGATION
+============================================================
+
+The visual system must support:
+
+    claim -> evidence -> interpretation -> decision -> result
+
+Case studies should behave as continuous online articles, not slide decks laid
+vertically. Several related ideas may remain visible and connected within the
+same flow. Section boundaries clarify the argument; they should not repeatedly
+reset the reader's attention.
+
+Case studies may use a compact chapter rail when the narrative has real chapter
+structure. The rail must orient, not decorate.
+
+Summer Quest working example:
+
+    01 ORIGIN
+    02 PARTICIPATION
+    03 GAME
+    04 REALITY
+    05 AFTER
+
+Desktop may show the full rail. Mobile may compress to:
+
+    03 / 05  GAME
+
+Chapter openings should use conclusion-led language, not generic process labels
+such as Research, Ideation, and Final Design.
+
+The default chapter transition is an editorial change of pace, not a new full
+screen. Use an immersive chapter opening only when the chapter contains a real
+narrative turn that deserves one.
+
+
+============================================================
+17. EVIDENCE STANDARD
+============================================================
+
+Every major visual should perform one of these jobs:
+
+- reveal a problem
+- show evidence
+- explain a system
+- compare meaningful options
+- document a decision
+- show an iteration caused by learning
+- show an outcome
+- establish necessary context
+
+Research should visibly move through:
+
+    EVIDENCE
+    -> INTERPRETATION
+    -> NEW MODEL
+    -> PRODUCT CONSEQUENCE
+
+Before / after is valuable only when it proves changed thinking. Do not display
+six nearly identical screens as though pixel archaeology is a leadership skill.
+
+
+============================================================
+18. VOICE, LABELS, AND ANNOTATION
+============================================================
+
+The portfolio voice should feel:
+
+- warm
+- curious
+- observant
+- direct
+- evidence-aware
+- occasionally witty
+
+Micro labels should feel technical and precise, creating contrast with
+expressive display language. Tiny text is reserved for metadata, not body copy.
+
+Captions should explain:
+
+- what the reader is looking at
+- why it matters
+- what changed because of it
+
+Avoid captions that merely rename the image.
+
+
+============================================================
+19. ACCESSIBILITY AND USABILITY
+============================================================
+
+Expressive disruption does not excuse basic failure.
+
+Required:
+
+- readable body size and line length
+- strong color contrast
+- visible keyboard focus
+- meaningful DOM reading order
+- alt text for informative imagery
+- reduced-motion support
+- touch targets that remain obvious on mobile
+- no essential information hidden behind hover
+- no overlap that destroys comprehension
+- no interaction that traps scrolling or focus
+
+The utility layer should be boring in the best possible way: reliable.
+
+
+============================================================
+20. REFERENCE ROLES
+============================================================
+
+COMMERCIAL / CREATIVE-AGENCY REFERENCES
+
+Use these to study concentrated composition:
+
+- spatial typography
+- extreme hierarchy
+- staged artifacts
+- collision and cropping
+- graphic-system thinking
+- memorable transitions
+
+They are not the structural model for the full case-study body. Their lighter
+content and image supply permit more viewport-scale staging than a hiring case
+study can sustain.
+
+
+EDITORIAL / MAGAZINE REFERENCES
+
+Use these to study continuity:
+
+- stable article spine
+- changing image widths
+- pull quotes embedded inside an argument
+- sidebars and context rails
+- recurring captions and metadata
+- visual rhythm without repeated resets
+
+Tejas Kumar's story is useful for executive summary, contents, orientation,
+progress, and recurring chapter grammar. Its contemplative scrollytelling pace
+and large empty fields are not the target density for recruiter reading.
+
+The HypeMag-style long-form article is useful for elegant pacing, split openings,
+inline pull quotes, and image/body relationships, but still depends heavily on
+portrait photography.
+
+The D2-style editorial pages are the strongest continuity reference: one article
+spine supports body copy, subheads, pull quotes, captions, side context, and
+several image scales without turning each item into its own scene.
+
+Take the reading logic, not print-sized typography or multi-column body flow.
+
+
+============================================================
+21. WHAT THIS DIRECTION IS NOT
+============================================================
+
+Do not copy:
+
+- luxury real-estate darkness
+- beige serif prestige signaling
+- raster mountains
+- pseudo-technical labels with no meaning
+- unreadably tiny body copy
+- fixed desktop spreads on mobile
+- newspaper-style multi-column body copy on screen
+- full-screen treatment for ordinary paragraphs or every chapter opening
+- case studies assembled as vertically stacked slides
+- huge empty fields around evidence that should be read together
+- pull quotes that merely repeat nearby copy without creating emphasis
+- constant WebGL spectacle
+- generic KPI cards
+- four matching insight cards
+- card grids for every type of content
+- decorative UX artifacts
+- motion without a communication job
+- weirdness used to conceal weak hierarchy
+- a generic colorful Product Designer template
+
+The references are valuable because of their composition logic, not because
+Kathy needs to cosplay as a 30-person creative agency.
+
+
+============================================================
+22. REVIEW CHECKLIST
+============================================================
+
+For every major composition, ask:
+
+1. What is the dominant idea?
+2. What should a recruiter understand in three seconds?
+3. What is the content function: Statement, Editorial Evidence, or Product Clarity?
+4. What is the presentation scale: Running, Feature, or Immersive?
+5. Has this idea earned its visual scale?
+6. Does the unit preserve the Editorial Spine before and after it?
+7. Which composition family, if any, is doing the work?
+8. Is the grid being broken deliberately or merely inconsistently?
+9. Does the artifact prove a decision, behavior, or result?
+10. Is the visual metaphor native to this project?
+11. Is motion revealing, transitioning, transforming, or orienting?
+12. Does the composition still work in black and white?
+13. Does the mobile version preserve the idea rather than miniaturize it?
+14. Is any important information available only on hover?
+15. Could one element be removed without losing meaning?
+
+If the answer to the last question is yes, remove it. The Empire already has
+enough unnecessary machinery.
+
+
+============================================================
+23. FINAL PRINCIPLE
+============================================================
+
+The portfolio should repeatedly make one thing obvious:
+
+    Kathy notices something important,
+    forms a point of view,
+    makes a deliberate choice,
+    and can show what happened because of it.
+
+The art direction should make that reasoning more memorable. The Editorial
+Spine should make it easier to follow. Neither may make the reasoning harder to
+see.

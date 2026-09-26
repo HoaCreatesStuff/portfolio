@@ -1,0 +1,33 @@
+/* Portfolio font assets. Semantic font roles are defined in styles.css. */
+@font-face {
+  font-family:"Salute";
+  src:url("assets/fonts/Salute.ttf") format("truetype");
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+}
+
+@font-face {
+  font-family:"Gloock";
+  src:url("assets/fonts/Gloock-Regular.ttf") format("truetype");
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+}
+
+@font-face {
+  font-family:"Esthentic DEMO";
+  src:url("assets/fonts/Esthentic DEMO.ttf") format("truetype");
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+}
+
+/* Canonical accent family, shared with the existing debug font option. */
+@font-face {
+  font-family: "Debug Accent missele";
+  src: url("assets/fonts/Misselle-FreeDemo-BF6a71b09248b40.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

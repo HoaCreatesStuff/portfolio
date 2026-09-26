@@ -1,0 +1,843 @@
+KATHY PORTFOLIO LAYOUT + GRID GUIDE
+Source of Truth — August 2026
+
+PURPOSE
+-------
+This guide defines the core page-width, grid, spacing, and composition system for Kathy's UX / Product Design portfolio.
+
+The goal is to support the established visual direction:
+
+ATMOSPHERIC EDITORIAL × GRAPHIC ART DIRECTION
+
+Core principle:
+
+    Soft atmosphere. Hard hierarchy.
+
+The grid should create strong underlying discipline while allowing:
+- asymmetry
+- editorial pacing
+- dramatic scale shifts
+- project-specific visual worlds
+- large conceptual visuals
+- selective atmospheric breakouts
+- strong recruiter scannability
+
+The system should NOT feel like a conventional SaaS dashboard grid where every element snaps into identical cards.
+
+The preferred model is:
+
+    RIGID GRID.
+    FLEXIBLE COMPOSITION.
+
+
+============================================================
+1. GLOBAL DESKTOP GRID
+============================================================
+
+MAIN CONTAINER
+--------------
+Width:
+    viewport width minus left and right outer page margins
+
+Desktop maximum:
+    none
+
+Desktop outer margin:
+    same fluid token as the grid gutter
+
+Grid:
+    12 columns
+
+Gutter:
+    same fluid token as the outer margin
+
+Canvas:
+    100vw
+
+
+FLUID SPATIAL GRID. CONTROLLED CONTENT MEASURE.
+------------------------------------------------
+The master 12-column grid expands with the viewport while retaining equal
+outer margins and gutters. Grid gutter = outer margin = approximately 35% of
+one grid-column width. It is naturally centered by those equal margins and
+has no fixed desktop max-width.
+
+For a 12-column grid, where c is one column and g is the shared gutter/margin:
+
+    g = 0.35c
+    viewport = 12c + 11g + 2g = 16.55c
+    g = 0.35 viewport / 16.55
+
+The implementation bounds this derived value with:
+
+    clamp(22px, 0.35 viewport / 16.55, 56px)
+
+This does not mean every element expands indefinitely.
+
+Master spatial grid:
+    fluid
+
+Reading measure:
+    controlled locally through semantic column spans, existing max-width
+    values, body-copy measure tokens, and component-level constraints
+
+Large visual artifacts:
+    may expand according to their assigned grid spans
+
+Diagrams and assets with intentional component-specific caps:
+    retain those caps unless separately redesigned
+
+Existing local reading protections such as 68ch, 700px, and 670px remain in
+place. The fluid master grid provides spatial scale; local constraints protect
+comprehension.
+
+
+============================================================
+2. THE 12-COLUMN GRID IS SCAFFOLDING
+============================================================
+
+The twelve-column grid exists to support composition.
+
+It should NOT become visibly repetitive.
+
+Useful divisions include:
+
+4 / 8
+5 / 7
+6 / 6
+7 / 5
+8 / 4
+3 / 6 / 3
+
+Also use:
+- offset compositions
+- intentional empty columns
+- asymmetric placement
+- partial-width text
+- full-width visuals
+
+Do not treat every section as twelve equal boxes.
+
+The grid should create coherence without making every layout look identical.
+
+
+============================================================
+3. SEMANTIC CONTENT WIDTHS
+============================================================
+
+Instead of thinking only in terms of one container width, use four primary content widths.
+
+------------------------------------------------------------
+A. READING WIDTH
+------------------------------------------------------------
+
+Recommended span:
+    6 columns
+
+Preferred text measure:
+    approximately 620–700px
+
+Use for:
+- case-study body copy
+- strategic reasoning
+- evidence interpretation
+- research explanation
+- reflection
+- longer narrative passages
+
+Purpose:
+Maintain comfortable reading length and prevent dense case-study writing from stretching too far across the page.
+
+
+------------------------------------------------------------
+B. ARGUMENT WIDTH
+------------------------------------------------------------
+
+Recommended span:
+    8 columns
+
+Approximate width:
+    820–960px depending on placement
+
+Use for:
+- chapter intros
+- major reframes
+- high-value product arguments
+- thesis paragraphs
+- important principles
+- selected outcome statements
+- wider supporting prose
+
+Purpose:
+Give major narrative ideas more visual authority than routine body copy.
+
+
+------------------------------------------------------------
+C. CHAPTER THESIS / STATEMENT WIDTH
+------------------------------------------------------------
+
+Recommended span:
+    9–10 columns
+
+Use for:
+- chapter-opening headlines
+- product theses
+- turning-point statements
+- major conceptual claims
+- large typographic moments
+
+Purpose:
+Create stronger narrative scale without making every heading enormous.
+
+
+------------------------------------------------------------
+D. EDITORIAL VISUAL WIDTH
+------------------------------------------------------------
+
+Standard visual:
+    10 columns
+
+Major visual:
+    12 columns
+
+Use for:
+- conceptual diagrams
+- product screenshots
+- research synthesis
+- before / after comparisons
+- experience architecture
+- annotated flows
+- photography
+- metrics
+- outcome visuals
+
+Purpose:
+Let evidence and product visuals carry more spatial weight than explanatory prose.
+
+
+------------------------------------------------------------
+E. ATMOSPHERIC / BREAKOUT WIDTH
+------------------------------------------------------------
+
+Recommended span:
+    full viewport or near-full viewport
+
+Use selectively for:
+- portfolio hero atmosphere
+- chapter transitions
+- major photography
+- large project-world moments
+- significant conceptual visuals
+- occasional typographic statements
+
+Do NOT use as the default background treatment for every section.
+
+If every element breaks the grid, there is no longer a meaningful grid to break.
+
+
+============================================================
+4. CASE-STUDY COMPOSITION
+============================================================
+
+The default case-study layout should be slightly asymmetric.
+
+Avoid:
+- constantly centered headings
+- centered paragraphs
+- repetitive heading → paragraph → image stacks
+- identical card structures
+
+Preferred behavior:
+- chapter labels may sit in the left margin
+- body text may be indented relative to headings
+- supporting evidence may occupy a side rail
+- visuals may extend wider than text
+- different narrative beats may use different spans
+
+
+EDITORIAL MARGIN
+----------------
+
+Reserve approximately 1–2 columns where useful as editorial margin space.
+
+Possible uses:
+- chapter number
+- chapter label
+- evidence type
+- status
+- hypothesis marker
+- caption
+- timeline marker
+- short annotation
+- metadata
+
+Example:
+
+    01 / THE CHALLENGE
+
+        Main chapter headline spans 8–9 columns.
+
+            Supporting body copy begins farther inward.
+
+This creates directional movement and reinforces editorial hierarchy.
+
+
+============================================================
+5. RECOMMENDED CASE-STUDY PATTERNS
+============================================================
+
+------------------------------------------------------------
+PATTERN — CHAPTER LOCKUP
+------------------------------------------------------------
+
+Use for numbered chapter headings.
+
+Structure:
+    number + content block
+    content block = eyebrow + display headline
+
+Relationship:
+- Number aligns with the first headline line, not the eyebrow.
+- Number → headline block uses the `--space-32` spacing token.
+- Eyebrow → headline uses the `--space-8` spacing token.
+- Eyebrow and headline share a flush-left edge.
+- Number and headline use their existing semantic display roles; eyebrow uses
+  the existing eyebrow/label role.
+
+Implementation:
+    .chapter-lockup
+    .chapter-lockup__number
+    .chapter-lockup__content
+    .chapter-lockup__eyebrow
+    .chapter-lockup__headline
+
+The component owns only this internal relationship and responsive stacking.
+Outer grid placement is context-specific to the chapter using it.
+
+------------------------------------------------------------
+PATTERN 1 — NARRATIVE CHAPTER OPENING
+------------------------------------------------------------
+
+Structure:
+
+Chapter label:
+    1–2 columns or margin position
+
+Headline:
+    8–9 columns
+
+Supporting paragraph:
+    6 columns
+    offset farther inward
+
+Purpose:
+Create a strong narrative opening without making the whole section centered.
+
+
+------------------------------------------------------------
+PATTERN 2 — DECISION + EVIDENCE
+------------------------------------------------------------
+
+Recommended split:
+    4 / 8
+or
+    5 / 7
+
+Text side:
+- problem
+- evidence
+- decision
+- tradeoff
+- interpretation
+
+Visual side:
+- screenshot
+- diagram
+- comparison
+- annotated interface
+- research evidence
+
+Use 4 / 8 when the visual is the dominant evidence.
+Use 5 / 7 when reasoning needs more room.
+
+
+------------------------------------------------------------
+PATTERN 3 — BIG CONCEPT ARTIFACT
+------------------------------------------------------------
+
+Recommended span:
+    10–12 columns
+
+Use for:
+- game loop vs. value loop
+- experience architecture
+- systems model
+- behavioral model
+- product tension diagram
+- major opportunity model
+
+Add:
+- small contextual label
+- one dominant visual
+- concise interpretation below or beside it
+
+Purpose:
+Turn invisible product reasoning into a memorable visual moment.
+
+
+------------------------------------------------------------
+PATTERN 4 — EVIDENCE RAIL
+------------------------------------------------------------
+
+Recommended split:
+    2–3 columns evidence
+    7–8 columns main narrative
+
+Evidence rail may contain:
+- statistic
+- research count
+- evidence source
+- hypothesis status
+- behavioral signal
+- short quote
+- limitation
+- metric
+
+Main area contains:
+- interpretation
+- product implication
+- decision
+- tradeoff
+
+Purpose:
+Visually separate evidence from interpretation and decision-making.
+
+
+------------------------------------------------------------
+PATTERN 5 — BEFORE / AFTER OR OPTION COMPARISON
+------------------------------------------------------------
+
+Recommended:
+    6 / 6
+or
+    5 / 7
+
+Use only when comparison reveals:
+- changed thinking
+- meaningful tradeoff
+- usability improvement
+- principle-preserving iteration
+- rejected alternative
+
+Do not use simply to display more screens.
+
+
+============================================================
+6. HOMEPAGE GRID BEHAVIOR
+============================================================
+
+The homepage should use the same underlying 12-column system but with more compositional freedom.
+
+------------------------------------------------------------
+HERO
+------------------------------------------------------------
+
+Primary positioning text:
+    7–9 columns
+
+Atmosphere / imagery:
+    full viewport or near-full viewport
+
+Use large typography confidently.
+
+Do not constrain the hero to a timid centered text box.
+
+
+------------------------------------------------------------
+PROJECT PREVIEWS
+------------------------------------------------------------
+
+Prefer editorial project bands over four identical cards.
+
+Possible layouts:
+
+Visual:
+    7–8 columns
+
+Copy:
+    4–5 columns
+
+Alternate orientation between projects where appropriate.
+
+Example rhythm:
+
+Project 1:
+    image left / copy right
+
+Project 2:
+    copy left / image right
+
+Project 3:
+    full-width visual + smaller supporting copy
+
+Consistency should come from information hierarchy, typography, spacing, and grid logic, not identical cards.
+
+
+============================================================
+7. ALIGNMENT RULES
+============================================================
+
+DO NOT CENTER EVERYTHING.
+
+Preferred alignment system:
+- left-aligned body text
+- offset chapter headings
+- indented supporting text
+- full-width visuals
+- occasional centered statement
+
+Centered composition should function as a special narrative beat.
+
+Use it for:
+- a key thesis
+- a chapter transition
+- an outcome statement
+- a major reflective moment
+
+Not for every section.
+
+
+============================================================
+8. RESPONSIVE GRID
+============================================================
+
+RESPONSIVE PRINCIPLE
+--------------------
+Preserve visual relationships and reading order, not exact mathematical
+desktop fractions. Keep asymmetry while it supports readability; stack or
+recompose when a desktop offset becomes cramped.
+
+Examples:
+- 3/12 desktop may become 2/8 or 3/8 depending on reading measure.
+- 2/12 desktop may remain 2/8 rather than collapsing to an unusable 1/8.
+- At 4 columns, prioritize clear grouping and readable measure.
+- Below 480px, use intentional single-column reading order rather than
+  preserving desktop offsets.
+
+
+GRID MODES
+----------
+
+≥ 1440px — WIDE EDITORIAL
+    12 columns
+    Use the full editorial composition and asymmetry.
+
+1024–1439px — DESKTOP
+    12 columns
+    Retain semantic desktop placements; compositions become naturally tighter
+    through the fluid grid.
+
+768–1023px — TABLET
+    8 columns
+    Simplify editorial splits while preserving reading order and hierarchy.
+
+480–767px — MOBILE
+    4 columns
+    Group related content clearly; stack cramped side rails and visuals.
+
+< 480px — SINGLE-COLUMN READING FLOW
+    1 column
+    Recompose into a deliberate top-to-bottom reading order. Do not preserve
+    desktop offsets or side-by-side relationships at the expense of clarity.
+
+The master grid remains fluid at every mode. Its outer margin and gutter use
+the same derived spacing token; only the active column count changes.
+
+
+============================================================
+9. VISUAL RHYTHM
+============================================================
+
+Avoid repeating:
+
+    heading
+    paragraph
+    image
+    heading
+    paragraph
+    image
+
+throughout an entire case study.
+
+Alternate among:
+- narrow reading sections
+- wide chapter theses
+- full-width diagrams
+- two-column comparisons
+- evidence rails
+- large photography
+- compact metric blocks
+- quiet reflection moments
+- atmospheric transitions
+
+Important decisions deserve more visual space.
+
+Routine information should remain compressed.
+
+
+============================================================
+10. FULL-BLEED USAGE
+============================================================
+
+Full-bleed or near-full-bleed sections should be rare enough to feel intentional.
+
+Good uses:
+- homepage hero
+- project atmosphere
+- real-world photography
+- important chapter transition
+- major visual thesis
+- immersive project-specific moment
+
+Avoid using full bleed for:
+- routine screenshots
+- standard paragraphs
+- decorative gradients
+- minor diagrams
+
+The contrast between contained and expanded layouts creates editorial rhythm.
+
+
+============================================================
+11. PROJECT-SPECIFIC FLEXIBILITY
+============================================================
+
+Use the same grid system across the portfolio, but allow each project to use it differently.
+
+SUMMER QUEST
+- widest visual moments
+- photography
+- playful asymmetry
+- expressive chapter transitions
+- more full-width moments
+
+PERFORMAMATCH
+- research-led
+- diagrammatic
+- strong evidence rails
+- more controlled analytical layouts
+
+MEDICATION DONATION
+- systems diagrams
+- careful information density
+- restrained compositions
+- trust-oriented rhythm
+
+COACHCARE / CCR
+- operational clarity
+- stronger structured splits
+- mature product screenshots
+- tighter evidence-to-decision relationships
+
+Consistency does not require identical compositions.
+
+
+============================================================
+12. RECRUITER / HIRING-MANAGER LOGIC
+============================================================
+
+The grid must support progressive disclosure.
+
+30-SECOND SCAN
+--------------
+Large headings, key visuals, metrics, and chapter structure should communicate the project quickly.
+
+2-MINUTE SKIM
+-------------
+Headings + captions + evidence visuals should communicate:
+- problem
+- tension
+- key decisions
+- outcomes
+
+DEEP READ
+---------
+Narrower text widths provide room for:
+- evidence
+- interpretation
+- tradeoffs
+- product reasoning
+- reflection
+
+The grid should therefore visually distinguish:
+- argument
+- evidence
+- explanation
+- supporting detail
+
+
+============================================================
+13. CORE IMPLEMENTATION VALUES
+============================================================
+
+DESKTOP
+-------
+Canvas:
+    100vw
+
+Main container:
+    width: viewport width minus left and right outer page margins
+    no fixed desktop max-width
+
+Outer padding:
+    same fluid token as the grid gutter
+
+Columns:
+    12
+
+Gutter:
+    same fluid token as the outer margin
+
+
+CORE SPACING SCALE
+------------------
+Use the shared spacing tokens for component padding, internal gaps, and
+vertical rhythm. Grid gutters remain a separate structural token.
+
+--space-8:
+    8px
+
+--space-16:
+    16px
+
+--space-24:
+    24px
+
+--space-32:
+    32px
+
+
+CONTENT SPANS
+-------------
+Body copy:
+    6 columns
+    preferred measure ~620–700px
+
+Wide intro / argument:
+    8 columns
+
+Chapter thesis:
+    9–10 columns
+
+Standard visual:
+    10 columns
+
+Major visual:
+    12 columns
+
+Atmospheric breakout:
+    viewport width
+
+
+TABLET
+------
+Columns:
+    8
+
+Margins:
+    32px
+
+Gutter:
+    20–24px
+
+
+MOBILE
+------
+Columns:
+    4
+
+Margins:
+    20–24px
+
+Gutter:
+    16px
+
+
+============================================================
+14. DO
+============================================================
+
+- Use the grid as underlying discipline.
+- Let text and visuals use different widths.
+- Use asymmetry intentionally.
+- Preserve readable body-copy measure.
+- Let major arguments become wider.
+- Give meaningful visuals more space than prose.
+- Use editorial margins for labels and evidence.
+- Alternate dense and spacious moments.
+- Let different projects use the same grid differently.
+- Use full-width moments selectively.
+- Preserve clear hierarchy on mobile.
+- Design for scanning before deep reading.
+
+
+============================================================
+15. AVOID
+============================================================
+
+- identical card layouts everywhere
+- everything centered
+- twelve visibly equal columns
+- full-width body copy
+- constant split-screen layouts
+- decorative full-bleed sections
+- repeated heading → paragraph → image rhythm
+- desktop geometry forced onto mobile
+- asymmetry without alignment logic
+- visually dramatic composition that obscures case-study reasoning
+- grids so rigid that every project loses its own visual world
+
+
+============================================================
+16. FINAL PRINCIPLES
+============================================================
+
+PRIMARY PRINCIPLE
+
+    Rigid grid.
+    Flexible composition.
+
+
+VISUAL PRINCIPLE
+
+    Soft atmosphere.
+    Hard hierarchy.
+
+
+EDITORIAL PRINCIPLE
+
+    Use scale, offset, whitespace, and alignment to create narrative movement.
+
+
+UX PRINCIPLE
+
+    The layout should help the reader understand what matters before asking them to read deeply.
+
+
+PORTFOLIO PRINCIPLE
+
+    The shell provides consistency.
+    The project controls the composition.
+
+
+FINAL TEST
+
+If the page feels:
+- calm but not sterile
+- expressive but not chaotic
+- editorial but still easy to scan
+- visually authored without hiding the reasoning
+
+the grid is working.
+
+If every section looks like the same component repeated vertically, the grid has become a template rather than a design system.

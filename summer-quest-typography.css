@@ -1,0 +1,37 @@
+/* Summer Quest typography mapped to the final shared semantic type system. */
+main dt {
+  font-family:var(--font-body);
+  font-size:var(--type-metadata);
+  font-weight:var(--type-weight-medium);
+  line-height:var(--type-metadata-line-height);
+}
+
+.accent-note { font-family:var(--font-accent); font-size:var(--type-accent-md); font-weight:var(--type-weight-regular); line-height:1; }
+
+.project-details-band .details dd { line-height:1.4; }
+.project-details-band .details .impact-metric { margin:0; }
+.metric-value { font-family:var(--font-body); font-weight:var(--type-weight-semibold); }
+
+main .opening-story-heading h2 { font-family:var(--font-heading); font-size:var(--type-heading-md); font-weight:var(--type-weight-regular); letter-spacing:-.025em; line-height:var(--type-heading-md-line-height); }
+main .chapter-lockup__headline,
+main .chapter-lockup__number { font-family:var(--font-heading); font-size:var(--type-heading-lg); font-weight:var(--type-weight-regular); letter-spacing:-.025em; line-height:var(--type-heading-lg-line-height); }
+main .question-repeat { font-family:var(--font-body); font-size:var(--type-subtitle-lg); font-weight:var(--type-weight-semibold); letter-spacing:-.02em; line-height:var(--type-subtitle-lg-line-height); }
+main .type-decision-heading,
+main .supporting-decision-title { font-family:var(--font-body); font-size:var(--type-subtitle-md); font-weight:var(--type-weight-semibold); letter-spacing:-.02em; line-height:var(--type-subtitle-md-line-height); }
+
+main h1,
+main h2,
+main h3,
+main .question-repeat,
+main .type-decision-heading,
+main .supporting-decision-title { text-wrap:balance; }
+
+main p:not(.accent-note),
+main figcaption,
+main .type-body,
+main .type-caption,
+main .supporting-decision-summary,
+main .supporting-decision-note { text-wrap:pretty; }
+
+.widow-guard { white-space:nowrap; }
+.prevent-widow { text-wrap:pretty; }

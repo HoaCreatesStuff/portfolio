@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Interactive design-principles map for the Summer Quest case study." />
+    <title>Five principles shaped every design decision — Summer Quest</title>
+    <link rel="preload" href="../../fonts/Salute.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../../spacing-tokens.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="principles-map">
+      <section class="map-shell" aria-label="Summer Quest design principles map">
+        <div class="diagram-wrap">
+          <svg id="principles-diagram" viewBox="0 0 1 1" role="group" aria-label="Summer Quest design principles map" aria-describedby="svg-desc">
+            <desc id="svg-desc">A central question connects to five design principles. Hover or select a principle to reveal the product decisions it informed.</desc>
+            <g id="connectors" aria-hidden="true"></g>
+            <g id="nodes"></g>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <script src="./data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

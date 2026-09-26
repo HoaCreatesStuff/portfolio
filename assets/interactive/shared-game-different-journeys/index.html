@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A Summer Quest case-study prototype showing five distinct paths through the same 25-quest board."
+    />
+    <title>Shared game, different journeys — Summer Quest</title>
+    <link rel="preload" href="../../fonts/Salute.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?visual-system=2" />
+  </head>
+  <body>
+    <main class="case-study" id="case-study">
+      <header class="intro">
+        <p class="eyebrow">Summer Quest / participation patterns</p>
+        <h1>One shared game.<br /><em>Five different paths.</em></h1>
+        <p class="deck">
+          Players joined at different times, completed different numbers of quests, and participated alone or with friends—without needing a shared schedule.
+        </p>
+      </header>
+
+      <section class="explorer" aria-label="Player journey explorer">
+        <div class="board-region">
+          <div class="board-topline">
+            <div>
+              <p class="section-label">The shared board</p>
+              <h2>25 prompts. One citywide invitation.</h2>
+            </div>
+            <p class="selection-count" id="selection-count" aria-live="polite">Select a journey</p>
+          </div>
+
+          <!-- Opened-state board markup is adapted from index.html + data/app.js renderGrid(). -->
+          <div class="board-frame" id="board-frame">
+            <div class="journey-overlay" id="journey-overlay" aria-hidden="true"></div>
+            <div id="questGrid" class="quest-grid prototype-quest-grid" aria-label="Summer Quest's canonical 5 by 5 board"></div>
+          </div>
+
+          <div class="board-footer">
+            <p class="board-note" id="board-note">Choose a player to trace one route through the same board.</p>
+          </div>
+        </div>
+
+        <aside class="journeys-region" aria-label="Representative players">
+          <div class="journey-heading">
+            <div>
+              <p class="section-label">Five real journeys</p>
+              <h2>Participation looked different for everyone.</h2>
+            </div>
+            <div class="controls" aria-label="Display controls">
+              <button class="control" id="all-button" type="button" aria-pressed="false">All players</button>
+            </div>
+          </div>
+          <div class="player-list" id="player-list"></div>
+        </aside>
+      </section>
+
+      <section class="evidence" aria-label="Key evidence">
+        <article>
+          <p class="evidence-number">05</p>
+          <h2>Representative players</h2>
+          <p>Five routes make the range of participation visible without asking every journey to look the same.</p>
+        </article>
+        <article>
+          <p class="evidence-number">25</p>
+          <h2>Same quest system</h2>
+          <p>Every route lands on the same fixed 5×5 board, with the same NYC prompts available to everyone.</p>
+        </article>
+        <article>
+          <p class="evidence-number">≠</p>
+          <h2>Different ways in</h2>
+          <p>Quantities, timing, and social patterns varied. A shared schedule was never the point.</p>
+        </article>
+      </section>
+
+      <footer>
+        <span>Prototype / evidence structure test</span>
+        <span>Route order reflects submitted quest sequences. Social and post-finale markers are lightweight analytical cues.</span>
+      </footer>
+    </main>
+    <!-- Canonical board content and order used by the Summer Quest index.html app. -->
+    <script src="../../data/quests.js?board-source=1"></script>
+    <script src="../../data/boardConfig.js?board-source=1"></script>
+    <script src="./data.js?board-source=8"></script>
+    <script src="./script.js?board-source=7"></script>
+  </body>
+</html>

@@ -1,0 +1,1629 @@
+KATHY'S PROFESSIONAL VOICE GUIDE
+For UX / Product Design Case Studies
+Reference version — August 2026
+
+
+PURPOSE
+
+This guide defines Kathy's authentic professional writing voice for UX and product design case studies.
+
+The goal is NOT to make the work sound merely polished, strategic, or "professional." The portfolio should feel unmistakably authored by a real person: warm, expressive, visually minded, observant, analytical, and memorable.
+
+The case studies should combine strong product reasoning with vivid storytelling. Metrics, logic, and design decisions establish credibility, but they should not flatten the personality or emotional texture of the work.
+
+Core principle:
+
+    Tell the story of how your understanding of the problem changed,
+    using the decisions, evidence, personalities, surprises, wrong turns,
+    and consequences that made that change happen.
+
+Screens, artifacts, and metrics are evidence. They are not the story by themselves.
+
+
+============================================================
+1. VOICE FORMULA
+============================================================
+
+Target balance:
+
+35% — Vivid storytelling
+30% — Strategic reasoning
+15% — Warmth and emotional intelligence
+15% — Evidence and metrics
+ 5% — Quirkiness / wit
+
+This is not a literal word-count formula. It is a calibration tool.
+
+Story makes the work engaging.
+Strategy makes the designer credible.
+Evidence makes the claims believable.
+Warmth makes the work human.
+Wit makes the voice recognizable.
+
+The final 5% of quirkiness should primarily come from Kathy herself.
+
+Important AI-writing rule:
+
+    Preserve and sharpen Kathy's wit. Do not manufacture it.
+
+If Kathy supplies an unusual analogy, hook, image, joke, metaphor, or turn of phrase, help refine it so it lands cleanly. Do not invent faux-Kathy cleverness simply because a paragraph feels too serious.
+
+The odd connection has value precisely because it came from the author's own brain.
+
+
+============================================================
+2. CORE PROFESSIONAL VOICE
+============================================================
+
+Kathy's professional voice is:
+
+- Warm
+- Expressive
+- Vivid
+- Strategic
+- Decisive
+- Visually aware
+- Curious
+- Human
+- Slightly irreverent
+- Comfortable with ambiguity
+- Comfortable changing her mind
+- Specific about tradeoffs
+- Interested in patterns and parallels
+- More editorial than corporate
+- More narrative than procedural
+
+Best shorthand:
+
+    A vivid storyteller who happens to think like a strategist.
+
+The case study should sound like an experienced designer telling another thoughtful person what really happened, what mattered, what changed, and why.
+
+It should NOT sound like:
+
+- a UX textbook
+- a design-process diary
+- a generic Medium case study
+- a consultancy pitch deck
+- a quarterly earnings report
+- a competency checklist disguised as prose
+- an AI-generated approximation of "professional designer voice"
+
+
+============================================================
+3. THE CENTRAL WRITING STRENGTH: JUDGMENT
+============================================================
+
+Kathy's strongest design writing is not activity-first. It is judgment-first.
+
+Natural reasoning pattern:
+
+    Observe
+    Compare
+    Identify what is wrong
+    Protect what is working
+    Adjust precisely
+    Explain why
+
+Lead with the insight, tension, or judgment whenever possible.
+
+Weak:
+
+    I redesigned the completion state for quest cards.
+
+Stronger:
+
+    The completion state was technically different, but not different
+    enough to recognize at a glance.
+
+Weak:
+
+    I conducted foundational research.
+
+Stronger:
+
+    The team had a solution ready to build. I wasn't convinced we had
+    validated the problem yet.
+
+This creates a story immediately because the reader encounters a point of view, not a task log.
+
+
+============================================================
+4. STORYTELLING MODEL
+============================================================
+
+Kathy's strongest case-study moments usually contain some version of:
+
+    Context
+    Expectation
+    Friction
+    Observation
+    Interpretation
+    Decision
+    Tradeoff
+    Consequence
+
+A useful narrative sequence:
+
+    Hook
+    Scene
+    Observation
+    Insight
+    Evidence
+    Decision
+    Consequence
+
+Not every section needs every beat.
+
+The important principle is that the reader should be able to feel the movement of the project.
+
+The story is not:
+
+    First I researched.
+    Then I made wireframes.
+    Then I tested.
+    Then I iterated.
+
+The story is:
+
+    What did we believe?
+    What disrupted that belief?
+    What did I notice?
+    What did I think it meant?
+    What did I change?
+    What happened because of that decision?
+
+
+============================================================
+5. RECONSTRUCT THE MOMENT
+============================================================
+
+Kathy naturally tells stories by rebuilding context.
+
+She is interested in:
+
+- what was happening around the decision
+- what people expected
+- where tension appeared
+- what something looked or felt like
+- the moment an assumption stopped making sense
+- the twist that changed the direction
+
+Use this intentionally at important turning points.
+
+Example structure:
+
+    We were already discussing implementation when something felt off.
+
+    Everyone was debating how the solution should work, but we still
+    hadn't established whether the original problem was the right one.
+
+    That changed the direction of the project.
+
+This is stronger than reducing the same moment to:
+
+    During discovery, I reframed the problem.
+
+Use sensory or emotional detail selectively. The goal is to give the reader a scene, not write a screenplay for every research meeting.
+
+Slow down for turning points.
+Move quickly through connective tissue.
+
+Narrative contrast creates pacing.
+
+
+============================================================
+6. CONTRAST IS A SIGNATURE TECHNIQUE
+============================================================
+
+Kathy frequently understands and explains ideas through contrast.
+
+Common structures:
+
+    Not X. Y.
+
+    X needed to do A, not B.
+
+    X worked, but Y didn't.
+
+    The opportunity wasn't X. It was Y.
+
+    I wanted to preserve X without introducing Y.
+
+    The principle was right. The signal was too weak.
+
+This is one of the strongest recurring features of her professional reasoning.
+
+Examples:
+
+    The app was the delivery system. The experience was the product.
+
+    The board needed to guide exploration, not control it.
+
+    The illustration should support the user's story, not become the hero.
+
+    The category system worked. The difference between states didn't.
+
+Contrast reveals what the designer is optimizing for.
+
+Do not force this syntax into every section. Use it when there is a genuine conceptual distinction.
+
+
+============================================================
+7. ANALOGIES AND UNEXPECTED PARALLELS
+============================================================
+
+Kathy enjoys making seemingly random connections that reveal a useful pattern.
+
+This should remain part of the portfolio voice.
+
+Good analogy behavior:
+
+1. The analogy gives the reader an immediate mental model.
+2. It exposes a structural similarity.
+3. It makes an abstract product problem tangible.
+4. The reasoning that follows proves the analogy is more than decoration.
+
+Possible sources of analogies may naturally come from:
+
+- cities
+- fashion
+- photography
+- performance
+- food
+- travel
+- rooms and physical spaces
+- social behavior
+- objects
+- ordinary annoyances
+- visual composition
+- whatever connection genuinely occurs to Kathy
+
+The analogy should answer:
+
+    Does this make the product problem easier to understand or remember?
+
+If yes, keep it.
+
+If its only purpose is to sound clever, remove it.
+
+Important AI guardrail:
+
+    Do not invent the quirky analogy on Kathy's behalf unless she explicitly
+    asks for brainstorming help.
+
+When she supplies the analogy, editing support can:
+
+- sharpen the parallel
+- shorten it
+- clarify the landing
+- connect it to the product insight
+- prevent it from overpowering the argument
+
+
+============================================================
+8. STRATEGIC REASONING
+============================================================
+
+Strategic reasoning should occupy a major part of the case-study voice.
+
+The reader should repeatedly see:
+
+- how Kathy frames ambiguity
+- how she identifies the real problem
+- what she believes matters most
+- what she chooses not to solve
+- how constraints affect the decision
+- what principle she protects
+- why one option is stronger than another
+- how evidence changes her mind
+- how product consequences follow from design choices
+
+Strong strategic writing makes the causal chain visible.
+
+Useful verbs:
+
+- reframed
+- prioritized
+- narrowed
+- challenged
+- tested
+- rejected
+- preserved
+- clarified
+- simplified
+- constrained
+- separated
+- combined
+- protected
+- shifted
+- reduced
+- expanded
+- tuned
+- changed
+- stopped
+- introduced
+
+Activity verbs such as "designed," "created," "conducted," and "made" are useful, but they should not carry the entire narrative.
+
+
+============================================================
+9. PRINCIPLE BEFORE PIXELS
+============================================================
+
+A recurring strength in Kathy's design thinking is identifying what must remain true before changing the interface.
+
+Useful structures:
+
+    The underlying principle remained the same.
+
+    I wanted to preserve...
+
+    The constraint wasn't arbitrary.
+
+    Rather than introducing a new interaction pattern...
+
+    The system was sound; the signal was too weak.
+
+    I changed the execution without changing the model.
+
+This is especially valuable in mid-level product design case studies because it demonstrates judgment rather than aesthetic reaction.
+
+
+============================================================
+10. CALIBRATION AND NUANCE
+============================================================
+
+Kathy naturally thinks in degrees, not binaries.
+
+Common language:
+
+- too much
+- not enough
+- slightly
+- significantly
+- almost
+- stronger
+- lighter
+- more distinct
+- at minimum
+- enough to recognize
+- enough to preserve
+- reduce
+- increase
+- rebalance
+- preserve
+
+This is a professional strength.
+
+The case study should not imply:
+
+    old design = bad
+    redesign = good
+
+Instead, show calibration.
+
+Example:
+
+    The interface didn't need fewer elements. It needed clearer hierarchy.
+
+Or:
+
+    The existing category-color system was useful. The completion signal
+    simply wasn't strong enough.
+
+This communicates maturity and restraint.
+
+
+============================================================
+11. VISUAL LANGUAGE + PRODUCT CONSEQUENCE
+============================================================
+
+Kathy has a strong visual-design vocabulary.
+
+Natural concepts include:
+
+- hierarchy
+- rhythm
+- balance
+- prominence
+- editorial quality
+- saturation
+- visual intensity
+- clarity
+- composition
+- scanning
+- contrast
+- supporting elements
+- visual hero
+- coherence
+
+Keep this vocabulary.
+
+But always connect aesthetic judgment to user or product consequence.
+
+Instead of:
+
+    The illustration felt too large.
+
+Use:
+
+    The illustration had become the visual hero, competing with the
+    journal entries users created themselves. I reduced its prominence
+    so the user's story regained priority.
+
+Instead of:
+
+    The cards needed more contrast.
+
+Use:
+
+    Users were relying on color to understand progress, but the two states
+    were too similar to distinguish quickly. I increased the contrast
+    while preserving category recognition.
+
+Useful formula:
+
+    Visual observation
+    →
+    Perceptual consequence
+    →
+    Product or behavioral consequence
+
+
+============================================================
+12. CAUSAL LANGUAGE
+============================================================
+
+Kathy naturally uses causal connectors:
+
+- because
+- so
+- but
+- which means
+- instead
+- actually
+- only
+- therefore
+- while
+- rather than
+
+This reflects how her brain links one decision to another.
+
+Do not remove the causal logic in an attempt to make the prose sound polished.
+
+Raw:
+
+    The hero is taking away from the user's story so it needs to be smaller.
+
+Edited:
+
+    The illustration was beginning to compete with the user's own content,
+    so I reduced its prominence.
+
+The goal is cleaner prose, not severed reasoning.
+
+
+============================================================
+13. WARMTH AND EMOTIONAL INTELLIGENCE
+============================================================
+
+Kathy does not naturally narrate from a detached distance.
+
+Her writing should make room for:
+
+- curiosity
+- surprise
+- uncertainty
+- delight
+- frustration
+- tension
+- relief
+- discovery
+- changing confidence
+
+Useful language can include:
+
+    At first, this looked straightforward.
+
+    Something felt off.
+
+    This was the moment the project changed.
+
+    I expected X. The behavior suggested Y.
+
+    The result surprised me.
+
+    I became less convinced that...
+
+    By this point, the question had shifted.
+
+These are not decorative emotions. They help the reader understand the designer's evolving mental model.
+
+Warmth should also show in how users and collaborators are described.
+
+Avoid treating people as data-producing machines.
+
+The research participant is a person encountering a situation, not merely "Participant 4."
+
+
+============================================================
+14. EVIDENCE AND METRICS
+============================================================
+
+Evidence matters, but it should support the story rather than replace it.
+
+Evidence may include:
+
+- usability observations
+- behavioral patterns
+- qualitative research
+- product analytics
+- business outcomes
+- task completion
+- adoption
+- conversion
+- time saved
+- error reduction
+- stakeholder feedback
+- implementation constraints
+- repeated support issues
+- comparative data
+
+Metrics are receipts.
+
+They should answer:
+
+    What does this number prove?
+
+Avoid dropping statistics into the page merely because portfolios are expected to contain numbers.
+
+Weak:
+
+    Task completion improved by 37%.
+
+Stronger:
+
+    The redesign improved task completion by 37%, but the more important
+    shift was where the hesitation disappeared: users stopped getting stuck
+    at the decision point we had repeatedly observed in testing.
+
+Whenever possible, pair:
+
+    metric + meaning
+
+or:
+
+    evidence + interpretation
+
+Avoid overstating evidence.
+
+Distinguish clearly between:
+
+    I believed...
+    One participant raised...
+    Several participants repeated...
+    Analytics showed...
+    Testing suggested...
+    The data confirmed...
+
+A single comment is not universal user truth.
+
+
+============================================================
+15. HUMOR AND QUIRKINESS
+============================================================
+
+Target: approximately 5% of the voice.
+
+Humor should be:
+
+- brief
+- organic
+- dry or playful
+- observational
+- rooted in the actual situation
+- used where it reveals something
+
+Useful locations:
+
+- hooks
+- headings
+- captions
+- transitions
+- brief reflections
+- analogy-driven explanations
+
+Avoid humor in places where it could trivialize:
+
+- accessibility problems
+- sensitive user situations
+- research participants
+- serious business consequences
+- conflict with teammates
+- evidence that requires precision
+
+The best wit does not interrupt the argument. It sharpens it.
+
+Important:
+
+    Kathy creates the quirkiness.
+    Editing should preserve it, not impersonate it.
+
+
+============================================================
+16. ITERATION: SHOW THE TURNING POINT, NOT THE ARCHAEOLOGY
+============================================================
+
+Kathy's live design process often looks like:
+
+    What if...
+    No.
+    Actually...
+    Better.
+    Almost.
+    One more change.
+
+This is productive design behavior.
+
+Do not reproduce the full transcript in the case study.
+
+Instead ask:
+
+    What assumption changed?
+    What evidence caused the change?
+    What principle emerged?
+    What decision followed?
+
+Compress ten small visual iterations into one meaningful narrative beat when they all serve the same insight.
+
+Iteration deserves space when it demonstrates:
+
+- changed understanding
+- user insight
+- technical constraint
+- tradeoff
+- scope decision
+- design principle
+- meaningful failure
+- unexpected result
+
+
+============================================================
+17. OWNERSHIP
+============================================================
+
+Use "I" when Kathy personally:
+
+- made a judgment
+- led research
+- framed the problem
+- proposed a direction
+- challenged an assumption
+- designed a solution
+- changed the approach
+- synthesized evidence
+- recommended a decision
+
+Use "we" when the work was genuinely shared:
+
+- team execution
+- collaborative decisions
+- shared research
+- collective prioritization
+- cross-functional implementation
+
+Do not hide ownership behind endless "we."
+
+Do not claim solo ownership of team outcomes.
+
+Specificity is stronger than either false modesty or hero narratives.
+
+
+============================================================
+18. COLLABORATION
+============================================================
+
+Do not write:
+
+    I collaborated closely with engineering.
+
+Show the actual collaboration.
+
+Useful questions:
+
+- What did the other person need?
+- Where did perspectives differ?
+- What constraint did they introduce?
+- What did Kathy advocate for?
+- What changed after the discussion?
+- What compromise emerged?
+
+Example structure:
+
+    Engineering was ready to build around the initial concept. I pushed
+    for foundational research first because we still hadn't established
+    whether the underlying problem was worth solving.
+
+Now collaboration is visible through the decision itself.
+
+
+============================================================
+19. HEADINGS SHOULD TELL THE STORY
+============================================================
+
+Avoid procedural headings when a narrative claim is possible.
+
+Weak:
+
+    Research
+    Iteration
+    Final Design
+    Results
+
+Stronger:
+
+    We were solving the wrong problem.
+
+    The first concept gave people too much structure.
+
+    One usability session exposed a problem the visual system was hiding.
+
+    The journal became more valuable than the board.
+
+    Research changed the product before UI began.
+
+A skim reader should be able to understand the case-study argument from the headings alone.
+
+
+============================================================
+20. A RECURRING PRODUCT-DESIGN PERSPECTIVE
+============================================================
+
+One repeated pattern in Kathy's work is protecting the experience from the interface.
+
+Examples of the underlying thinking:
+
+- an app can deliver an experience without becoming the experience
+- a journal can matter more than the navigation system because it contains the memory
+- an illustration should support user-created content rather than compete with it
+- gamification should encourage behavior without turning the experience into task management
+- structure should guide people without over-controlling them
+
+Possible underlying professional perspective:
+
+    Technology should structure the experience without becoming the experience.
+
+Do not force this into every project as a personal-brand slogan.
+
+Use it when the project genuinely demonstrates the pattern.
+
+
+============================================================
+21. NATURAL LANGUAGE TO PRESERVE
+============================================================
+
+Recurring concepts that fit Kathy's voice:
+
+- problem framing
+- reframing
+- constraints
+- tradeoffs
+- hierarchy
+- intent
+- clarity
+- evidence
+- behavior
+- signals
+- trust
+- prioritization
+- systems
+- story
+- experience
+- friction
+- recognition
+- value
+- editorial
+- turning point
+- preserve
+- support
+- guide
+- control
+- scope
+- direction
+- prominence
+- functional
+- intentional
+- reusable
+- at a glance
+
+These words feel natural because they reflect the way Kathy actually reasons.
+
+
+============================================================
+22. LANGUAGE TO TREAT WITH SUSPICION
+============================================================
+
+Use only when genuinely accurate:
+
+- delightful
+- seamless
+- innovative
+- leveraged
+- robust
+- holistic
+- user-centric
+- ideated
+- synergy
+- best-in-class
+- end-to-end
+- impactful
+- intuitive
+
+These words are not forbidden.
+
+They simply become empty quickly.
+
+Prefer concrete explanations over UX-professional wallpaper.
+
+
+============================================================
+23. THINGS TO EDIT OUT OF THE RAW VOICE
+============================================================
+
+A. OVERLY IMPERATIVE LANGUAGE
+
+Raw design mode:
+
+    Make this smaller.
+    Remove that.
+    Increase this.
+
+Case-study mode:
+
+    I reduced the illustration because it was competing with the primary
+    content.
+
+Keep the decisiveness. Add the reasoning.
+
+
+B. MISSING CONTEXT
+
+Kathy often jumps mentally from observation to conclusion because she already understands the project.
+
+The reader does not.
+
+Add the missing bridge:
+
+    Why did this matter?
+
+
+C. TOO MUCH CALIBRATION DETAIL
+
+Fine visual tuning demonstrates craft, but not every 2px adjustment belongs in the story.
+
+Keep details when they demonstrate:
+
+- hierarchy
+- accessibility
+- recognition
+- interaction
+- system logic
+- constraint
+- meaningful craft judgment
+
+
+D. EXCESSIVE NEGATION
+
+"Not X, but Y" is a signature strength.
+
+Too much can make the voice sound combative.
+
+Alternate contrastive statements with clear positive claims.
+
+
+E. EVIDENCE INFLATION
+
+Do not convert:
+
+    one participant said...
+
+into:
+
+    users wanted...
+
+Maintain epistemic precision.
+
+
+============================================================
+24. DEFAULT PARAGRAPH ARCHITECTURE
+============================================================
+
+For an important design decision:
+
+1. CLAIM
+   State the interesting thing first.
+
+2. EVIDENCE
+   What observation, research, data, constraint, or behavior revealed it?
+
+3. INTERPRETATION
+   What did Kathy think it meant?
+
+4. DECISION
+   What did she do?
+
+5. TRADEOFF
+   What did the decision preserve, sacrifice, or leave unresolved?
+
+6. RESULT
+   What happened next?
+
+Not every paragraph needs all six.
+
+Major turning points usually need most of them.
+
+
+============================================================
+25. DEFAULT STORY BEAT
+============================================================
+
+A strong case-study section may follow:
+
+    I thought X.
+    Then Y happened.
+    That suggested Z.
+    So I changed A.
+    I deliberately kept B.
+    The result was C.
+
+This is far more memorable than documenting process phases.
+
+
+============================================================
+26. OPENING A CASE STUDY
+============================================================
+
+The opening should create tension quickly.
+
+Useful starting points:
+
+- a contradiction
+- a surprising observation
+- an expectation that proved wrong
+- a vivid moment
+- a difficult constraint
+- a provocative product question
+- a human behavior that did not match the system
+- a decision the team was about to make
+
+Avoid starting with several paragraphs of company background unless the reader genuinely needs it.
+
+The opening should answer:
+
+    Why is this problem interesting?
+
+
+============================================================
+27. PACING
+============================================================
+
+Not every paragraph deserves equal weight.
+
+Move quickly through:
+
+- routine process
+- setup
+- expected steps
+- implementation detail that did not alter the direction
+
+Slow down for:
+
+- changed assumptions
+- conflict
+- meaningful research findings
+- tradeoffs
+- surprising behavior
+- reversals
+- major product decisions
+- outcomes
+
+Drama comes from contrast.
+
+If everything is dramatic, nothing is.
+
+
+============================================================
+28. CASE STUDY AS ARGUMENT + STORY
+============================================================
+
+A strong Kathy case study should operate on two tracks at once.
+
+STORY TRACK:
+
+    What happened?
+    What surprised me?
+    What changed?
+    What did this feel like at the time?
+
+ARGUMENT TRACK:
+
+    What do I believe?
+    What evidence supports it?
+    Why was this decision stronger?
+    What product consequence followed?
+
+The story creates memory.
+The argument creates trust.
+
+Neither should dominate the other.
+
+
+============================================================
+29. THE ROLE OF PERSONALITY
+============================================================
+
+Personality is not a decorative layer applied after the professional content.
+
+It can appear through:
+
+- what Kathy notices
+- what she chooses to compare
+- what she finds surprising
+- what details she remembers
+- the visual language she uses
+- how she frames tension
+- the analogies she naturally makes
+- moments of delight or skepticism
+- how directly she states a judgment
+
+This is stronger than inserting generic jokes into otherwise impersonal prose.
+
+
+============================================================
+30. AI COLLABORATION RULES FOR FUTURE CASE STUDIES
+============================================================
+
+When helping Kathy write case studies:
+
+DO:
+
+- preserve her original hooks
+- preserve unusual analogies
+- preserve expressive language when it is clear
+- strengthen causal logic
+- identify missing context
+- clarify product consequences
+- sharpen strategic reasoning
+- challenge unsupported claims
+- distinguish evidence levels
+- improve pacing
+- remove repetition
+- help structure tension and turning points
+- keep visual observations connected to behavior
+- make metrics meaningful
+- protect moments of warmth
+- flag generic UX language
+- ask what she actually thought or felt when a section becomes too sterile, when appropriate
+
+DO NOT:
+
+- invent faux-quirky jokes to imitate her
+- flatten expressive writing into corporate prose
+- replace vivid language with UX jargon
+- force every project into the same storytelling template
+- turn metrics into the protagonist
+- rewrite uncertainty into fake confidence
+- turn one research comment into universal truth
+- manufacture conflict for drama
+- make every design iteration sound strategically profound
+- over-polish sentences until they could belong to anyone
+
+Editing target:
+
+    Kathy after one excellent editorial pass.
+
+Not:
+
+    Generic professional UX writer.
+
+
+============================================================
+31. FINAL EDITING CHECKLIST
+============================================================
+
+Before considering a section finished, ask:
+
+1. What am I claiming?
+
+2. Why should the reader care?
+
+3. What changed my understanding?
+
+4. What evidence supports the claim?
+
+5. Why did I choose this direction instead of another?
+
+6. What did I preserve?
+
+7. What tradeoff did I accept?
+
+8. What changed because of the decision?
+
+9. Is there a real human story here, or only process documentation?
+
+10. Can the reader picture what was happening?
+
+11. Does the emotional tone feel honest?
+
+12. Are the metrics interpreted, not merely displayed?
+
+13. Is the visual design discussion connected to behavior or product consequence?
+
+14. Does the paragraph sound like Kathy?
+
+15. Could another competent product designer have written this exact paragraph?
+
+If the answer to #15 is yes, look for the missing specificity:
+- the actual judgment
+- the actual context
+- the surprising observation
+- the unusual connection
+- the tradeoff
+- the human detail
+- the precise language Kathy would naturally use
+
+
+============================================================
+32. NORTH-STAR PRINCIPLES
+============================================================
+
+PRIMARY NORTH STAR
+
+    Tell the story of how your understanding of the problem changed,
+    using the decisions, evidence, personalities, surprises, wrong turns,
+    and consequences that made that change happen.
+
+
+SECONDARY NORTH STAR
+
+    Personality should shine through the evidence, not be buried beneath it.
+
+
+STRATEGIC NORTH STAR
+
+    Write about the decisions that shaped the product, not everything that
+    happened during the process.
+
+
+PERSONALITY NORTH STAR
+
+    Preserve and sharpen Kathy's quirkiness. Do not manufacture it.
+
+
+CRAFT NORTH STAR
+
+    Make abstract product problems tangible.
+
+
+FINAL TEST
+
+The reader should finish the case study knowing:
+
+- what Kathy noticed
+- how she thinks
+- how she makes decisions
+- what changed her mind
+- what evidence she trusts
+- how she balances craft with product logic
+- what working with her might feel like
+- and at least one thing about the project they still remember later
+
+That is the standard.
+
+A portfolio should prove competence.
+
+A memorable portfolio should also leave a person behind.
+
+============================================================
+33. VOICE MODULATION BY CONTENT TYPE
+============================================================
+
+The voice should not stay at one volume across an entire case study.
+
+Different parts of the story require different levels of personality,
+strategy, and evidentiary precision.
+
+Use this as the default calibration:
+
+HERO / HOOK
+- Personality: high
+- Strategy: medium
+- Evidence tone: low
+- Goal: create tension, curiosity, and memorability quickly
+
+CONTEXT / SETUP
+- Personality: medium
+- Strategy: medium
+- Evidence tone: low
+- Goal: make the situation concrete without over-explaining
+
+DESIGN DECISION
+- Personality: medium
+- Strategy: high
+- Evidence tone: medium
+- Goal: reveal judgment and causal reasoning
+
+TRADEOFF / CONSTRAINT
+- Personality: low-to-medium
+- Strategy: high
+- Evidence tone: medium
+- Goal: show maturity, prioritization, and what the decision cost
+
+DATA / EVIDENCE
+- Personality: very low
+- Strategy: medium
+- Evidence tone: very high
+- Goal: state what happened precisely, without embellishment
+
+INTERPRETATION
+- Personality: medium-to-high
+- Strategy: high
+- Evidence tone: high
+- Goal: explain what the evidence means and what changed because of it
+
+REFLECTION / FUTURE QUESTION
+- Personality: high
+- Strategy: high
+- Evidence tone: medium
+- Goal: show changed judgment, curiosity, and what becomes worth testing next
+
+CAPTION / ANNOTATION
+- Personality: medium
+- Strategy: medium
+- Evidence tone: high
+- Goal: direct attention and explain why the visual matters
+
+Core rule:
+
+    Personality should rise around interpretation and reflection,
+    and fall around evidence.
+
+The reader should feel a human voice throughout the case study without
+having to wonder whether the metric itself has developed a personality.
+
+
+============================================================
+34. SENIORITY GUARDRAILS FOR EXPRESSIVE WRITING
+============================================================
+
+Expressive writing does not automatically read as junior.
+
+It begins to read junior when personality replaces precision.
+
+Avoid:
+
+- every heading trying to be clever
+- excessive rhetorical questions
+- slang used as a substitute for point of view
+- exclamation marks as emphasis
+- phrases such as "I loved," "I was obsessed," or "this was so fun"
+  unless the emotional reaction is genuinely relevant
+- dramatizing routine UX decisions
+- cute labels replacing accurate terminology
+- jokes inside evidence-heavy sections
+- treating taste as rationale
+- overusing handwritten notes, playful labels, or visual flourishes
+- presenting ordinary craft adjustments as major strategic breakthroughs
+
+Prefer:
+
+- precise first-person judgment
+- concrete behavior
+- named tradeoffs
+- clear constraints
+- confident restraint
+- selective wit
+- strong opinions that can be defended
+- explicit evidence boundaries
+- knowing when not to perform personality
+
+Core rule:
+
+    Maturity comes from precision, restraint, tradeoffs,
+    and knowing when not to perform personality.
+
+Expressive does not mean casual.
+Mature does not mean impersonal.
+
+
+============================================================
+35. PROJECT-SPECIFIC VOICE MODULATION
+============================================================
+
+The portfolio should have one recognizable author, not one identical tone
+applied to every subject.
+
+Adjust the emotional temperature and personality intensity to the project.
+
+SUMMER QUEST
+- most vivid
+- playful
+- conversational
+- warm
+- behaviorally curious
+- highest tolerance for wit, sensory detail, and expressive hooks
+
+PERFORMAMATCH
+- curious
+- analytical
+- research-led
+- precise
+- slightly quieter
+- personality should come through observation and synthesis
+
+MEDICATION DONATION
+- human
+- restrained
+- serious
+- careful with humor
+- emotionally intelligent without sentimentality
+- emphasize complexity, responsibility, and systems thinking
+
+CCR
+- measured
+- pragmatic
+- operational
+- constraint-aware
+- professionally mature
+- personality should come through judgment, clarity, and specificity more
+  than playfulness
+
+The voice should remain recognizably Kathy across all four projects.
+
+What changes is the volume.
+
+A mature designer should not sound identical while describing a birthday
+game, foundational research, a high-stakes service problem, and a mature
+product ecosystem.
+
+
+============================================================
+36. CONCRETE OVER ABSTRACT
+============================================================
+
+Kathy's strongest writing makes abstract product ideas tangible.
+
+Use abstraction when it creates a useful model.
+
+Then ground it.
+
+Every abstract paragraph should contain at least one thing the reader can
+picture, imagine, or recognize as behavior.
+
+Examples:
+
+- someone texting a friend
+- a Saturday outing
+- opening the app on a sidewalk
+- three quests happening during one afternoon
+- putting the phone away
+- a 5×5 board
+- one person bringing another friend
+- skipping a week
+- checking progress on the train
+- comparing memories at the finale
+
+Weak:
+
+    The system supported flexible participation across different contexts.
+
+Stronger:
+
+    People could skip a week, join a quest after work, or turn one Saturday
+    outing into three adventures.
+
+Weak:
+
+    The product reduced coordination friction.
+
+Stronger:
+
+    No one had to wait for the entire group to be free before playing.
+
+Editing test:
+
+    Can the reader picture what I mean?
+
+If not, look for the missing human behavior, object, moment, or setting.
+
+
+============================================================
+37. RHETORICAL QUESTION RULES
+============================================================
+
+Rhetorical questions are useful in Kathy's voice because they reveal
+curiosity and mark shifts in understanding.
+
+Use them when they:
+
+- introduce the central product question
+- mark a genuine change in understanding
+- expose a tension the project must resolve
+- open a future hypothesis
+- make an abstract behavioral problem concrete
+
+Strong:
+
+    What makes someone actually text a friend and say, "Want to do this?"
+
+Avoid them when:
+
+- a declarative statement would be stronger
+- several appear close together
+- the question merely decorates a heading
+- the answer is obvious
+- the question is being used to create artificial drama
+
+Do not let "What if...?" become a recurring stylistic device simply because
+it sounds exploratory.
+
+A rhetorical question should earn its place by changing the reader's frame.
+
+
+============================================================
+38. SENTENCE RHYTHM
+============================================================
+
+Kathy's natural voice benefits from variation in sentence length.
+
+A useful rhythm:
+
+    Sharp short statement.
+    Medium explanatory sentence.
+    Occasional longer causal sentence that connects evidence, interpretation,
+    and consequence.
+    Short landing.
+
+Example:
+
+    Points were useful until they became the point.
+
+    I wanted enough competition to create momentum, but not enough to turn
+    a summer adventure into an optimization exercise.
+
+Avoid:
+
+- four similarly polished sentences of equal length
+- long paragraphs where every sentence carries the same cadence
+- excessive fragments
+- overly compressed copy that loses causal logic
+
+Short sentences should create emphasis.
+
+Longer sentences should carry reasoning.
+
+The variation should feel editorial, not theatrical.
+
+
+============================================================
+39. METRICS: INTERPRET, DO NOT PERFORM
+============================================================
+
+Metrics should be stated plainly.
+
+Their job is credibility.
+
+Do not decorate the number with personality.
+
+Good:
+
+    65% of recorded completions involved friends.
+
+Then interpret:
+
+    Social participation became common without being mandatory.
+
+Avoid:
+
+    A whopping 65% brought friends along!
+
+Avoid:
+- "huge"
+- "massive"
+- "amazing"
+- "impressive"
+- "only" unless the comparison genuinely matters
+- exclamation points
+- playful framing that makes the evidence feel less trustworthy
+
+Core rule:
+
+    Metrics get interpretation, not personality.
+
+Personality may return in the sentence before or after the evidence,
+but the evidence itself should remain clean.
+
+
+============================================================
+40. VISUAL + VERBAL PERSONALITY SHOULD TRADE OFF
+============================================================
+
+The page does not need every expressive system operating at maximum intensity
+at the same time.
+
+If the visual already contains:
+
+- large expressive typography
+- atmospheric photography
+- handwritten accents
+- unusual color
+- playful motion
+- layered editorial composition
+
+then the surrounding copy can become quieter.
+
+If the visual treatment is restrained, the writing can carry more of the
+personality.
+
+Core rule:
+
+    Visual personality and verbal personality should trade off,
+    not stack automatically.
+
+The goal is controlled contrast.
+
+Personality should feel intentional because some moments are allowed to be
+quiet.
+
+
+============================================================
+41. ADDITIONAL NORTH-STARS
+============================================================
+
+VOICE MODULATION NORTH STAR
+
+    Sound most like yourself when interpreting.
+    Sound most precise when proving.
+
+SENIORITY NORTH STAR
+
+    Expressive does not mean casual.
+    Mature does not mean impersonal.
+
+CONCRETE WRITING NORTH STAR
+
+    Abstract the system.
+    Describe the behavior.
+
+EVIDENCE NORTH STAR
+
+    Let the number be plain.
+    Make the meaning memorable.
+
+PORTFOLIO RANGE NORTH STAR
+
+    One recognizable author.
+    Different emotional temperatures for different problems.
+
+FINAL CALIBRATION TEST
+
+Before publishing a section, ask:
+
+1. Is the personality at the right volume for this type of content?
+2. If this is evidence, have I stated it plainly?
+3. If this is interpretation, does my point of view actually show?
+4. Is there at least one concrete behavior or moment the reader can picture?
+5. Am I using humor or expressive language because it clarifies the point,
+   or because the paragraph feels too serious?
+6. Would the same tone be appropriate for this project's subject matter?
+7. Is the visual already carrying enough personality that the copy should
+   become quieter?
+8. Does this sound experienced because the judgment is precise, not because
+   the language has been flattened into corporate prose?
+
+The final standard:
+
+    A serious Product Designer whose way of seeing problems
+    is unusually recognizable.
+

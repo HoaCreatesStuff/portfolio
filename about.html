@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Hoa." />
+    <title>About — Hoa</title>
+    <link rel="preload" href="assets/fonts/Salute.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="assets/fonts/Gloock-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926-link-hover" />
+    <link rel="stylesheet" href="grid-spacing.css" />
+    <link rel="stylesheet" href="spacing-tokens.css" />
+    <link rel="stylesheet" href="debug-toolbar.css" />
+    <link rel="stylesheet" href="summer-quest-tokens.css" />
+    <link rel="stylesheet" href="debug-overlay.css" />
+    <link rel="stylesheet" href="display-font.css" />
+    <link rel="stylesheet" href="debug-fonts.css" />
+    <link rel="stylesheet" href="summer-quest-typography.css" />
+<link rel="stylesheet" href="about.css?v=75" />
+    <link rel="stylesheet" href="responsive-grid.css" />
+    <script src="debug-font-registry.js" defer></script>
+    <script src="debug-toolbar.js" defer></script>
+    <script src="about-text-fit.js" defer></script>
+    <script src="about-journey.js" defer></script>
+      <script src="contact-navigation.js" defer></script>
+  </head>
+  <body data-display-font="salute" data-accent-font="debug-accent-missele">
+    <aside class="debug-toolbar" aria-label="Development debug controls">
+      <button type="button" data-debug-toggle="grid" aria-pressed="false">Grid</button>
+      <button type="button" data-debug-toggle="bounds" aria-pressed="false">Bounds</button>
+      <label class="debug-toolbar-display">Display
+        <select data-display-font aria-label="Display font">
+          <option value="salute">Salute</option>
+          <option value="gloock">Gloock</option>
+        </select>
+      </label>
+      <label class="debug-toolbar-display">Accent
+        <select data-accent-font aria-label="Accent font">
+          <option value="esthentic-demo">Esthentic DEMO</option>
+        </select>
+      </label>
+      <label class="debug-toolbar-display debug-toolbar-hero">Hero
+        <select data-hero-image data-hero-image-target="#about-hero-image" aria-label="Hero image">
+          <option value="0" data-image-src="assets/images/about/about-me-option-0.jpg">Library</option>
+          <option value="1" data-image-src="assets/images/about/about-me-option-1.jpg">Floral suit</option>
+          <option value="4" data-image-src="assets/images/about/about-me-option-4.JPG" selected>Tile wall</option>
+        </select>
+      </label>
+      <button type="button" data-debug-hide aria-label="Hide debug toolbar" title="Hide debug toolbar">×</button>
+    </aside>
+    <header class="site-header page-grid">
+      <a class="site-logo" href="index.html" aria-label="Hoa, pronounced hwa, home"><img class="site-logo__mark" src="assets/logo-mark.svg" alt="" /><span class="site-logo__identity"><img class="site-logo__type" src="assets/logo-type.svg" alt="Hoa" /><span class="site-logo__pronunciation type-caption" aria-hidden="true">/hwa/</span></span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#work">Work</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="about-page">
+      <section class="about-hero page-grid" aria-labelledby="about-heading">
+        <h1 id="about-heading" class="about-hero__headline">
+          <span>What’s my</span>
+          <span>superpower?</span>
+        </h1>
+
+        <figure class="about-hero__portrait">
+          <img id="about-hero-image" class="about-photo" src="assets/images/about/about-me-option-4.JPG" alt="Portrait of Hoa" />
+        </figure>
+
+        <p class="about-hero__percentages accent-note">
+          25% Observer<br />
+          35% Maker<br />
+          40% Curious Cat
+        </p>
+
+        <p class="about-hero__intro"><span class="about-hero__intro-greeting">Hi I'm Hoa!</span><br>I’m endlessly curious about why people do what they do, how systems quietly shape those choices, and how I can influence both. I notice patterns, ask too many questions, and am usually constantly experimenting with something, whether it’s a product problem, expressive fashion, multidisciplinary arts, or a culturally fused recipe that probably shouldn’t work but somehow does.</p>
+      </section>
+
+      <section class="journey page-grid" aria-labelledby="journey-heading">
+        <header class="journey__header">
+          <p class="journey__eyebrow type-label">My journey</p>
+          <h2 id="journey-heading" class="journey__heading">I stayed in one place.<br>The work never did.</h2>
+        </header>
+
+        <div class="journey__accordion" data-journey-accordion>
+          <article class="journey__item is-open">
+            <button class="journey__trigger" id="journey-trigger-01" type="button" aria-expanded="true" aria-controls="journey-panel-01">
+              <span class="journey__number">2015—Now</span>
+              <span class="journey__role"><span class="journey__primary">CoachCare</span><span class="journey__secondary">Sole Designer — Graphic → UI → Product</span></span>
+              <span class="journey__category">Healthtech / Product</span>
+              <span class="journey__chevron" aria-hidden="true"></span>
+            </button>
+            <div class="journey__panel" id="journey-panel-01" role="region" aria-labelledby="journey-trigger-01" aria-hidden="false">
+              <div class="journey__panel-content editorial-flow">
+                <p>I joined CoachCare when we were still a tiny startup and grew with the company as it became a much larger health-tech organization. My role changed with it: I started in graphic and brand design, moved deeper into UI, and eventually into product design as the problems became less about how things looked and more about how they worked.</p>
+                <p>Along the way, I designed products used daily by 150,000+ patients, helped build scalable UI systems through major company growth, supported fundraising and sales storytelling, and led a full company rebrand.</p>
+                <p>What kept me there wasn’t one job description. It was getting to keep learning what design could influence.</p>
+                <div class="journey__evolution" aria-label="Career evolution from graphic design to UI to product design">
+                  <div><strong>Graphic</strong><span>Brand · campaigns · sales · company identity</span></div>
+                  <span class="journey__evolution-arrow" aria-hidden="true">→</span>
+                  <div><strong>UI</strong><span>Digital interfaces · visual systems · scalable patterns</span></div>
+                  <span class="journey__evolution-arrow" aria-hidden="true">→</span>
+                  <div><strong>Product</strong><span>Workflows · research · product decisions · behavior · systems</span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey__item">
+            <button class="journey__trigger" id="journey-trigger-02" type="button" aria-expanded="false" aria-controls="journey-panel-02">
+              <span class="journey__number">June-November 2015</span>
+              <span class="journey__role"><span class="journey__primary">Big Arrow Group</span><span class="journey__secondary">Jr. Art Director / Designer</span></span>
+              <span class="journey__category">Agency</span>
+              <span class="journey__chevron" aria-hidden="true"></span>
+            </button>
+            <div class="journey__panel" id="journey-panel-02" role="region" aria-labelledby="journey-trigger-02" aria-hidden="true">
+              <div class="journey__panel-content editorial-flow">
+                <p>Before CoachCare, I worked in an agency environment across healthcare and consumer accounts, collaborating with art directors, copywriters, and strategists on integrated campaigns across print and digital.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey__item">
+            <button class="journey__trigger" id="journey-trigger-03" type="button" aria-expanded="false" aria-controls="journey-panel-03">
+              <span class="journey__number">2012—2015</span>
+              <span class="journey__role"><span class="journey__primary">Early creative years</span><span class="journey__secondary">Internships, campus work &amp; very enthusiastic multitasking</span></span>
+              <span class="journey__category">Foundation</span>
+              <span class="journey__chevron" aria-hidden="true"></span>
+            </button>
+            <div class="journey__panel" id="journey-panel-03" role="region" aria-labelledby="journey-trigger-03" aria-hidden="true">
+              <div class="journey__panel-content editorial-flow">
+                <dl class="journey__foundations">
+                  <div><dt>J. Walter Thompson</dt><dd>Creative / Art Director Intern</dd></div>
+                  <div><dt>Dixon Schwabl Advertising</dt><dd>Creative Department Intern</dd></div>
+                  <div><dt>Rochester Business Journal</dt><dd>Graphic Design Intern</dd></div>
+                  <div><dt>Nazareth College</dt><dd>Print production · tutoring · campus design roles</dd></div>
+                </dl>
+                <p>This is where I learned production craft, visual storytelling, collaboration, and how frequently “designer” really means “figure it out.”</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="off-clock page-grid" aria-labelledby="off-clock-heading" hidden>
+        <h2 id="off-clock-heading" class="off-clock__heading">Off the Clock</h2>
+
+        <div class="off-clock__stage">
+          <div class="off-clock__panel off-clock__panel--left">
+            <p class="off-clock__note accent-note" data-auto-fit-note>things I&nbsp; try<br>when nobody assigned them</p>
+            <figure class="off-clock__item off-clock__movement" data-photo-order="03"><img class="about-photo" src="assets/images/about/off-clock-subway-photography.jpg" alt="Subway photography" style="--focus-x:52%; --focus-y:50%;"></figure>
+            <figure class="off-clock__item off-clock__anchor" data-photo-order="05"><img class="about-photo" src="assets/images/about/off-clock-fashion.JPG" alt="Fashion portrait"></figure>
+            <figure class="off-clock__item off-clock__performance" data-photo-order="07"><img class="about-photo" src="assets/images/about/off-clock-drawing.jpg" alt="Drawing"></figure>
+            <figure class="off-clock__item off-clock__making" data-photo-order="01"><img class="about-photo" src="assets/images/about/off-clock-collage.jpg" alt="Collage"></figure>
+            <figure class="off-clock__item off-clock__placeholder"><img class="about-photo" src="assets/images/about/off-clock-lyra.jpg" alt="Lyra"></figure>
+            <div class="off-clock__row-debug" aria-hidden="true">
+              <div><span>R1</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R2</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R3</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R4</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R5</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R6</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R7</span><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+
+          <div class="off-clock__panel off-clock__panel--right">
+            <figure class="off-clock__item off-clock__support" data-photo-order="08"><img class="about-photo" src="assets/images/about/off-clock-dance-group.jpg" alt="Dance group"></figure>
+            <figure class="off-clock__item off-clock__central" data-photo-order="04"><img class="about-photo" src="assets/images/about/off-clock-watercolor.JPG" alt="Watercolor painting" style="--focus-x:48%; --focus-y:72%;"></figure>
+            <figure class="off-clock__item off-clock__food" data-photo-order="02"><img class="about-photo" src="assets/images/about/off-clock-handmade-jewelry-tray.jpg" alt="Handmade jewelry tray"></figure>
+            <figure class="off-clock__item off-clock__play" data-photo-order="06"><img class="about-photo" src="assets/images/about/off-clock-cake.jpg" alt="Cake"></figure>
+            <p class="off-clock__process accent-note" data-auto-fit-note data-auto-fit-scale="0.6">play is part of <span class="widow-guard">the process</span></p>
+            <div class="off-clock__row-debug" aria-hidden="true">
+              <div><span>R1</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R2</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R3</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R4</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R5</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R6</span><i></i><i></i><i></i><i></i><i></i></div><div><span>R7</span><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="master-grid-debug" aria-hidden="true">
+      <span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span>
+      <span>C7</span><span>C8</span><span>C9</span><span>C10</span><span>C11</span><span>C12</span>
+    </div>
+  </body>
+</html>

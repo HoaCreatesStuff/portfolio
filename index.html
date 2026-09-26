@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hoa's product and experience design portfolio." />
+    <title>Hoa — Product &amp; Experience Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926-link-hover" />
+    <link rel="stylesheet" href="grid-spacing.css" />
+    <link rel="stylesheet" href="spacing-tokens.css" />
+    <link rel="stylesheet" href="debug-toolbar.css" />
+    <link rel="stylesheet" href="summer-quest-tokens.css" />
+    <link rel="stylesheet" href="debug-overlay.css" />
+    <link rel="stylesheet" href="display-font.css" />
+    <link rel="stylesheet" href="debug-fonts.css" />
+    <link rel="stylesheet" href="responsive-grid.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="debug-font-registry.js" defer></script>
+    <script src="debug-toolbar.js" defer></script>
+      <script src="contact-navigation.js" defer></script>
+  </head>
+  <body class="homepage homepage-v2" data-display-font="salute" data-accent-font="debug-accent-missele">
+    <aside class="debug-toolbar" aria-label="Development debug controls">
+      <button type="button" data-debug-toggle="grid" aria-pressed="false">Grid</button>
+      <button type="button" data-debug-toggle="bounds" aria-pressed="false">Bounds</button>
+      <label class="debug-toolbar-display">Display
+        <select data-display-font aria-label="Display font">
+          <option value="salute">Salute</option>
+          <option value="gloock">Gloock</option>
+        </select>
+      </label>
+      <label class="debug-toolbar-display">Accent
+        <select data-accent-font aria-label="Accent font">
+          <option value="esthentic-demo">Esthentic DEMO</option>
+        </select>
+      </label>
+      <button type="button" data-debug-hide aria-label="Hide debug toolbar" title="Hide debug toolbar">×</button>
+    </aside>
+
+    <header class="site-header page-grid">
+      <a class="site-logo" href="index.html" aria-label="Hoa, pronounced hwa, home"><img class="site-logo__mark" src="assets/logo-mark.svg" alt="" /><span class="site-logo__identity"><img class="site-logo__type" src="assets/logo-type.svg" alt="Hoa" /><span class="site-logo__pronunciation type-caption" aria-hidden="true">/hwa/</span></span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work" aria-current="page">Work</a>
+        <a href="about.html">About</a>
+        <a href="#resume">Resume</a>
+        <a href="contact.html">Contact</a>
+        <span class="site-nav__contacts" aria-label="Contact links">
+          <a class="site-nav__icon site-nav__icon--linkedin" href="https://www.linkedin.com/in/hoapnguyen/" target="_blank" rel="noopener noreferrer" aria-label="Hoa Nguyen on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45H16.9v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0h.01Z" /></svg>
+          </a>
+          <a class="site-nav__icon site-nav__icon--email" href="contact.html" aria-label="Contact Hoa Nguyen">
+            <img src="https://cdn.vectorstock.com/i/500p/05/58/gmail-logo-icon-google-email-vector-50150558.jpg" alt="" />
+          </a>
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="editorial-index home-grid page-grid" id="work" aria-labelledby="home-heading">
+        <div class="editorial-index__intro">
+          <h1 id="home-heading" class="type-heading-xs">Messy systems.<br> Everyday problems.<br />A decade of visual craft to turn ambiguous ideas into products people actually need.</h1>
+          <a class="editorial-index__cta" href="contact.html">Get in touch</a>
+        </div>
+
+        <a class="editorial-project editorial-project--flagship" href="#work" aria-label="CoachCare project — case study coming soon">
+          <div class="editorial-project__visual">
+            <img src="assets/images/projects/coachcare-clinician.jpg" alt="Doctor working on a laptop in a clinic" />
+            <span class="editorial-project__number" aria-hidden="true">01</span>
+          </div>
+          <div class="editorial-project__meta">
+            <h2 class="type-heading-xxs">CoachCare Prism</h2>
+            <p class="type-label">0→1 Product · Complex Systems</p>
+            <p class="type-body">Helping care teams deliver better remote care through AI-automated workflows.</p>
+          </div>
+        </a>
+
+        <a class="editorial-project editorial-project--secondary" href="summer-quest.html" aria-label="Read the NYC Summer Quest case study">
+          <div class="editorial-project__visual">
+            <img src="assets/images/summer-quest/summer-quest.jpg" alt="NYC Summer Quest" />
+            <span class="editorial-project__number" aria-hidden="true">02</span>
+          </div>
+          <div class="editorial-project__meta">
+            <h2 class="type-heading-xxs">Summer Quest</h2>
+            <p class="type-label">0→1 Product · Experience &amp; Game Design</p>
+            <p class="type-body">Transforming a birthday into a month-long social experience built for city life.</p>
+          </div>
+        </a>
+
+        <a class="editorial-project editorial-project--tertiary" href="#work" aria-label="PerformaMatch project — case study coming soon">
+          <div class="editorial-project__visual">
+            <img src="assets/images/projects/performamatch-artwork.png" alt="PerformaMatch artwork with a performer and flowing pink fabric" />
+            <span class="editorial-project__number" aria-hidden="true">03</span>
+          </div>
+          <div class="editorial-project__meta">
+            <h2 class="type-heading-xxs">PerformaMatch</h2>
+            <p class="type-label">Research · Product Strategy</p>
+            <p class="type-body">Reframing an ambitious product build into a focused proof of concept.</p>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <div class="master-grid-debug" aria-hidden="true">
+      <span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span>
+      <span>C7</span><span>C8</span><span>C9</span><span>C10</span><span>C11</span><span>C12</span>
+    </div>
+    <div class="debug-overlay" aria-hidden="true">
+      <div class="debug-viewport-line"><span class="debug-viewport-label">VIEWPORT · 100svh</span></div>
+    </div>
+  </body>
+</html>

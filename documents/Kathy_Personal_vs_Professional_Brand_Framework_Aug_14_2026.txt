@@ -1,0 +1,726 @@
+KATHY — PERSONAL BRAND VS. PROFESSIONAL BRAND FRAMEWORK
+
+1. THE CORE DISTINCTION
+
+Your professional brand answers:
+
+“Why should someone hire me as a Product Designer?”
+
+Your personal brand answers:
+
+“Why will they remember me instead of the other 30 qualified designers they saw this week?”
+
+They are not competing identities.
+
+The goal is:
+
+Professional credibility first. Personal distinctiveness throughout.
+
+Your personality should make the work more memorable, not make the work harder to understand.
+
+
+2. PROFESSIONAL BRAND
+
+Core positioning
+
+Mid-level Product Designer who combines strategic product thinking, strong visual craft, behavioral insight, and hands-on execution to turn ambiguous ideas into thoughtful, usable experiences.
+
+You should come across as someone who:
+
+- understands the product beyond the interface
+- asks why something should exist before deciding how it should look
+- makes deliberate tradeoffs
+- thinks about behavior, motivation, systems, and real-world constraints
+- can move from concept through implementation
+- works comfortably across UX, UI, product strategy, prototyping, testing, and iteration
+- has unusually strong visual storytelling ability for a product designer
+- uses AI and technical tools as implementation collaborators without confusing tool usage with design ownership
+
+
+PROFESSIONAL ATTRIBUTES TO COMMUNICATE
+
+1. Strategic
+
+You connect design decisions to:
+
+- user behavior
+- product goals
+- business or experience outcomes
+- constraints
+- risks
+- downstream consequences
+
+You do not present design as a sequence of screens.
+
+You present it as a sequence of decisions.
+
+
+2. Product-minded
+
+You naturally ask questions such as:
+
+- What actually needs to be built?
+- What can be simplified?
+- Which behavior are we trying to encourage?
+- What does the user need at this moment?
+- Where does complexity add value?
+- Where should the product deliberately do less?
+- What happens after launch?
+
+This should separate you from candidates who mainly demonstrate UX process compliance.
+
+
+3. Behaviorally aware
+
+You are interested in how products influence:
+
+- motivation
+- participation
+- habits
+- social behavior
+- emotional response
+- perceived effort
+- trust
+- reward
+
+Summer Quest is particularly strong evidence of this.
+
+
+4. Strong visual craft
+
+Visual design is a major strength, but it should be framed as a product capability, not your entire identity.
+
+Your work should demonstrate:
+
+- hierarchy
+- information design
+- interaction clarity
+- visual systems
+- editorial composition
+- emotional tone
+- polished execution
+
+The message is not:
+
+“I make things beautiful.”
+
+It is:
+
+“I use visual design deliberately to shape comprehension, behavior, and experience.”
+
+
+5. Builder mentality
+
+You are comfortable getting close to implementation.
+
+Evidence may include:
+
+- working prototypes
+- live products
+- AI-assisted development
+- implementation decisions
+- debugging
+- responsive behavior
+- technical tradeoffs
+- analytics
+- iteration after launch
+
+This positions you closer to a modern product designer than a traditional handoff-only UX designer.
+
+
+6. Evidence-driven, but not process-theater-driven
+
+You should show evidence when it matters:
+
+- analytics
+- usability observations
+- survey results
+- interviews
+- behavioral signals
+- iteration history
+
+But you do not need to manufacture a textbook research process for projects that did not require one.
+
+Your portfolio should communicate:
+
+“I use the amount and type of research appropriate to the decision.”
+
+That is more credible than pretending every project began with twelve personas and an affinity map summoned from the UX underworld.
+
+
+3. PERSONAL BRAND
+
+Core identity
+
+Your personal brand should feel:
+
+Warm. Expressive. Curious. Observant. Playful. Editorial. Slightly unexpected.
+
+Not “quirky” as a performance.
+
+Not “fun designer™.”
+
+The personality comes from how you see and describe the world.
+
+
+PERSONAL QUALITIES TO PRESERVE
+
+1. Curiosity
+
+You notice strange details.
+
+You chase questions.
+
+You enjoy understanding why something behaves the way it does.
+
+That curiosity can appear through:
+
+- project origins
+- side projects
+- observations
+- research questions
+- unexpected product hypotheses
+
+
+2. Storytelling instinct
+
+You naturally reconstruct:
+
+- context
+- emotion
+- environment
+- tension
+- sequence
+- surprise
+
+Your strongest case studies should therefore feel like stories with:
+
+1. setup
+2. tension
+3. decisions
+4. consequences
+5. resolution
+
+Not:
+
+Research → Wireframes → Testing → Final UI → Thank you for scrolling 6,000 pixels.
+
+
+3. Expressiveness
+
+You are comfortable allowing enthusiasm, frustration, surprise, humor, and affection for the work to show.
+
+The writing can occasionally sound like a human being actually experienced the project.
+
+This is an advantage.
+
+Protect it.
+
+
+4. Pattern recognition
+
+One of your strongest natural tendencies is making unusual comparisons that reveal something useful.
+
+Your analogies work best when they:
+
+- clarify complexity
+- expose a pattern
+- make an abstract idea concrete
+- create a memorable hook
+
+The analogy should support the reasoning.
+
+It should never replace it.
+
+
+5. Editorial sensibility
+
+Your personal visual identity should feel more like:
+
+- a designed publication
+- a curious object
+- an editorial story
+- an expressive digital space
+
+than:
+
+- generic SaaS portfolio template
+- brutalist designer clone
+- pastel productivity app
+- hyper-minimal Swiss résumé with one enormous Helvetica sentence declaring that you “craft experiences”
+
+Human civilization has produced enough of those.
+
+
+6. Warmth without sentimentality
+
+Your work frequently deals with:
+
+- people
+- memory
+- connection
+- motivation
+- everyday life
+- shared experiences
+
+That emotional intelligence should remain visible.
+
+But the portfolio should not become overly earnest.
+
+The warmth should come from the work itself.
+
+
+4. THE INTERSECTION
+
+This is where your strongest brand actually lives.
+
+You are not:
+
+Strategist OR visual designer
+
+You are:
+
+A visual storyteller who thinks in product systems and behavioral decisions.
+
+You are not:
+
+Creative OR analytical
+
+You are:
+
+Creative in how you frame problems and analytical in how you decide what to do about them.
+
+You are not:
+
+Professional OR personal
+
+You are:
+
+Professionally rigorous, personally recognizable.
+
+
+5. BRAND ARCHITECTURE
+
+Think of the portfolio as three layers.
+
+Layer 1 — Immediate professional signal
+
+A recruiter should understand within seconds:
+
+Kathy is a Product Designer.
+
+They should quickly see evidence of:
+
+- product thinking
+- shipped work
+- strategic decisions
+- UX/UI ability
+- visual quality
+
+No mystery box.
+
+Do not make recruiters solve an escape room to determine your job title.
+
+
+Layer 2 — Differentiation
+
+After several minutes, the impression should become:
+
+“She approaches products differently.”
+
+They notice:
+
+- behavioral reasoning
+- unusually thoughtful framing
+- strong visual storytelling
+- product judgment
+- systems thinking
+- willingness to build
+
+
+Layer 3 — Personal recognition
+
+After reading multiple projects:
+
+“I know what Kathy feels like as a designer.”
+
+They recognize:
+
+- your voice
+- curiosity
+- humor
+- visual atmosphere
+- way of noticing things
+- preference for meaningful and slightly unusual problems
+
+That is personal branding working correctly.
+
+
+6. PORTFOLIO VOICE BALANCE
+
+The portfolio writing should roughly prioritize:
+
+30% Strategic reasoning
+Why decisions were made.
+
+25% Storytelling and context
+What was happening and why it mattered.
+
+20% Product / UX explanation
+How the experience works.
+
+15% Evidence
+Results, testing, observations, metrics.
+
+5% Personal reflection
+What surprised you or changed your thinking.
+
+5% Wit / analogy / quirk
+Small moments that make the writing unmistakably yours.
+
+The last 5% should mostly come naturally from you rather than being manufactured.
+
+
+7. WHAT PROFESSIONAL BRANDING CONTROLS
+
+Professional branding should determine:
+
+- project selection
+- project hierarchy
+- case-study structure
+- titles and role descriptions
+- decision framing
+- metrics
+- process explanation
+- capabilities shown
+- résumé language
+- navigation clarity
+- credibility signals
+
+It establishes competence.
+
+
+8. WHAT PERSONAL BRANDING CONTROLS
+
+Personal branding can influence:
+
+- visual atmosphere
+- typography
+- transitions
+- imagery
+- project hooks
+- captions
+- writing rhythm
+- analogy
+- microcopy
+- personal introduction
+- About page
+- project selection
+- small unexpected interactions
+
+It creates recognition.
+
+
+9. WHAT NOT TO TURN INTO “BRAND”
+
+You do not need:
+
+- a personal logo
+- a forced catchphrase
+- a signature emoji
+- a branded adjective stack
+- an invented design philosophy
+- a “creative rebel” persona
+- constant jokes
+- every project rendered in identical colors
+- a personal manifesto on every page
+
+Brand is the pattern people infer from repeated evidence.
+
+It is not something you have to announce every thirteen seconds.
+
+
+10. PORTFOLIO VISUAL DIRECTION
+
+LOCKED DIRECTION
+
+Atmospheric Editorial × Graphic Art Direction
+
+The portfolio should not visually choose between:
+- professional polish
+and
+- dramatic personality
+
+Its identity comes from controlling both.
+
+Core principle:
+
+Soft atmosphere. Hard hierarchy.
+
+The atmosphere may be:
+- dreamy
+- hazy
+- colorful
+- warm
+- slightly surreal
+
+The hierarchy should be:
+- decisive
+- graphic
+- editorial
+- high-contrast
+- compositionally confident
+
+This prevents the atmospheric pink / lilac / blue world from becoming overly youthful or decorative.
+
+The visual identity should feel closer to an art-directed independent publication than a conventional UX portfolio template.
+
+
+PROFESSIONAL CLARITY STILL CONTROLS
+
+- navigation
+- body-text readability
+- case-study architecture
+- evidence hierarchy
+- captions
+- metadata
+- interaction predictability
+- accessibility
+- responsive behavior
+
+PERSONAL / ART-DIRECTION EXPRESSION CAN CONTROL
+
+- homepage atmosphere
+- chapter-opening compositions
+- large typographic statements
+- asymmetry
+- image cropping
+- photography
+- project-specific visual worlds
+- color fields
+- visual rhythm
+- selected motion
+- occasional handwritten accents
+- transitions between quiet and dramatic sections
+
+
+PRINT-EDITORIAL INFLUENCE
+
+Use print-magazine principles as compositional grammar, not as literal imitation.
+
+Translate:
+- spread-like chapter openings
+- dramatic type scale
+- small metadata against large statements
+- asymmetrical image / text relationships
+- side notes
+- pull statements
+- thin rules / chapter markers with actual meaning
+- aggressive but intentional cropping
+- whitespace as part of the composition
+
+Do not import:
+- tiny print body text
+- long multi-column reading
+- fake page numbers / crop marks / barcodes
+- fixed desktop spreads
+- page-turn gimmicks
+
+Desktop may feel like a spread.
+
+Mobile should become a strong vertical composition.
+
+
+TWO-STAGE VISUAL AUDIENCE
+
+Round 1 — Recruiter / general hiring screen
+
+The work must be immediately legible:
+- Product Designer
+- strong projects
+- clear role
+- clear outcomes / status
+- easy navigation
+
+Round 2 — Design manager / design lead
+
+The work must additionally demonstrate:
+- art direction
+- typography
+- composition
+- image selection and crop
+- grid control
+- rhythm
+- restraint
+- motion judgment
+- visual concept
+- project-specific systems
+- responsive translation
+- originality
+
+Recruiter clarity is the floor.
+
+Visual craft is part of the proof.
+
+A merely polished portfolio would undersell one of Kathy's strongest differentiators.
+
+
+PROJECT-SPECIFIC INTENSITY
+
+SUMMER QUEST
+Highest visual intensity.
+Atmospheric, photographic, colorful, playful, editorial, dramatic.
+
+PERFORMAMATCH
+Curious and analytical.
+Diagrammatic, editorial, calmer, typographically confident.
+
+MEDICATION DONATION
+Careful and systemic.
+Restrained, human, high-trust, documentary where appropriate.
+
+CCR
+Structured and mature.
+Controlled hierarchy, operational clarity, confident product presentation.
+
+Consistency should come from:
+- type roles
+- grid logic
+- spacing
+- metadata
+- annotations
+- interaction rules
+
+Not identical page compositions.
+
+
+VISUAL QUALITY TEST
+
+Professional:
+Does this make me easier to hire?
+
+Personal:
+Does this feel recognizably mine?
+
+Art direction:
+Could another competent Product Designer have designed this exact page?
+
+If the answer to the third question is yes too often, the portfolio may still be visually generic.
+
+Personality should not sit only in the homepage hero.
+
+The art direction must survive into the case studies.
+
+
+
+11. PERSONAL PROJECTS AS BRAND EVIDENCE
+
+Your personal projects should help reveal your worldview.
+
+Good topics for you naturally involve:
+
+- behavior
+- curiosity
+- everyday rituals
+- social dynamics
+- memory
+- perception
+- culture
+- decision-making
+- overlooked ordinary experiences
+
+This is more valuable than producing random fake SaaS dashboards just because hiring managers supposedly enjoy dashboards.
+
+A strong set of projects should collectively answer:
+
+“What kinds of things does Kathy notice that another designer might not?”
+
+
+12. CASE-STUDY TEST
+
+Every major case study should prove at least three dimensions.
+
+Product competence
+Can she make sound product decisions?
+
+Craft
+Can she execute the experience well?
+
+Perspective
+Is there something distinctive about how she approaches the problem?
+
+The strongest projects prove all three.
+
+
+13. BRAND CONSISTENCY TEST
+
+Before publishing anything, ask:
+
+Professional
+
+- Does this make me look like a stronger Product Designer?
+- Is my contribution obvious?
+- Can someone identify the important decisions?
+- Is there evidence behind my claims?
+- Am I demonstrating judgment rather than merely process?
+
+Personal
+
+- Does this feel like something I would actually make?
+- Is there a point of view?
+- Does any personality survive?
+- Is there something memorable here?
+- Have I accidentally polished away everything human?
+
+Combined
+
+- Is the personality helping the story rather than competing with it?
+- Does the work remain easy to evaluate?
+- Would someone remember both the project and me?
+
+
+14. DESIRED RECRUITER TAKEAWAY
+
+After scanning:
+
+“Strong Product Designer. Excellent visual craft.”
+
+After reading one case study:
+
+“She thinks carefully about behavior, product decisions, and tradeoffs.”
+
+After reading several:
+
+“She has a recognizable point of view.”
+
+From a design manager / design lead:
+
+“She has real art-direction judgment, not just polished UI.”
+
+After an interview:
+
+“She is strategic, curious, articulate, visually strong, and capable of taking substantial ownership.”
+
+That progression is the brand.
+
+
+15. SHORT INTERNAL BRAND STATEMENT
+
+This does not have to appear publicly.
+
+Use it as a filter for portfolio decisions:
+
+“I’m a Product Designer who turns messy ideas and human behavior into thoughtful, visually compelling experiences. I combine product strategy, behavioral reasoning, storytelling, and strong craft, while bringing curiosity and personality to the way I frame problems.”
+
+
+16. SIMPLEST VERSION
+
+When deciding whether something belongs in the portfolio:
+
+Professional brand asks:
+Does this prove I am good at the job I want?
+
+Personal brand asks:
+Does this feel recognizably mine?
+
+The portfolio succeeds when the answer to both is yes.

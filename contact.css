@@ -1,0 +1,145 @@
+/* A standalone page: the viewport surface enters, and its content scrolls normally. */
+.contact-page { overflow:hidden; }
+.contact-page__surface {
+  height:100vh;
+  height:100dvh;
+  overflow:auto;
+  background:var(--color-paper);
+  animation:contact-enter 550ms cubic-bezier(.22,.68,0,1) both;
+}
+@keyframes contact-enter {
+  from { transform:translateY(-100%); }
+  to { transform:translateY(0); }
+}
+.contact-page__back-row { padding-top:var(--space-16); }
+.contact-page__back {
+  grid-column:1 / -1;
+  justify-self:end;
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  color:var(--color-ink);
+  text-decoration:none;
+  font-size:var(--type-control);
+  font-weight:var(--type-weight-semibold);
+  text-transform:none;
+  letter-spacing:normal;
+}
+.contact-content {
+  grid-column:4 / span 6;
+  min-width:0;
+  padding-block:var(--space-64) var(--space-128);
+}
+.contact-field label {
+  display:block;
+  margin:0;
+  font-size:var(--type-label);
+  font-weight:var(--type-weight-semibold);
+  line-height:var(--type-label-line-height);
+  letter-spacing:.1em;
+}
+.contact-content h1 {
+  margin:var(--space-8) 0 var(--space-16);
+  font-family:"Salute",var(--font-heading-backup);
+  font-synthesis:none;
+  font-size:var(--type-heading-lg);
+  font-weight:var(--type-weight-regular);
+  /* Match the Reality Check chapter headline. */
+  line-height:var(--type-heading-lg-line-height);
+  letter-spacing:-.025em;
+}
+.contact-content h1:focus { outline:none; }
+.contact-intro { margin:0; }
+.contact-form { display:grid; gap:var(--space-32); margin-top:var(--space-title-to-content); }
+.contact-field { min-width:0; }
+.contact-field label span { color:var(--text-muted); font-weight:var(--type-weight-regular); letter-spacing:0; }
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  display:block;
+  width:100%;
+  min-width:0;
+  min-height:48px;
+  margin-top:var(--space-8);
+  padding:var(--space-12) 0;
+  border:0;
+  border-bottom:1px solid var(--text-muted);
+  border-radius:0;
+  background:transparent;
+  color:var(--color-ink);
+  font:inherit;
+  font-size:max(1rem,var(--type-body));
+  line-height:var(--type-body-line-height);
+}
+.contact-field :is(input,select,textarea):focus {
+  outline:none;
+  border-bottom-color:var(--color-accent);
+  caret-color:var(--color-accent);
+}
+.contact-field textarea { resize:vertical; }
+.contact-field input::placeholder,
+.contact-field textarea::placeholder { color:var(--text-muted); opacity:1; }
+.contact-submit {
+  --cta-endpoint-size:clamp(24px,2.222vw,32px);
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  width:fit-content;
+  min-height:48px;
+  padding:var(--space-12) 0;
+  border:0;
+  background:none;
+  color:var(--color-ink);
+  font:inherit;
+  font-size:var(--type-control);
+  font-weight:var(--type-weight-semibold);
+  line-height:1.3;
+  letter-spacing:normal;
+  cursor:pointer;
+}
+.contact-submit::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:var(--space-4);
+  width:1.75rem;
+  height:2px;
+  background:var(--color-secondary);
+  transition:width 520ms cubic-bezier(.18,.78,.24,1);
+}
+.contact-submit::before {
+  content:"";
+  position:absolute;
+  left:calc(100% + var(--space-8));
+  bottom:calc(var(--space-4) + 1px - var(--cta-endpoint-size) / 2);
+  width:var(--cta-endpoint-size);
+  height:var(--cta-endpoint-size);
+  background:url("assets/logo-mark.svg") center / contain no-repeat;
+  pointer-events:none;
+  transform:scale(0) rotate(0deg);
+  transition:transform 280ms cubic-bezier(.18,.9,.28,1);
+}
+.contact-submit:is(:hover,:focus-visible)::after { width:100%; }
+.contact-submit:is(:hover,:focus-visible)::before {
+  transform:scale(1) rotate(360deg);
+  transition-delay:340ms;
+}
+.contact-note { margin:var(--space-8) 0 0; color:var(--text-muted); font-size:var(--type-caption); }
+.contact-page :is(a,button):focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }
+.contact-page .site-nav a { display:inline-flex; align-items:center; min-height:44px; }
+@media (min-width:768px) and (max-width:1023px) {
+  .contact-content { grid-column:2 / span 6; }
+}
+@media (max-width:1439px) {
+  .contact-content { padding-block:var(--space-32) var(--space-96); }
+}
+@media (max-width:767px) {
+  .contact-page .site-header { padding-top:var(--space-24); row-gap:var(--space-16); }
+  .contact-page .site-nav { margin-top:0; flex-wrap:wrap; gap:var(--space-16); }
+  .contact-content { grid-column:1 / -1; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .contact-page__surface { animation:none; }
+  .contact-submit::before,
+  .contact-submit::after { transition:none; }
+}

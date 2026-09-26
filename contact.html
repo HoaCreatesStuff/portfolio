@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with Hoa about product design, collaborations, and curious ideas." />
+    <title>Contact — Hoa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926-link-hover" />
+    <link rel="stylesheet" href="grid-spacing.css" />
+    <link rel="stylesheet" href="spacing-tokens.css" />
+    <link rel="preload" href="assets/fonts/Salute.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="display-font.css" />
+    <link rel="stylesheet" href="responsive-grid.css" />
+    <link rel="stylesheet" href="contact.css?v=20260926-cta" />
+    <script src="contact.js?v=20260926-recipient" defer></script>
+  </head>
+  <body class="contact-page">
+    <div class="contact-page__surface">
+      <header class="site-header page-grid">
+        <a class="site-logo" href="index.html" aria-label="Hoa, pronounced hwa, home"><img class="site-logo__mark" src="assets/logo-mark.svg" alt="" /><span class="site-logo__identity"><img class="site-logo__type" src="assets/logo-type.svg" alt="Hoa" /><span class="site-logo__pronunciation type-caption" aria-hidden="true">/hwa/</span></span></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#resume">Resume</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
+      <div class="page-grid contact-page__back-row">
+        <a class="contact-page__back" href="index.html" data-contact-back aria-label="Close contact and return to previous page">Close &gt;</a>
+      </div>
+      <main class="page-grid">
+        <div class="contact-content">
+          <p class="contact-eyebrow type-label">Get in touch</p>
+          <h1 id="contact-heading" tabindex="-1">Xin chào!</h1>
+          <p class="contact-intro type-subtitle-sm">Ideas, questions, strange little observations.<br> Send them my way.</p>
+          <form class="contact-form" action="mailto:hoa.p.nguyen@gmail.com" method="post" enctype="text/plain">
+            <div class="contact-field">
+              <label for="contact-name">NAME</label>
+              <input id="contact-name" name="name" autocomplete="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">EMAIL</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required />
+            </div>
+            <div class="contact-field">
+              <label for="contact-company">COMPANY <span>(optional)</span></label>
+              <input id="contact-company" name="company" autocomplete="organization" placeholder="Company name" />
+            </div>
+            <div class="contact-field">
+              <label for="contact-subject">WHAT’S THIS ABOUT?</label>
+              <select id="contact-subject" name="subject">
+                <option>A product design role</option>
+                <option>A project or collaboration</option>
+                <option>Portfolio / design talk</option>
+                <option>Something else entirely</option>
+              </select>
+            </div>
+            <div class="contact-field">
+              <label for="contact-message">YOUR MESSAGE</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="What’s on your mind?" required></textarea>
+            </div>
+            <div>
+              <button class="contact-submit" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

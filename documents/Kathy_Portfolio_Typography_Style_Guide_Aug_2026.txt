@@ -1,0 +1,1306 @@
+KATHY PORTFOLIO TYPOGRAPHY STYLE GUIDE
+Locked Working System — August 26, 2026
+
+PURPOSE
+-------
+This document is the source of truth for the typography system used across Kathy's UX / Product Design portfolio.
+
+The system is designed to support:
+- strong editorial storytelling
+- recruiter and hiring-manager scannability
+- long-form case study readability
+- expressive but controlled visual identity
+- project-specific visual worlds
+- selective personality without sacrificing clarity
+
+The governing principle:
+
+    SALUTE speaks the major argument.
+    FIGTREE structures and explains it.
+    ESTHENTIC adds the human aside.
+
+The typography system uses one unified semantic heading scale rather than
+separate "display" and "heading" systems. HTML heading level remains
+independent from visual type token.
+
+
+============================================================
+1. LOCKED FONT SYSTEM
+============================================================
+
+PRIMARY DISPLAY
+---------------
+Salute
+Role:
+- homepage hero
+- case-study project titles
+- major chapter theses
+- major narrative turning points
+- selected large callouts
+- selected large metrics
+
+Working status:
+PRIMARY DISPLAY FONT
+
+Important:
+- Use the supplied Salute font as Regular / 400.
+- Do not fake bold or italic.
+- Do not use browser-synthesized 600 / 700 weights.
+- Create hierarchy with size, spacing, composition, and Figtree weight instead.
+
+
+DISPLAY BACKUP
+--------------
+Gloock
+Role:
+- licensing / production fallback if Salute cannot be used
+- same semantic role as Salute
+
+Working status:
+BACKUP ONLY
+
+Reason:
+Gloock has stronger immediate drama and visual recognition, but Salute proved more flexible across dense case-study layouts and better suited to a whole-portfolio system.
+
+
+PRIMARY BODY / UI
+-----------------
+Figtree
+
+Role:
+- body copy
+- Subtitle / decks
+- navigation
+- UI controls
+- metadata
+- captions
+- evidence labels
+- case-study supporting headings
+- buttons
+- tags
+- forms
+- diagrams
+- data labels
+
+Working status:
+LOCKED PRIMARY BODY / UI FONT
+
+Reason:
+Figtree is readable, contemporary, warm enough to avoid feeling clinical, and neutral enough to let expressive display typography, imagery, atmosphere, and handwriting carry the personality.
+
+
+BODY / UI BACKUP
+----------------
+Plus Jakarta Sans
+
+Working status:
+BACKUP ONLY
+
+Reason:
+Strong readability and contemporary product signal, but more visibly branded / polished than Figtree. It can make the system feel more startup / product-brand oriented and competes slightly more with expressive display typography.
+
+
+PRIMARY ACCENT
+--------------
+Esthentic DEMO
+
+Role:
+- short handwritten annotations
+- human asides
+- margin-note moments
+- arrows / diagram notes
+- occasional expressive microcopy
+- selective personal commentary
+
+Working status:
+LOCKED FINALIST / PRIMARY WORKING ACCENT
+
+Important:
+- Not required for comprehension.
+- Never use for navigation, body paragraphs, buttons, critical labels, metrics, or accessibility-critical information.
+- Keep use sparse.
+
+
+ACCENT BACKUP / ALTERNATIVE
+---------------------------
+Baby Boston
+
+Working status:
+LOCKED FOR CONSIDERATION
+
+Reason:
+Free, readable, expressive, and similar enough in spirit to the intended personal handwritten feel. Slightly cleaner / friendlier than Esthentic.
+
+
+REMOVED FROM CONSIDERATION
+--------------------------
+Display:
+- Newsreader — too newspaper / publication-coded relative to the final direction.
+- Crimson Pro — too conventionally pretty and not distinctive enough.
+- Fraunces — strong and expressive but currently below Salute / Gloock in the final system; can be reconsidered only if needed.
+
+Body:
+- Nunito — too soft / rounded relative to the sharper editorial direction.
+- Elms Sans — more personality than needed for the body role.
+- Carlito — functional but too anonymous.
+
+Accent:
+- Caveat — too common.
+- Reenie Beanie — useful but surpassed by Esthentic and Baby Boston.
+- Covered By Your Grace — louder and more overtly “handwritten font.”
+- DearJoe 1 M&S — not part of the final locked pair.
+
+
+============================================================
+2. TYPOGRAPHIC VOICE ARCHITECTURE
+============================================================
+
+The typography has three distinct voices.
+
+SALUTE
+------
+Narrative importance.
+
+Use when the page needs to say:
+“This is the idea to remember.”
+
+FIGTREE
+-------
+Comprehension and structure.
+
+Use when the page needs to say:
+“This is what you need to understand.”
+
+ESTHENTIC
+---------
+Personal interruption.
+
+Use when the page needs to say:
+“This is Kathy adding a human note.”
+
+Do not let all three voices compete at once.
+
+The portfolio should feel:
+
+    EXPRESSIVE SHELL
+    +
+    DISCIPLINED INFORMATION ARCHITECTURE
+
+
+============================================================
+3. UNIFIED HEADING SCALE
+============================================================
+
+The portfolio uses ONE visual heading scale.
+
+Do not maintain separate "Display" and "Heading" systems.
+The same visual token may be applied to different semantic HTML heading
+levels depending on document structure.
+
+Recommended CSS token names:
+- heading-xl
+- heading-lg
+- heading-md
+- heading-sm
+- heading-xs
+- heading-supporting
+
+Do not name the visual tokens h1 / h2 / h3 / h4 / h5.
+Semantic HTML hierarchy and visual emphasis are related, but not identical.
+
+
+HEADING XL
+----------
+Font:
+Salute
+
+Desktop:
+clamp(4rem, 7vw, 5rem)
+Equivalent working range:
+64–80 px
+
+Weight:
+400
+
+Line height:
+0.95–1.0
+
+Tracking:
+approximately -0.025em
+
+Use:
+- page-level hero
+- largest portfolio statement
+- case-study project title when composition warrants maximum emphasis
+- rare identity-level narrative moment
+
+
+HEADING L
+---------
+Font:
+Salute
+
+Desktop:
+clamp(3rem, 5.1vw, 3.75rem)
+Equivalent working range:
+48–60 px
+
+Weight:
+400
+
+Line height:
+1.0–1.05
+
+Tracking:
+approximately -0.02em
+
+Use:
+- major chapter title
+- primary narrative beat
+- major turning point
+
+
+HEADING M
+---------
+Font:
+Salute
+
+Desktop:
+clamp(2.5rem, 4.2vw, 3.5rem)
+Equivalent working range:
+40–56 px
+
+Weight:
+400
+
+Line height:
+approximately 1.05
+
+Tracking:
+approximately -0.015em
+
+Use:
+- opening thesis
+- major reframe
+- strong subsection statement
+- homepage statement when Heading XL would overpower the composition
+
+
+HEADING S
+---------
+Font:
+Figtree
+
+Desktop:
+2.5rem
+Equivalent:
+40 px
+
+Weight:
+600
+
+Line height:
+approximately 1.1
+
+Tracking:
+approximately -0.015em
+
+Use:
+- featured decision
+- strong subsection
+- important supporting argument
+
+
+HEADING XS
+----------
+Font:
+Figtree
+
+Desktop:
+1.875rem
+Equivalent:
+30 px
+
+Weight:
+600
+
+Line height:
+1.2
+
+Tracking:
+approximately -0.01em
+
+Use:
+- standard design decision
+- principle heading
+- recurring case-study subsection heading
+- central product question
+
+
+SUPPORTING HEADING
+------------------
+Font:
+Figtree
+
+Desktop:
+1.5rem
+Equivalent:
+24 px
+
+Weight:
+600
+
+Line height:
+approximately 1.25
+
+Use:
+- evidence grouping
+- minor subsection
+- card title
+- small supporting content cluster
+
+Note:
+This is a supporting heading role below Heading XS. Keep it visually quieter
+than the five primary heading levels.
+
+
+============================================================
+4. READING + SUPPORTING TEXT SCALE
+============================================================
+
+SUBTITLE
+--------
+Font:
+Figtree
+
+Desktop:
+1.25rem
+Equivalent:
+20 px
+
+Mobile:
+approximately 1.125–1.25rem
+
+Weight:
+400
+
+Line height:
+approximately 1.55
+
+Tracking:
+approximately -0.01em
+
+Use:
+- homepage supporting statement
+- project subtitle
+- chapter intro statement
+- short explanatory lead directly supporting a heading
+
+Rule:
+Subtitle should remain concise, generally 1–3 sentences.
+It supports orientation and emphasis; it does not replace normal body copy.
+
+
+BODY
+----
+Font:
+Figtree
+
+Desktop:
+1.0625rem
+Equivalent:
+17 px
+
+Mobile:
+approximately 1.0625rem
+
+Weight:
+400
+
+Line height:
+1.65
+
+Use:
+- standard long-form case-study reading
+- explanatory prose
+- evidence interpretation
+- supporting narrative text
+
+
+BODY STRONG
+-----------
+Same size as Body
+
+Weight:
+600
+
+Use:
+- inline emphasis only
+
+
+CAPTION
+-------
+Font:
+Figtree
+
+Desktop:
+0.875rem
+Equivalent:
+14 px
+
+Mobile:
+0.875rem
+
+Weight:
+400
+
+Line height:
+1.5
+
+Use:
+- screenshot captions
+- chart captions
+- visual interpretation
+- explanation of what the reader should understand from a visual
+
+Semantic rule:
+
+    CAPTION = What should I understand from this visual?
+
+
+METADATA
+--------
+Font:
+Figtree
+
+Desktop:
+0.875rem
+Equivalent:
+14 px
+
+Mobile:
+approximately 0.8125–0.875rem
+
+Weight:
+500
+
+Line height:
+1.4
+
+Use:
+- role
+- timeline
+- platform
+- status
+- project details
+- taxonomy labels when they are informational rather than interactive
+
+Semantic rule:
+
+    METADATA = What is this?
+
+
+EYEBROW
+-------
+Desktop:
+0.75rem
+Equivalent:
+12 px
+
+Mobile:
+approximately 0.6875–0.75rem
+
+Weight:
+600
+
+Line height:
+approximately 1.3
+
+Tracking:
+0.10–0.14em
+
+Transform:
+uppercase
+
+Use:
+- chapter numbers
+- evidence labels
+- capability categories
+- section labels
+
+
+PILL / TAG
+----------
+Desktop:
+0.8125rem
+Equivalent:
+13 px
+
+Mobile:
+0.75rem
+
+Weight:
+500
+
+Line height:
+1.0
+
+Use:
+- taxonomy
+- project categories
+
+
+BUTTON / UI CONTROL
+-------------------
+Desktop:
+0.9375rem
+Equivalent:
+15 px
+
+Mobile:
+0.875rem
+
+Weight:
+600
+
+Line height:
+1.0
+
+Use:
+- functional interaction controls
+
+
+ACCENT SMALL
+------------
+Font:
+Esthentic DEMO
+
+Working size:
+approximately 1.5rem
+Equivalent:
+24 px
+
+Use:
+- brief handwritten annotations
+
+
+ACCENT MEDIUM
+-------------
+Font:
+Esthentic DEMO
+
+Working size:
+approximately 2.125–2.25rem
+Equivalent:
+34–36 px
+
+Use:
+- stronger annotation moments
+- expressive aside
+
+
+ACCENT LARGE
+------------
+Font:
+Esthentic DEMO
+
+Working size:
+approximately 3rem
+Equivalent:
+48 px
+
+Use:
+- rare large handwritten note
+- major personal interruption
+
+Accent remains a separate expressive system because it is not part of the
+information hierarchy and must never be required for comprehension.
+
+
+============================================================
+5. SEMANTIC USAGE RULES
+============================================================
+
+SALUTE SHOULD BE USED FOR
+-------------------------
+- homepage positioning statement
+- case-study project name
+- major chapter thesis
+- selected high-value narrative turning points
+- occasional major callout
+- selected major metric
+
+SALUTE SHOULD NOT BE USED FOR
+-----------------------------
+- every heading
+- long-form body text
+- UI controls
+- forms
+- navigation
+- dense evidence labels
+- captions
+- large amounts of metadata
+
+Important:
+Salute should feel like a narrative event.
+If it appears constantly, it loses its expressive function.
+
+
+FIGTREE SHOULD BE USED FOR
+--------------------------
+- all body copy
+- Subtitle
+- Heading S / Heading XS / Supporting Heading
+- product questions
+- navigation
+- buttons
+- project metadata
+- data labels
+- captions
+- charts
+- tags
+- forms
+- functional UI
+- evidence interpretation
+
+
+ESTHENTIC SHOULD BE USED FOR
+----------------------------
+- short annotation
+- brief aside
+- expressive human note
+- occasional diagram annotation
+- arrows or commentary
+
+ESTHENTIC SHOULD NOT BE USED FOR
+--------------------------------
+- paragraphs
+- buttons
+- navigation
+- labels required for understanding
+- accessibility-critical information
+- detailed data
+- core product copy
+
+
+============================================================
+6. CASE-STUDY HIERARCHY EXAMPLE
+============================================================
+
+EYEBROW
+Figtree 0.75rem / 600 / uppercase
+
+Example:
+0→1 PRODUCT · EXPERIENCE DESIGN · BEHAVIORAL DESIGN
+
+
+PROJECT TITLE
+Heading XL or Heading L depending on composition
+
+Example:
+NYC Summer Quest
+
+
+PROJECT SUBTITLE
+Subtitle
+
+Example:
+Designing a social game that makes real life more playable.
+
+
+CHAPTER LABEL
+Eyebrow
+
+Example:
+01 · THE STORY
+
+
+CHAPTER THESIS
+Heading L
+
+Example:
+A birthday celebration that unfolds across an entire city, all summer long.
+
+
+BODY
+Body
+
+
+CENTRAL PRODUCT QUESTION
+Heading XS
+
+Example:
+How do you design a shared experience when everyone participates differently?
+
+
+FEATURED DECISION / MAJOR SUBSECTION
+Heading S
+
+
+STANDARD DECISION / PRINCIPLE
+Heading XS
+
+
+SUPPORTING SUBSECTION
+Supporting Heading
+
+
+PERSONAL ANNOTATION
+Accent Small / Medium / Large depending on composition
+
+Example:
+That was my vision.
+
+
+MAJOR TURNING POINT
+Heading L or Heading M depending on narrative importance
+
+
+EVIDENCE LABEL
+Eyebrow
+
+
+CAPTION
+Caption
+
+
+METRIC
+Salute large number
++
+Metadata label
+
+
+IMPORTANT:
+Do not infer visual hierarchy from HTML heading tags.
+A semantic <h2> may use Heading L in one context and Heading M in another.
+Choose the visual token based on narrative importance and composition while
+keeping document structure semantically correct.
+
+
+============================================================
+7. TEXT MEASURE
+============================================================
+
+BODY COPY
+---------
+Target:
+approximately 60–72 characters per line
+
+Recommended:
+max-width around 68ch
+
+
+SUBTITLE TEXT
+-------------
+Target:
+approximately 50–60 characters per line
+
+Recommended:
+max-width around 55ch
+
+
+DISPLAY TEXT
+------------
+Do not use character-based width mechanically.
+
+Display typography should be composed intentionally based on:
+- meaning
+- line breaks
+- rhythm
+- visual balance
+
+
+============================================================
+8. SPACING + RHYTHM
+============================================================
+
+PARAGRAPH TO PARAGRAPH
+----------------------
+Approximately 1em
+
+
+PROSE TO NEW SUBSECTION
+-----------------------
+Approximately 2–3rem
+
+
+MAJOR CHAPTER TRANSITIONS
+-------------------------
+Approximately 6–10rem
+
+Adjust based on:
+- anchor visuals
+- diagrams
+- photography
+- narrative pacing
+
+
+CORE RULE
+---------
+Not every section should have equal visual intensity.
+
+Quiet sections make major Salute moments stronger.
+
+
+============================================================
+9. EMPHASIS
+============================================================
+
+BODY EMPHASIS
+-------------
+Use Figtree 600.
+
+Use italics selectively if supported.
+
+Avoid:
+- excessive colored text
+- inserting Salute inside normal paragraphs
+- handwriting inside sentences
+- bolding entire paragraphs
+- multiple competing emphasis devices
+
+If everything is emphasized, nothing is.
+
+
+============================================================
+10. LINKS
+============================================================
+
+Font:
+Figtree
+
+Keep link treatment simple.
+
+Recommended:
+- inherited text color
+- visible underline
+- slightly increased underline offset
+- subtle hover behavior
+
+Avoid stacking:
+- dramatic color shift
+- underline animation
+- background animation
+- large motion
+
+Functional interaction should remain obvious and restrained.
+
+
+============================================================
+11. DATA + METRICS
+============================================================
+
+Use Salute only when a number is itself a narrative moment.
+
+Example:
+
+    63
+    quests completed
+
+63:
+Salute
+
+label:
+Figtree
+
+
+Detailed charts, tables, and analytics:
+Figtree only.
+
+Rule:
+
+    HEADING / SALUTE TYPE FOR INTERPRETATION.
+    FIGTREE FOR DATA INFRASTRUCTURE.
+
+
+============================================================
+12. UI CONTROLS
+============================================================
+
+All functional controls use Figtree.
+
+Includes:
+- navigation
+- buttons
+- filters
+- tags
+- pagination
+- forms
+- dropdowns
+- tooltips
+- status messages
+- accessibility notices
+
+Principle:
+
+    Editorial content can be expressive.
+    Interaction should be obvious.
+
+
+============================================================
+13. MOBILE RULES
+============================================================
+
+Do not simply shrink desktop typography.
+
+DISPLAY
+-------
+- allow more line breaks
+- reduce scale deliberately
+- inspect tracking at narrow widths
+- avoid overly compressed letters
+- preserve readable rhythm
+
+BODY
+----
+- never below 16 px
+- preferred working target around 17 px for long case studies
+
+METADATA
+--------
+- avoid going below 12 px
+- 13 px preferred where possible
+
+ACCENT
+------
+- keep annotation copy short
+- avoid large multi-line handwritten blocks
+
+
+============================================================
+14. ACCESSIBILITY
+============================================================
+
+Typography must remain functional.
+
+Rules:
+- body copy minimum approximately 16 px
+- body line height at least 1.5
+- strong foreground/background contrast
+- no essential information presented only in handwriting
+- no essential distinction communicated by font choice alone
+- page must survive browser zoom to 200%
+- display headings must wrap responsively
+- no faux Salute weights required for hierarchy
+- semantic HTML hierarchy should remain independent from visual style tokens
+
+Important:
+Do not force H1 / H2 / H3 styling to determine semantic structure.
+Use semantic type classes / tokens.
+
+
+============================================================
+15. RECOMMENDED CSS TOKENS
+============================================================
+
+Suggested foundation:
+
+:root {
+  --font-display: "Salute", serif;
+  --font-display-backup: "Gloock", Georgia, serif;
+
+  --font-body: "Figtree", Arial, sans-serif;
+  --font-body-backup: "Plus Jakarta Sans", Arial, sans-serif;
+
+  --font-accent: "Esthentic DEMO", cursive;
+  --font-accent-backup: "Baby Boston", cursive;
+
+  --type-heading-xl: clamp(4rem, 7vw, 5rem);
+  --type-heading-lg: clamp(3rem, 5.1vw, 3.75rem);
+  --type-heading-md: clamp(2.5rem, 4.2vw, 3.5rem);
+  --type-heading-sm: 2.5rem;
+  --type-heading-xs: 1.875rem;
+  --type-heading-supporting: 1.5rem;
+
+  --type-subtitle: 1.25rem;
+  --type-body: 1.0625rem;
+  --type-meta: 0.875rem;
+  --type-caption: 0.875rem;
+  --type-eyebrow: 0.75rem;
+  --type-tag: 0.8125rem;
+  --type-control: 0.9375rem;
+
+  --type-accent-sm: 1.5rem;
+  --type-accent-md: 2.25rem;
+  --type-accent-lg: 3rem;
+}
+
+
+Recommended semantic classes:
+
+.type-heading-xl
+.type-heading-lg
+.type-heading-md
+.type-heading-sm
+.type-heading-xs
+.type-heading-supporting
+.type-subtitle
+.type-body
+.type-metadata
+.type-caption
+.type-eyebrow
+.type-tag
+.type-control
+.type-accent-sm
+.type-accent-md
+.type-accent-lg
+
+
+Important implementation rule:
+
+Do not use h1 / h2 / h3 selectors as the primary visual type system.
+Keep semantic HTML structure correct, then apply the appropriate visual token
+through classes or component styles.
+
+Use rem for the core type system because rem:
+- respects root/user font-size preferences
+- keeps sizing predictable across component nesting
+- avoids compounding behavior from em-based font sizing
+
+Use em selectively for properties that should scale with the current element,
+such as icon size, decorative underline thickness, or local inline spacing.
+
+
+Production note:
+Test Salute → Gloock fallback metrics before placing Gloock directly in the automatic font-family chain.
+If the metrics differ enough to damage line breaks or composition, handle fallback intentionally rather than relying on silent substitution.
+
+
+============================================================
+16. RELATIONSHIP TO PORTFOLIO VISUAL STRATEGY
+============================================================
+
+The typography system supports the locked portfolio direction:
+
+    CLEAN EDITORIAL SKELETON
+    +
+    SOFT ATMOSPHERIC PERSONALITY
+    +
+    EXPRESSIVE TYPOGRAPHY
+    +
+    PROJECT-SPECIFIC VISUAL WORLDS
+    +
+    CALM MOTION
+    +
+    STRATEGIC VISUAL STORYTELLING
+
+
+SALUTE contributes:
+- editorial authorship
+- narrative hierarchy
+- memorable visual craft
+
+FIGTREE contributes:
+- restraint
+- readability
+- product-design credibility
+- information architecture
+- scanning
+
+ESTHENTIC contributes:
+- humanity
+- personal voice
+- selective visual interruption
+
+
+============================================================
+17. RELATIONSHIP TO PORTFOLIO INSPIRATION SET
+============================================================
+
+KARINA SIRQUEIRA
+----------------
+System takeaway:
+Restraint and whitespace.
+
+Typography response:
+Figtree carries most information quietly.
+Salute is used selectively.
+
+
+DION PIETERS
+------------
+System takeaway:
+Typography can become the visual event.
+
+Typography response:
+Large Salute thesis moments mark important narrative beats.
+
+
+ROBIN NOGUIER
+-------------
+System takeaway:
+Human voice can coexist with serious work.
+
+Typography response:
+Esthentic creates selective human annotations without weakening professional hierarchy.
+
+
+OKC MEDIA / A-LIGN
+------------------
+System takeaway:
+Research and strategy should become visually legible.
+
+Typography response:
+Figtree handles evidence.
+Salute marks reframes, insights, and product consequences.
+
+
+NOTHIN'
+-------
+System takeaway:
+Conceptual visual identity without generic UX artifacts.
+
+Typography response:
+Salute remains distinctive enough to support unusual diagrams and art direction without competing with them.
+
+
+LORENZO LANNINO
+---------------
+System takeaway:
+Calm polish and alive-but-not-busy typography.
+
+Typography response:
+Salute + Figtree creates controlled editorial rhythm.
+
+
+MARINO
+------
+System takeaway:
+Business-readable consequences.
+
+Typography response:
+Figtree protects clarity and evidence readability while Salute highlights what the reader should remember.
+
+
+============================================================
+18. RECRUITER / HIRING-MANAGER FUNCTION
+============================================================
+
+The typography system should support three levels of perception.
+
+
+FIRST 10 SECONDS
+----------------
+Figtree provides:
+- clarity
+- professional signal
+- product-design readability
+
+
+AFTER 30 SECONDS
+----------------
+Salute provides:
+- distinctive visual craft
+- editorial personality
+- narrative hierarchy
+
+
+AFTER SEVERAL MINUTES
+---------------------
+Esthentic + project art direction provide:
+- human recognition
+- personal identity
+- authored voice
+
+
+This mirrors the portfolio brand architecture:
+
+    PROFESSIONAL CREDIBILITY FIRST.
+    PERSONAL DISTINCTIVENESS THROUGHOUT.
+
+
+============================================================
+19. CURRENT LOCKED STATUS
+============================================================
+
+LOCKED
+------
+Primary display:
+Salute
+
+Display backup:
+Gloock
+
+Primary body / UI:
+Figtree
+
+Body backup:
+Plus Jakarta Sans
+
+Primary accent:
+Esthentic DEMO
+
+Accent alternative:
+Baby Boston
+
+
+LOCKED SYSTEM RULE
+------------------
+One unified heading scale:
+Heading XL → L → M → S → XS → Supporting Heading.
+
+Salute for Heading XL / L / major Heading M narrative moments.
+Figtree for Heading S / XS / Supporting Heading, Subtitle, Body, Metadata,
+Caption, UI, and evidence infrastructure.
+Esthentic for optional personality around the edges.
+
+Core sizing uses rem.
+Responsive large headings may combine rem + vw inside clamp().
+Semantic HTML heading levels remain independent from visual type tokens.
+
+
+============================================================
+20. FUTURE VALIDATION
+============================================================
+
+Before final production launch, validate:
+
+[ ] Salute licensing for intended portfolio use.
+
+[ ] Webfont performance / loading behavior.
+
+[ ] Salute rendering across Chrome, Safari, Firefox, iOS Safari.
+
+[ ] Heading XL at homepage hero scale.
+
+[ ] Heading XL / L at project-title scale.
+
+[ ] Heading L at chapter-thesis scale.
+
+[ ] Figtree long-form reading on desktop and mobile.
+
+[ ] Salute → Gloock fallback metric differences.
+
+[ ] Esthentic licensing and web use.
+
+[ ] Baby Boston licensing and fallback behavior.
+
+[ ] 200% browser zoom.
+
+[ ] Mobile line wrapping.
+
+[ ] Accessibility contrast across atmospheric backgrounds.
+
+[ ] Reduced-motion / low-bandwidth scenarios do not depend on typography loading correctly.
+
+
+============================================================
+FINAL PRINCIPLE
+============================================================
+
+The typography should make the portfolio easier to understand,
+more memorable,
+and more recognizably authored.
+
+It should not compete with the reasoning.
+
+The final system is:
+
+    SALUTE
+    for the story worth remembering.
+
+    FIGTREE
+    for the information worth understanding.
+
+    ESTHENTIC
+    for the human voice around the edges.

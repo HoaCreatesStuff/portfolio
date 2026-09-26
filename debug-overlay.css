@@ -1,0 +1,148 @@
+/* Fixed development-only overlay. It derives from the same margin, gutter, and column tokens as the page grid. */
+:root {
+  --debug-bounds-color:color-mix(in srgb,var(--color-secondary) 70%,transparent);
+}
+
+.master-grid-debug { display:none; }
+
+/* Document-coordinate markers stay separate from the fixed viewport grid. */
+.debug-overlay { display:none; }
+
+body.grid-debug-enabled .debug-overlay {
+  position:absolute;
+  inset:0;
+  z-index:99999;
+  width:100%;
+  min-height:100%;
+  display:block;
+  pointer-events:none;
+}
+
+.debug-viewport-line {
+  position:absolute;
+  top:100svh;
+  left:0;
+  width:100%;
+  height:1px;
+  background:var(--color-primary);
+  pointer-events:none;
+}
+
+.debug-viewport-label {
+  position:absolute;
+  right:var(--space-8);
+  bottom:var(--space-4);
+  color:var(--color-primary);
+  font-family:var(--font-body);
+  font-size:var(--type-metadata);
+  font-weight:var(--type-weight-medium);
+  line-height:var(--type-metadata-line-height);
+  white-space:nowrap;
+}
+
+body.grid-debug-enabled .master-grid-debug {
+  --debug-grid-track:0px;
+  --debug-grid-pitch:var(--grid-gutter);
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  width:calc(100% - (var(--page-margin) * 2));
+  height:100dvh;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(var(--grid-columns),minmax(0,1fr));
+  grid-template-rows:100%;
+  column-gap:var(--grid-gutter);
+  pointer-events:none;
+  outline:1px solid color-mix(in srgb,var(--color-primary) 38%,transparent);
+}
+
+/* JS derives --debug-grid-track from this element's real grid width; rows reuse it as their height. */
+body.grid-debug-enabled .master-grid-debug::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  background-image:linear-gradient(to bottom, color-mix(in srgb,var(--color-primary) 4.5%,transparent) 0 calc(var(--debug-grid-track) - 1px), color-mix(in srgb,var(--color-primary) 28%,transparent) calc(var(--debug-grid-track) - 1px) var(--debug-grid-track), color-mix(in srgb,var(--color-paper) 46%,transparent) var(--debug-grid-track) var(--debug-grid-pitch));
+  background-repeat:repeat-y;
+  background-size:100% var(--debug-grid-pitch);
+  pointer-events:none;
+}
+
+body.summer-quest-page.grid-debug-enabled .master-grid-debug::before,
+body.summer-quest-page.grid-debug-enabled .master-grid-debug__rows {
+  display:none;
+}
+
+/* Each span occupies the exact CSS grid track; transparent gaps expose the real gutter. */
+body.grid-debug-enabled .master-grid-debug > span {
+  position:relative;
+  z-index:1;
+  min-width:0;
+  padding-top:4px;
+  border-inline:1px solid color-mix(in srgb,var(--color-primary) 32%,transparent);
+  background:color-mix(in srgb,var(--color-primary) 6.5%,transparent);
+  color:var(--color-primary);
+  font-family:var(--font-body);
+  font-size:var(--type-metadata);
+  font-weight:var(--type-weight-medium);
+  line-height:var(--type-metadata-line-height);
+  text-align:center;
+}
+
+/* Homepage desktop keeps the familiar 12 × 8 labels while revealing the
+   unlabelled half-column and half-row placement anchors underneath. */
+@media (min-width:480px) {
+  body.homepage-v2.grid-debug-enabled .master-grid-debug {
+    height:100dvh;
+  }
+
+  body.homepage-v2.grid-debug-enabled .master-grid-debug::before {
+    background-image:linear-gradient(to bottom, color-mix(in srgb,var(--color-primary) 4.5%,transparent) 0 calc(50% - 1px), color-mix(in srgb,var(--color-primary) 14%,transparent) calc(50% - 1px) 50%, color-mix(in srgb,var(--color-primary) 4.5%,transparent) 50% calc(100% - 1px), color-mix(in srgb,var(--color-primary) 28%,transparent) calc(100% - 1px) 100%);
+    background-size:100% var(--debug-grid-pitch);
+  }
+
+  body.homepage-v2.grid-debug-enabled .master-grid-debug > span {
+    background-color:color-mix(in srgb,var(--color-primary) 6.5%,transparent);
+    background-image:linear-gradient(to right, transparent calc(50% - .5px), color-mix(in srgb,var(--color-primary) 16%,transparent) calc(50% - .5px) calc(50% + .5px), transparent calc(50% + .5px));
+  }
+}
+
+@media (min-width:1024px) {
+  body.homepage-v2.grid-debug-enabled .master-grid-debug { height:100svh; }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  body.homepage-v2.grid-debug-enabled .master-grid-debug > span:nth-child(n + 7) { display:none; }
+}
+
+.master-grid-debug__rows {
+  position:absolute;
+  inset:0;
+  z-index:3;
+  pointer-events:none;
+}
+
+.master-grid-debug__row-label {
+  position:absolute;
+  left:-2rem;
+  color:var(--color-primary);
+  font-family:var(--font-body);
+  font-size:var(--type-metadata);
+  font-weight:var(--type-weight-medium);
+  line-height:var(--type-metadata-line-height);
+  pointer-events:none;
+}
+
+/* The element retains twelve labels; hide labels outside the active shared column count. */
+@media (max-width:1023px) {
+  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 9) { display:none; }
+}
+
+@media (max-width:767px) {
+  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 5) { display:none; }
+}
+
+@media (max-width:479px) {
+  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 2) { display:none; }
+}
