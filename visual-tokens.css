@@ -1,0 +1,51 @@
+/* Shared visual values only: safe for standalone documents and embeds. */
+:root {
+  --color-paper:#F4F5F8;
+  --color-ink:#171619;
+  --color-primary:#D93E6A;
+  --color-secondary:#4766B0;
+  --color-accent:#EF7832;
+  --color-atmosphere-lilac:#C5B8D6;
+  --color-atmosphere-blue:#B4C7D9;
+  --color-atmosphere-pink:#DDB9C5;
+  --color-atmosphere-butter:#EBD9A4;
+  --color-atmosphere-apricot:#F2B07F;
+  --font-body:"Figtree",Arial,sans-serif;
+  --type-body:1.0625rem;
+  --type-body-line-height:1.6;
+  --type-metadata:.875rem;
+  --type-subtitle-sm:1.25rem;
+}
+
+/*
+ * SPACING SYSTEM
+ * Base scale: --space-4 through --space-160.
+ * Semantic aliases cover text, controls, components, blocks, and fluid layout
+ * spacing. Use rem-based tokens for layout/component spacing; use em only for
+ * local typography relationships.
+ */
+:root {
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-96: 6rem;
+  --space-128: 8rem;
+  --space-160: 10rem;
+
+  --space-text: var(--space-16);
+  --space-block: var(--space-24);
+
+  --space-chapter: clamp(2.5rem, 4vw, 4rem);
+  --space-major-break: clamp(4rem, 7vw, 6rem);
+  --space-hero-to-title: clamp(2rem, 4vw, 3rem);
+  --space-title-to-content: clamp(3rem, 5vw, 4rem);
+}
+
+/* Shared color derivatives and typography values; font faces remain in display-font.css. */
+:root {           --color-ink-3:color-mix(in srgb,var(--color-ink) 3%,transparent); --text-muted:color-mix(in srgb,var(--color-ink) 68%,var(--color-paper)); --font-heading:"Salute",serif; --font-heading-backup:"Gloock",Georgia,serif;  --font-accent:"Debug Accent missele",cursive; --type-heading-xl:clamp(4rem,7vw,5rem); --type-heading-lg:clamp(3rem,5.1vw,3.75rem); --type-heading-md:clamp(2.5rem,4.2vw,3.5rem); --type-heading-sm:2.5rem; --type-heading-xs:1.875rem; --type-heading-xxs:1.5rem; --type-heading-xl-line-height:1.08; --type-heading-lg-line-height:1.10; --type-heading-md-line-height:1.12; --type-heading-sm-line-height:1.15; --type-heading-xs-line-height:1.16; --type-heading-xxs-line-height:1.18; --type-subtitle-lg:1.875rem; --type-subtitle-md:1.5rem;  --type-subtitle-xs:1.125rem; --type-subtitle-lg-line-height:1.18; --type-subtitle-md-line-height:1.18; --type-subtitle-sm-line-height:1.45; --type-subtitle-xs-line-height:1.45;    --type-metadata-line-height:1.35; --type-caption:.875rem; --type-caption-line-height:1.45; --type-label:0.875rem; /* 14px */ --type-label-line-height:1.25; --type-control:.9375rem; --type-control-line-height:1.18; --type-accent-sm:1.5rem; --type-accent-md:2.25rem; --type-accent-lg:3rem; --type-weight-regular:400; --type-weight-medium:500; --type-weight-semibold:600; }

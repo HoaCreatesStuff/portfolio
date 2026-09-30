@@ -118,7 +118,7 @@
     else if (viewMode === "overview" || viewMode === "all") renderOverview();
     else renderPanel(selectedPrincipleId);
   };
-  const selectPrinciple = (id, source) => {
+  const selectPrinciple = (id) => {
     if (indexFor(id) === -1) return;
     viewMode = "selected";
     selectedPrincipleId = id;
@@ -128,25 +128,24 @@
   };
   const setOverviewMode = () => { viewMode = "overview"; previewPrincipleId = null; renderFromState(); postViewState(); };
   const setAllMode = () => { viewMode = "all"; previewPrincipleId = null; renderFromState(); postViewState(); };
-  const collapseToDefault = () => selectPrinciple(principles[0].id, "collapse-all");
 
   document.querySelector("#principle-previous")?.addEventListener("click", () => {
     if (viewMode === "overview" || viewMode === "all") {
-      selectPrinciple(principles[principles.length - 1].id, "previous");
+      selectPrinciple(principles[principles.length - 1].id);
       return;
     }
     const index = indexFor(selectedPrincipleId);
     if (index === 0) setAllMode();
-    else selectPrinciple(principles[index - 1].id, "previous");
+    else selectPrinciple(principles[index - 1].id);
   });
   document.querySelector("#principle-next")?.addEventListener("click", () => {
     if (viewMode === "overview" || viewMode === "all") {
-      selectPrinciple(principles[0].id, "next");
+      selectPrinciple(principles[0].id);
       return;
     }
     const index = indexFor(selectedPrincipleId);
     if (index === principles.length - 1) setAllMode();
-    else selectPrinciple(principles[index + 1].id, "next");
+    else selectPrinciple(principles[index + 1].id);
   });
   showAll?.addEventListener("click", () => viewMode === "all" ? setOverviewMode() : setAllMode());
   frame?.addEventListener("load", () => {
@@ -159,7 +158,7 @@
       postDiagramCopy();
       return;
     }
-    if (event.data?.type === "summer-quest-principle-request") selectPrinciple(event.data.id, "visual");
+    if (event.data?.type === "summer-quest-principle-request") selectPrinciple(event.data.id);
     if (event.data?.type === "summer-quest-principle-mode-request") event.data.mode === "all" ? setAllMode() : setOverviewMode();
     if (event.data?.type === "summer-quest-principle-state") {
       previewPrincipleId = event.data.preview ? event.data.id : null;

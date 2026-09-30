@@ -24,18 +24,14 @@
 .opening-story .project-details-band .details dd,
 .opening-story .impact-metric { margin:0; padding:0; }
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
   .project-details-band { grid-column:6 / span 3; grid-row:2; }
-  .project-details-band .details { grid-template-columns:min-content minmax(0,1fr); }
-  .opening-story { grid-template-columns:repeat(8,minmax(0,1fr)); }
   .opening-story-heading { grid-column:1 / span 6; }
   .opening-copy { grid-column:1 / span 4; }
 }
 
 @media (max-width:640px) {
   .project-details-band { grid-column:1 / -1; grid-row:auto; }
-  .project-details-band .details { grid-template-columns:min-content minmax(0,1fr); }
-  .opening-story { grid-template-columns:repeat(4,minmax(0,1fr)); padding:var(--space-major-break) 0; }
   .opening-story-heading,.opening-copy { grid-column:1 / -1; }
   .opening-copy { margin-top:0; }
 }

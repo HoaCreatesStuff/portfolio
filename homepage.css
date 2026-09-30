@@ -31,61 +31,11 @@
 .homepage-v2 .site-logo {
   grid-column:2;
   grid-row:1;
-  display:inline-flex;
-  align-items:center;
-  gap:var(--space-12);
   align-self:start;
   padding:0;
   text-decoration:none;
   pointer-events:auto;
   transform:translateY(calc(var(--v2-row) * .5));
-}
-
-.site-logo__identity {
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-}
-
-.site-logo__mark,
-.site-logo__type {
-  display:block;
-  width:auto;
-}
-
-.site-logo__mark { height:2.5rem; }
-.site-logo__type { height:1.5rem; }
-
-.site-logo__mark {
-  transform-origin:center;
-  transition:transform 400ms ease;
-  will-change:transform;
-}
-
-.site-logo:hover .site-logo__mark,
-.site-logo:focus-visible .site-logo__mark {
-  transform:rotate(360deg);
-}
-
-.site-logo__pronunciation {
-  position:absolute;
-  top:50%;
-  left:100%;
-  margin:0;
-  color:color-mix(in srgb,var(--color-ink) 50%,transparent);
-  white-space:nowrap;
-  text-transform:none;
-  opacity:0;
-  clip-path:inset(0 100% 0 0);
-  transform:translate(-10px,-50%);
-  transition:opacity 250ms ease-out 70ms,transform 300ms ease-out 70ms,clip-path 300ms ease-out 70ms;
-}
-
-.site-logo:hover .site-logo__pronunciation,
-.site-logo:focus-visible .site-logo__pronunciation {
-  opacity:1;
-  clip-path:inset(0 0 0 0);
-  transform:translate(var(--space-8),-50%);
 }
 
 .homepage-v2 .site-nav {
@@ -343,11 +293,6 @@ body.homepage-v2.bounds-debug-enabled .editorial-index > * { outline:1px dashed 
  * Whole-grid labels remain C1–C12 / R1–R8; half steps are placement anchors only.
  */
 
-@media (min-width:1440px) {
-  .editorial-index__intro { grid-column:7 / 11; grid-row:5 / span 5; }
-  .editorial-project--flagship { grid-column:2 / span 4; }
-}
-
 @media (min-width:1024px) {
   .homepage-v2 {
     --home-half-column:calc(100vw / 24);
@@ -373,8 +318,6 @@ body.homepage-v2.bounds-debug-enabled .editorial-index > * { outline:1px dashed 
     overflow:hidden;
   }
 
-  .site-logo__mark { height:2.5rem; }
-  .site-logo__type { height:1.5rem; }
   .homepage-v2 .site-logo {
     grid-column:2 / 4;
     grid-row:2;

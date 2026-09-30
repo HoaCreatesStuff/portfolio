@@ -28,25 +28,6 @@
 .case-study-footer__link:focus-visible { color:var(--color-primary); }
 .case-study-footer__link:focus-visible { outline:1px solid var(--color-primary); outline-offset:4px; }
 
-/* Keep the rotary as the scroll endpoint while showing its footer below the stage. */
-.performa-match-page:has(.chapter-preview.is-enhanced) {
-  position:relative;
-}
-.performa-match-page:has(.chapter-preview.is-enhanced) > main {
-  display:flow-root;
-}
-.performa-match-page:has(.chapter-preview.is-enhanced) .chapter-preview {
-  margin-bottom:max(
-    calc(var(--space-160) + var(--preview-footer-adjustment, 0px)),
-    calc(var(--preview-footer-height, 0px) + var(--space-16))
-  );
-}
-.performa-match-page:has(.chapter-preview.is-enhanced) > .case-study-footer {
-  position:absolute;
-  bottom:0;
-  margin-top:0;
-}
-
 @media (max-width:640px) {
   .case-study-footer__nav { padding-block:var(--space-16) var(--space-24); }
   .case-study-footer__link { font-size:var(--type-metadata); line-height:var(--type-metadata-line-height); }

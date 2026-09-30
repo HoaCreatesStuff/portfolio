@@ -1,20 +1,5 @@
 const debugEnabled = new URLSearchParams(window.location.search).get('debug') === 'true';
 
-const updateGridMetrics = () => {
-  const grid = document.querySelector('.page-grid');
-  if (!grid) return null;
-  const styles = getComputedStyle(grid);
-  const columns = Number.parseInt(styles.getPropertyValue('--grid-columns'), 10) || 1;
-  const bounds = grid.getBoundingClientRect();
-  const gutter = Number.parseFloat(getComputedStyle(grid).columnGap) || 0;
-  const track = (bounds.width - (columns - 1) * gutter) / columns;
-  const pitch = track + gutter;
-  if (track <= 0 || pitch <= 0) return null;
-
-  document.documentElement.style.setProperty('--grid-track-size', `${track}px`);
-  return { columns, gutter, track, pitch };
-};
-
 const updateMasterGridOverlay = () => {
   const metrics = updateGridMetrics();
   const overlay = document.querySelector('.master-grid-debug');
@@ -51,13 +36,10 @@ const updateMasterGridOverlay = () => {
 };
 
 window.addEventListener('resize', () => {
-  updateGridMetrics();
   if (debugEnabled) updateMasterGridOverlay();
 });
 
-updateGridMetrics();
-
-// Grid metrics above also support the public layout; controls and saved experiments do not.
+// Controls and saved experiments are gated; grid-metrics.js owns public measurement.
 if (debugEnabled) {
   document.body.classList.add('debug-enabled');
 
@@ -104,7 +86,7 @@ if (debugEnabled) {
     const family = font?.family;
     const complete = () => requestAnimationFrame(() => window.dispatchEvent(new CustomEvent('debugfontchange', { detail: { role, value } })));
     if (!family || !document.fonts?.load) return complete();
-    document.fonts.load(`400 1em "${family}"`).then(complete, complete);
+    document.fonts.load(`${font?.weight || 400} 1em "${family}"`).then(complete, complete);
   };
 
   const initializeFontSelector = (role, fallback) => {

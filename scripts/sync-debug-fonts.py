@@ -117,9 +117,7 @@ for group, source, destination_relative in GROUPS:
 for source_font, label in EXTRA_ACCENT_FONTS:
     if not source_font.is_file():
         continue
-    destination_relative = Path("assets/fonts/debug/accent")
-    target_font = PROJECT_ROOT / destination_relative / source_font.name
-    shutil.copy2(source_font, target_font)
+    # Canonical fonts are shared by production and debug; never generate copies.
     base_slug = slugify(label) or "font"
     slug = base_slug
     suffix = 2
@@ -131,16 +129,19 @@ for source_font, label in EXTRA_ACCENT_FONTS:
         "value": f"debug-accent-{slug}",
         "label": label,
         "family": f"Debug Accent {slug}",
-        "path": (destination_relative / source_font.name).as_posix(),
+        "path": source_font.relative_to(PROJECT_ROOT).as_posix(),
         "format": FORMATS[source_font.suffix.lower()],
     })
+
+# Google Fonts: Playfair Display, Black (900). Loaded only when selected.
+registry["display"].append({'value': 'debug-display-playfair-display-black', 'label': 'Playfair Display Black', 'family': 'Playfair Display', 'path': 'https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf', 'format': 'truetype', 'weight': 900})
 
 font_faces = "\n\n".join(
     "@font-face {\n"
     f"  font-family: \"{css_string(font['family'])}\";\n"
     f"  src: url(\"{css_string(font['path'])}\") format(\"{font['format']}\");\n"
     "  font-style: normal;\n"
-    "  font-weight: 400;\n"
+    f"  font-weight: {font.get('weight', 400)};\n"
     "  font-display: swap;\n"
     "}"
     for fonts in registry.values() for font in fonts
@@ -151,15 +152,11 @@ states = "\n\n".join(
     f"body.debug-enabled[data-display-font=\"{font['value']}\"] {{\n"
     f"  --font-heading: \"{css_string(font['family'])}\", Georgia, serif;\n"
     f"  --font-display: \"{css_string(font['family'])}\", Georgia, serif;\n"
-    "  --font-display-weight: 400;\n"
-    "  --font-display-scale: 1;\n"
     "}"
     for font in registry["display"]
 ) + "\n\n" + "\n\n".join(
     f"body.debug-enabled[data-accent-font=\"{font['value']}\"] {{\n"
     f"  --font-accent: \"{css_string(font['family'])}\", cursive;\n"
-    "  --font-accent-weight: 400;\n"
-    "  --font-accent-scale: 1;\n"
     "}"
     for font in registry["accent"]
 )

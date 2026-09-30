@@ -124,7 +124,6 @@
   transform:scale(1) rotate(360deg);
   transition-delay:340ms;
 }
-.contact-note { margin:var(--space-8) 0 0; color:var(--text-muted); font-size:var(--type-caption); }
 .contact-page :is(a,button):focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }
 .contact-page .site-nav a { display:inline-flex; align-items:center; min-height:44px; }
 @media (min-width:768px) and (max-width:1023px) {

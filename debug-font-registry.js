@@ -7,6 +7,14 @@ window.DEBUG_FONT_OPTIONS = {
       "family": "Debug Display cratch-regular",
       "path": "assets/fonts/debug/display/Cratch-Font/OTF/Cratch-Regular.otf",
       "format": "opentype"
+    },
+    {
+      "value": "debug-display-playfair-display-black",
+      "label": "Playfair Display Black",
+      "family": "Playfair Display",
+      "path": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf",
+      "format": "truetype",
+      "weight": 900
     }
   ],
   "accent": [
@@ -21,14 +29,14 @@ window.DEBUG_FONT_OPTIONS = {
       "value": "debug-accent-simple-cakes",
       "label": "Simple Cakes",
       "family": "Debug Accent simple-cakes",
-      "path": "assets/fonts/debug/accent/SimpleCakes-lxq5w.ttf",
+      "path": "assets/fonts/SimpleCakes-lxq5w.ttf",
       "format": "truetype"
     },
     {
       "value": "debug-accent-missele",
       "label": "Missele",
       "family": "Debug Accent missele",
-      "path": "assets/fonts/debug/accent/Misselle-FreeDemo-BF6a71b09248b40.otf",
+      "path": "assets/fonts/Misselle-FreeDemo-BF6a71b09248b40.otf",
       "format": "opentype"
     }
   ]

@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Debug Accent simple-cakes";
-  src: url("assets/fonts/debug/accent/SimpleCakes-lxq5w.ttf") format("truetype");
+  src: url("assets/fonts/SimpleCakes-lxq5w.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -28,24 +28,30 @@
 body.debug-enabled[data-display-font="debug-display-cratch-regular"] {
   --font-heading: "Debug Display cratch-regular", Georgia, serif;
   --font-display: "Debug Display cratch-regular", Georgia, serif;
-  --font-display-weight: 400;
-  --font-display-scale: 1;
 }
 
 body.debug-enabled[data-accent-font="debug-accent-bongky"] {
   --font-accent: "Debug Accent bongky", cursive;
-  --font-accent-weight: 400;
-  --font-accent-scale: 1;
 }
 
 body.debug-enabled[data-accent-font="debug-accent-simple-cakes"] {
   --font-accent: "Debug Accent simple-cakes", cursive;
-  --font-accent-weight: 400;
-  --font-accent-scale: 1;
 }
 
 body.debug-enabled[data-accent-font="debug-accent-missele"] {
   --font-accent: "Debug Accent missele", cursive;
-  --font-accent-weight: 400;
-  --font-accent-scale: 1;
+}
+
+/* Google Fonts Black face; other display weights are intentionally not loaded. */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+body.debug-enabled[data-display-font="debug-display-playfair-display-black"] {
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, serif;
 }

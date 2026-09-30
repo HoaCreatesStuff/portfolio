@@ -1,4 +1,16 @@
+body.prism-page.bounds-debug-enabled .grid-diagnostic .opening-copy::after {
+  content:"opening-copy: master cols 4–9";
+}
+body.prism-page.bounds-debug-enabled .grid-diagnostic .project-details-band::after {
+  content:"summary: master cols 4–9";
+}
+body.prism-page.bounds-debug-enabled .grid-diagnostic .opening-story-heading::after {
+  content:"story heading: master cols 2–11";
+}
+
 /* Prism opening alignment on the twelve-column desktop grid. */
+.prism-page .opening-story-heading h2 { text-wrap:wrap; }
+
 @media (min-width:1024px) {
   .prism-page .opening-story-heading { grid-column:2 / 12; }
   .prism-page .opening-copy { grid-column:3 / 11; }
@@ -42,10 +54,10 @@
   .prism-page .prism-summary .details:last-child { grid-column:2; }
 }
 @media (min-width:768px) and (max-width:1023px) {
-  .prism-page .prism-summary { grid-column:1 / -1; }
+  body.prism-page .opening-story > .opening-copy { grid-column:2 / 8; }
 }
 @media (max-width:767px) {
-  .prism-page .prism-summary { grid-column:1 / -1; }
+  body.prism-page .opening-story > .opening-copy { grid-column:1 / -1; }
 }
 
 /* Keep Prism's nested opening grid independent of PerformaMatch's intro layout. */
@@ -69,3 +81,12 @@ body.prism-page .opening-story > .project-details-band { grid-row:3; }
   body.prism-page .opening-story > .opening-copy,
   body.prism-page .opening-story > .project-details-band { grid-column:3 / 11; }
 }
+
+@media (max-width:1023px) {
+  .prism-page .prism-summary { grid-column:1 / -1; }
+}
+
+/* Prism owns the intro presentation formerly inherited through PerformaMatch. */
+.prism-page .opening-copy > :first-child { margin-top:0; }
+.prism-page .project-details-band { margin-top:calc(var(--space-32) - var(--space-block)); }
+.prism-page .project-details-band .details { column-gap:var(--space-text); }

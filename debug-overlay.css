@@ -1,3 +1,69 @@
+/* Temporary reusable development toolbar. */
+.debug-toolbar {
+  position:fixed;
+  top:var(--space-8);
+  left:var(--space-8);
+  z-index:10000;
+  display:none;
+  flex-wrap:wrap;
+  gap:var(--space-8);
+  max-width:calc(100vw - (var(--space-8) * 2));
+  padding:var(--space-8);
+  background:color-mix(in srgb,var(--color-paper) 90%,transparent);
+  border:1px solid color-mix(in srgb,var(--color-ink) 25%,transparent);
+}
+
+body.debug-enabled .debug-toolbar { display:flex; }
+
+body.debug-enabled .debug-toolbar[hidden] { display:none; }
+
+.debug-toolbar button {
+  border:1px solid color-mix(in srgb,var(--color-ink) 35%,transparent);
+  padding:4px var(--space-8);
+  background:transparent;
+  color:var(--color-ink);
+  font:var(--type-weight-semibold) var(--type-control)/var(--type-control-line-height) var(--font-body);
+}
+
+.debug-toolbar button[aria-pressed="true"] { background:color-mix(in srgb,var(--color-accent) 20%,transparent); }
+
+/* Development-only: reveal every case-study layout box while Bounds is enabled. */
+body.bounds-debug-enabled main * {
+  outline:1px dashed var(--debug-bounds-color);
+  outline-offset:-1px;
+}
+
+.debug-toolbar button[data-debug-toggle="bounds"][aria-pressed="true"] {
+  border-color:var(--debug-bounds-color);
+  background:color-mix(in srgb,var(--color-secondary) 12%,transparent);
+  color:var(--color-secondary);
+}
+
+.debug-toolbar-display {
+  display:flex;
+  align-items:center;
+  gap:var(--space-4);
+  color:var(--color-ink);
+  font:var(--type-weight-semibold) var(--type-control)/var(--type-control-line-height) var(--font-body);
+}
+
+.debug-toolbar select {
+  max-width:min(13rem, 38vw);
+  border:1px solid color-mix(in srgb,var(--color-ink) 35%,transparent);
+  padding:4px;
+  background:transparent;
+  color:var(--color-ink);
+  font:inherit;
+}
+
+/* About-only hero-image selector: mirrors the active debug-control treatment. */
+.debug-toolbar-hero select { background:color-mix(in srgb,var(--color-accent) 20%,transparent); }
+
+/* Font experiments apply only after the explicit URL gate initializes. */
+body.debug-enabled[data-display-font="salute"] { --font-heading:"Salute",serif; }
+body.debug-enabled[data-display-font="gloock"] { --font-heading:"Gloock",Georgia,serif; }
+body.debug-enabled[data-accent-font="esthentic-demo"] { --font-accent:"Esthentic DEMO",cursive; }
+
 /* Fixed development-only overlay. It derives from the same margin, gutter, and column tokens as the page grid. */
 :root {
   --debug-bounds-color:color-mix(in srgb,var(--color-secondary) 70%,transparent);
@@ -134,15 +200,4 @@ body.grid-debug-enabled .master-grid-debug > span {
   pointer-events:none;
 }
 
-/* The element retains twelve labels; hide labels outside the active shared column count. */
-@media (max-width:1023px) {
-  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 9) { display:none; }
-}
-
-@media (max-width:767px) {
-  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 5) { display:none; }
-}
-
-@media (max-width:479px) {
-  body.grid-debug-enabled .master-grid-debug > span:nth-child(n + 2) { display:none; }
-}
+/* Responsive label visibility (including generated rows) is owned by responsive-grid.css. */

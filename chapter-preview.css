@@ -1,0 +1,95 @@
+/* Shared chapter preview and its footer coordination. */
+.chapter-preview-page .case-study-progress-note {
+  margin-top:var(--space-96);
+  padding-inline:var(--pad);
+  text-align:center;
+}
+.chapter-preview-page .case-study-progress-note .accent-note {
+  margin:0;
+  line-height:1.25;
+}
+
+/* Temporary chapter preview: the ordered list is the no-script and reduced-motion fallback. */
+.chapter-preview-page .chapter-preview { padding-block:var(--space-major-break); }
+.chapter-preview-page .chapter-preview__list {
+  row-gap:var(--space-major-break);
+  padding:0;
+  list-style:none;
+}
+.chapter-preview-page .chapter-preview__item {
+  grid-column:4 / 10;
+  min-width:0;
+}
+.chapter-preview-page .chapter-preview__item .chapter-lockup__number {
+  font-family:var(--font-heading);
+  font-size:var(--type-heading-xs);
+  font-weight:var(--type-weight-regular);
+  line-height:var(--type-heading-xs-line-height);
+}
+.chapter-preview-page .chapter-preview__item .chapter-lockup__headline {
+  margin:0;
+  font-size:var(--type-heading-xs);
+  line-height:var(--type-heading-xs-line-height);
+  white-space:normal;
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .chapter-preview-page .chapter-preview__item { grid-column:2 / 8; }
+}
+
+@media (max-width:767px) {
+  .chapter-preview-page .chapter-preview__item { grid-column:1 / -1; }
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  .chapter-preview-page .chapter-preview.is-enhanced {
+    height:var(--preview-window-height);
+    margin-bottom:max(0px, calc((100svh - var(--preview-window-height)) / 2));
+    padding:0;
+  }
+  .chapter-preview-page .chapter-preview.is-enhanced .chapter-preview__stage {
+    position:sticky;
+    top:max(0px, calc((100svh - var(--preview-window-height)) / 2));
+    height:var(--preview-window-height);
+  }
+  .chapter-preview-page .chapter-preview.is-enhanced .chapter-preview__mask {
+    height:100%;
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+    mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+  }
+  .chapter-preview-page .chapter-preview.is-enhanced .chapter-preview__list {
+    grid-auto-rows:var(--preview-step);
+    row-gap:0;
+    align-items:center;
+    transform:translate3d(0,var(--preview-stack-y),0);
+    will-change:transform;
+  }
+  .chapter-preview-page .chapter-preview.is-enhanced .chapter-preview__item {
+    opacity:var(--preview-opacity,0);
+    filter:blur(var(--preview-blur,0px));
+    transform:scale(var(--preview-scale,1));
+    transform-origin:center;
+    will-change:opacity,filter;
+  }
+}
+
+/* Keep the rotary as the scroll endpoint while showing its footer below the stage. */
+.chapter-preview-page:has(.chapter-preview.is-enhanced) {
+  position:relative;
+}
+.chapter-preview-page:has(.chapter-preview.is-enhanced) > main {
+  display:flow-root;
+}
+.chapter-preview-page:has(.chapter-preview.is-enhanced) .chapter-preview {
+  margin-bottom:max(
+    calc(var(--space-160) + var(--preview-footer-adjustment, 0px)),
+    calc(var(--preview-footer-height, 0px) + var(--space-16))
+  );
+}
+.chapter-preview-page:has(.chapter-preview.is-enhanced) > .case-study-footer {
+  position:absolute;
+  bottom:0;
+  margin-top:0;
+}
+

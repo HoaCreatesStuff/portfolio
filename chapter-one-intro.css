@@ -12,43 +12,15 @@
 .chapter-lockup__content > .type-label { grid-column:2; grid-row:1; margin:0; }
 .chapter-lockup__headline { grid-column:2; grid-row:2; align-self:baseline; }
 .chapter-lockup__headline:not(.heading) { margin:0; }
-
-/* Chapter 04 subtitle follows its headline within the shared lockup grid. */
-.design .chapter-lockup__headline,
-.outcomes .chapter-lockup__headline { margin-bottom:0; }
-.design .chapter-lockup__subhead,
-.outcomes .chapter-lockup__subhead { margin-top:var(--space-8); }
 .chapter-lockup__subhead { grid-column:2; grid-row:3; margin:0; }
 
 /* Chapter 01 introductory composition only. */
 @media (min-width:1024px) {
-  .chapter-problem-lockup { grid-column:2 / span 10; grid-row:1 / span 2; }
-  .chapter-problem-lockup .chapter-lockup__headline { white-space:nowrap; }
   .chapter-standard-lockup { grid-column:2 / span 10; }
-  .principles-lockup { grid-column:2 / span 10; }
-  .chapter-problem-content { grid-column:3 / span 8; grid-row:3; }
-  .chapter-problem-intro { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); column-gap:var(--gutter); }
-  .chapter-problem-intro > :is(p,h3) { grid-column:2 / span 6; }
-  .chapter-problem-assumptions { margin-inline:calc((100% - (var(--gutter) * 7)) / 8 + var(--gutter)); }
-  .chapter-problem-question { width:auto; margin-inline:calc((100% - (var(--gutter) * 7)) / 8 + var(--gutter)); }
 }
-
-.chapter-problem .chapter-problem-assumptions {
-  margin-top:var(--space-text);
-  background:color-mix(in srgb, var(--color-atmosphere-butter) 10%, transparent);
-}
-.chapter-problem-intro > .type-heading-xxs:first-child { margin-top:var(--space-text); }
-.chapter-problem-assumptions > .type-label { margin:0 0 var(--space-text); }
-.chapter-problem-assumptions ol { margin:var(--space-text) 0 0; padding:0 0 0 var(--space-block); }
-.chapter-problem-assumptions li { margin:0 0 var(--space-text); padding:0; }
-.chapter-problem-assumptions li:last-child { margin-bottom:0; }
-.chapter-problem-assumptions + .chapter-problem-question { margin-top:var(--space-text); }
-.chapter-problem-question.question-repeat { margin-bottom:0; }
 
 @media (min-width:768px) and (max-width:1023px) {
-  .chapter-problem-lockup { grid-column:1 / -1; grid-row:1 / span 2; }
   .chapter-standard-lockup { grid-column:1 / -1; }
-  .chapter-problem-content { grid-column:4 / -1; grid-row:3; }
 }
 
 @media (max-width:767px) {

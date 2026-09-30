@@ -1,6 +1,6 @@
-// Temporary paper-strip chapter preview for the unfinished PerformaMatch case study.
+// Temporary paper-strip chapter preview shared by unfinished case studies.
 (() => {
-  const section = document.querySelector('.performa-match-page .chapter-preview');
+  const section = document.querySelector('.chapter-preview-page .chapter-preview');
   if (!section || !CSS.supports('position', 'sticky')) return;
 
   const stage = section.querySelector('.chapter-preview__stage');
