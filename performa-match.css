@@ -115,3 +115,9 @@ body.performa-match-page.bounds-debug-enabled .grid-diagnostic .opening-story-he
     margin-inline:var(--pad);
   }
 }
+
+/* Keep navigation within narrow phone viewports. */
+.performa-match-page:not(.prism-page) .site-nav { flex-wrap:wrap; }
+@media (max-width:359px) {
+  .performa-match-page:not(.prism-page) .opening-story-heading .heading { font-size:40px; overflow-wrap:anywhere; }
+}
