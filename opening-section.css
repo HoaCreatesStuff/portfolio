@@ -15,7 +15,15 @@
   margin:0 auto;
   padding:var(--space-major-break) 0;
 }
-.opening-story-heading { grid-column:1 / span 7; }
+.opening-story-heading {
+  grid-column:1 / span 7;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:auto auto;
+  row-gap:var(--space-8);
+  margin-bottom:calc(var(--space-title-to-content) - var(--space-block));
+}
+.opening-story-heading > .heading { margin-bottom:0; }
 .opening-story-heading h2:not(.heading) { margin:0; }
 .opening-copy { grid-column:5 / span 3; grid-row:2; width:100%; max-width:none; margin:0; }
 .opening-copy > .accent-note:first-child { margin-top:0; }

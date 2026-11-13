@@ -11,8 +11,10 @@
 .chapter-lockup__number { grid-column:1; grid-row:2; align-self:baseline; margin:0; }
 .chapter-lockup__content > .type-label { grid-column:2; grid-row:1; margin:0; }
 .chapter-lockup__headline { grid-column:2; grid-row:2; align-self:baseline; }
+.chapter-lockup__headline.heading { margin-bottom:0; }
 .chapter-lockup__headline:not(.heading) { margin:0; }
 .chapter-lockup__subhead { grid-column:2; grid-row:3; margin:0; }
+.chapter > .page-grid > .chapter-lockup { margin-bottom:calc(var(--space-title-to-content) - var(--space-text)); }
 
 /* Chapter 01 introductory composition only. */
 @media (min-width:1024px) {
