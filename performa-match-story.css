@@ -8,8 +8,9 @@
 }
 
 .performa-match-story { margin-top:var(--space-major-break); }
+.performa-match-story .performa-chapter { padding-block:var(--space-chapter); }
 .performa-match-story .performa-chapter > .page-grid { row-gap:var(--space-48); }
-.performa-match-story .performa-chapter > .page-grid > .chapter-lockup { margin-bottom:calc(var(--space-title-to-content) - var(--space-48)); }
+.performa-match-story .performa-chapter > .page-grid > .chapter-lockup { margin-bottom:calc(var(--space-block) - var(--space-48)); }
 .performa-match-story .chapter-lockup { grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto; }
 .performa-match-story .chapter-lockup__content > .type-label { grid-column:1; grid-row:1; }
 .performa-match-story .chapter-lockup__headline { grid-column:1; grid-row:2; max-width:none; }
@@ -135,6 +136,8 @@
   background:var(--color-paper);
 }
 .performa-match-story .performa-intermission { background:var(--color-ink); color:var(--color-paper); text-align:center; }
+.performa-match-story .performa-chapter:has(+ .performa-intermission) { padding-bottom:calc(2 * var(--space-chapter)); }
+.performa-match-story .performa-intermission + .performa-chapter { padding-top:calc(2 * var(--space-chapter)); }
 .performa-match-story .performa-intermission .chapter-lockup { margin-bottom:0; }
 .performa-match-story .performa-intermission .type-label { color:var(--color-paper); }
 .performa-match-story .performa-intermission .chapter-lockup__headline { color:var(--color-atmosphere-butter); font-size:var(--type-heading-sm); line-height:var(--type-heading-sm-line-height); }
@@ -161,6 +164,7 @@
   .performa-match-story .performa-model-interactive { grid-column:1 / -1; }
   .performa-model-interactive iframe { height:max(32rem,calc(66.3cqw + 8rem)); }
   .performa-match-story .performa-chapter > .page-grid { row-gap:var(--space-32); }
+  .performa-match-story .performa-chapter > .page-grid > .chapter-lockup { margin-bottom:calc(var(--space-block) - var(--space-32)); }
 }
 
 @media (max-width:600px) {
@@ -232,13 +236,14 @@
 .performa-validation__detail { margin:0; font-size:var(--type-body); line-height:var(--type-body-line-height); }
 .performa-validation__limitation { margin-top:var(--space-24); color:var(--text-muted); }
 .performa-validation__limitation .performa-validation__label { color:var(--text-muted); }
-.performa-validation__note { margin:0 0 var(--space-24); }
+.performa-validation__note { margin:0; }
 .performa-validation__note summary { display:block; position:relative; padding-right:var(--space-32); cursor:pointer; font-size:var(--type-body); line-height:var(--type-body-line-height); list-style:none; }
 .performa-validation__note summary::-webkit-details-marker { display:none; }
 .performa-validation__note summary::after { content:'+'; position:absolute; top:0; right:0; line-height:var(--type-label-line-height); }
 .performa-validation__note[open] summary::after { content:'−'; }
 .performa-validation__note summary > span { display:block; }
-.performa-validation__footnote { margin:var(--space-8) 0 var(--space-24); color:var(--text-muted); font-size:var(--type-body); line-height:var(--type-body-line-height); }
+.performa-validation__footnote { margin:var(--space-8) 0 0; color:var(--text-muted); font-size:var(--type-body); line-height:var(--type-body-line-height); }
+.performa-validation__note[open] .performa-validation__grid { margin-top:var(--space-24); }
 @media(max-width:767px) { .performa-validation__grid { grid-template-columns:minmax(0,1fr); gap:var(--space-32); } .performa-validation__panel { display:flex; flex-direction:column; grid-row:auto; } .performa-validation__panel:not(:first-child) { border-top:1px solid color-mix(in srgb,var(--color-ink) 30%,transparent); } }
 
 /* Discovery channels: proportional circles with inspectable schematic overlaps. */
@@ -534,11 +539,21 @@
 }
 
 @media (min-width:1024px) {
+  .performa-match-story .performa-chapter:not(.performa-intermission) > .page-grid > .chapter-lockup,
+  .performa-match-story #plot-twist > .page-grid > .chapter-lockup,
+  .performa-match-story .performa-chapter:not(.performa-intermission) > .page-grid > .chapter-copy,
+  #curtain-calls .performa-story-aside { grid-column:3 / 11; }
   .performa-match-story .chapter-copy,
   #rising-conflict .chapter-copy,
   #role-change .chapter-copy,
   #plot-twist .chapter-copy,
   .performa-match-story .performa-findings-pair,
-  #rising-conflict :is(.performa-finding-access,.performa-finding-workflow) { grid-column:4 / 12; }
-  #rising-conflict :is(.performa-finding-access,.performa-finding-workflow) .performa-story-quote { margin-inline-start:calc(-1 * (var(--grid-track-size) + var(--gutter))); }
+  #rising-conflict :is(.performa-finding-access,.performa-finding-workflow) { grid-column:3 / 11; }
+  #rising-conflict :is(.performa-finding-access,.performa-finding-workflow) .performa-story-quote { margin-inline-start:0; }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .performa-match-story .performa-chapter:not(.performa-intermission) > .page-grid > .chapter-lockup { grid-column:2 / 8; }
+}
+@media (max-width:767px) {
+  .performa-match-story .performa-chapter:not(.performa-intermission) > .page-grid > .chapter-lockup { grid-column:1 / -1; }
 }
