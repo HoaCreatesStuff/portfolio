@@ -19,11 +19,19 @@
     <link rel="stylesheet" href="chapter-one-intro.css">
     <link rel="stylesheet" href="responsive-grid.css">
     <link rel="stylesheet" href="performa-match.css?v=release-readiness-3">
-    <link rel="stylesheet" href="performa-match-story.css?v=aside-align-left-1">
+    <link rel="stylesheet" href="performa-match-story.css?v=discovery-venn-3">
     <link rel="stylesheet" href="case-study-footer.css">
+    <link rel="stylesheet" href="contact.css?v=20260926-cta">
+    <script src="performa-match-chapters.js" defer></script>
+    <script src="performa-assumptions.js" defer></script>
+    <script src="performa-text-reveal.js" defer></script>
+    <script src="performa-discovery.js?v=metadata-2" defer></script>
+    <script src="performa-priorities.js" defer></script>
+    <script src="performa-link-notice.js" defer></script>
+    <script src="performa-validation.js" defer></script>
     <script src="debug-font-registry.js" defer></script>
     <script src="grid-metrics.js" defer></script>
-    <script src="assets/interactive/performamatch-research-treemap/embed.js" defer></script>
+    <script src="assets/interactive/performamatch-research-treemap/embed.js?v=framework-fit-2" defer></script>
     <script src="debug-toolbar.js" defer></script>
       <script src="contact-navigation.js" defer></script>
   </head>
@@ -50,6 +58,14 @@
         <a href="index.html#work">Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <span class="site-nav__contacts" aria-label="Contact links">
+          <a class="site-nav__icon site-nav__icon--linkedin" href="https://www.linkedin.com/in/hoapnguyen/" target="_blank" rel="noopener noreferrer" aria-label="Hoa Nguyen on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45H16.9v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0h.01Z" /></svg>
+          </a>
+          <a class="site-nav__icon site-nav__icon--email" href="mailto:hoa.p.nguyen48@gmail.com" aria-label="Email Hoa Nguyen">
+            <img src="https://cdn.vectorstock.com/i/500p/05/58/gmail-logo-icon-google-email-vector-50150558.jpg" alt="" />
+          </a>
+        </span>
       </nav>
     </header>
     <main>
@@ -86,6 +102,7 @@
         </section>
       </div>
 
+      <div class="performa-article-layout">
       <div class="performa-match-story">
         <section class="chapter performa-chapter" id="opening-scene" aria-labelledby="opening-scene-heading">
           <div class="page-grid">
@@ -99,22 +116,31 @@
               <p>When my founder friend introduced her latest venture, PerformaMatch, the mission immediately intrigued me. Having briefly fancied myself a background actor at some point, I also had my own taste of casting websites. The process can be a headache to navigate, and access is uneven, so I could see why AI might help artists discover opportunities more efficiently.</p>
               <p>What I was less convinced by was the need for another casting platform.</p>
               <p>By the time I joined, the product direction was already taking shape. I wanted to understand where the existing casting industry was actually failing performers, whether AI could help, and whether a new marketplace could realistically earn a place in an already crowded industry.</p>
-              <h3>I took three assumptions into the research:</h3>
-              <ul class="performa-story-list">
-                <li><strong>AI personalization could improve casting relevance.</strong> Better matching could surface roles based on skills, experience, goals, and fit.</li>
-                <li><strong>Performers may value relevance over volume.</strong> Fewer, better-matched opportunities might be more useful than a large stream of weak matches.</li>
-                <li><strong>Equity could differentiate the platform.</strong> Reducing financial barriers and bias could give PerformaMatch a meaningful reason to exist.</li>
-              </ul>
+              <h3 class="performa-assumptions-heading">I took three assumptions into the research:</h3>
+              <div class="performa-assumptions" data-assumptions>
+                <div class="performa-assumptions__item" data-open="true">
+                  <button class="performa-assumptions__trigger" type="button" aria-expanded="true" aria-controls="assumption-1"><span class="performa-assumptions__number">01</span><span>AI personalization could improve casting relevance.</span><span class="performa-assumptions__icon" aria-hidden="true"></span></button>
+                  <div class="performa-assumptions__panel" id="assumption-1" aria-hidden="false"><div><p>Better matching could surface roles based on skills, experience, goals, and fit.</p></div></div>
+                </div>
+                <div class="performa-assumptions__item" data-open="false">
+                  <button class="performa-assumptions__trigger" type="button" aria-expanded="false" aria-controls="assumption-2"><span class="performa-assumptions__number">02</span><span>Performers may value relevance over volume.</span><span class="performa-assumptions__icon" aria-hidden="true"></span></button>
+                  <div class="performa-assumptions__panel" id="assumption-2" aria-hidden="true"><div><p>Fewer, better-matched opportunities might be more useful than a large stream of weak matches.</p></div></div>
+                </div>
+                <div class="performa-assumptions__item" data-open="false">
+                  <button class="performa-assumptions__trigger" type="button" aria-expanded="false" aria-controls="assumption-3"><span class="performa-assumptions__number">03</span><span>Equity could differentiate the platform.</span><span class="performa-assumptions__icon" aria-hidden="true"></span></button>
+                  <div class="performa-assumptions__panel" id="assumption-3" aria-hidden="true"><div><p>Reducing financial barriers and bias could give PerformaMatch a meaningful reason to exist.</p></div></div>
+                </div>
+              </div>
             </div></div>
             <div class="performa-research-row">
               <div class="performa-research-row__copy reading-copy editorial-flow type-body">
                 <h3>The sample was small, so I prioritized range.</h3>
                 <p>The founder envisioned PerformaMatch working across disciplines, career stages, locations, and representation status. </p>
-                <p class="accent-note">Certainly, designing for everyone is every founder’s dream.</p>
+                <p class="accent-note performa-founder-note">Certainly, designing for everyone is every founder’s dream.</p>
                 <p>I looked for performing artists across performance fields and career stages, leaning toward earlier-career performers because I expected them to feel the access and discovery problems more acutely. With only about two weeks to recruit, most participants came through my social network and were based in New York. </p>
               </div>
               <figure class="performa-research-interactive">
-                <iframe data-research-treemap src="assets/interactive/performamatch-research-treemap/index.html?embed=1" title="Research Scope · 69 inputs" loading="lazy"></iframe>
+                <iframe data-research-treemap src="assets/interactive/performamatch-research-treemap/index.html?embed=1&v=label-fit-5" title="Research scope · 69 inputs" loading="lazy"></iframe>
               </figure>
             </div>
           </div>
@@ -130,26 +156,107 @@
             </div>
             <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
               <h3>Relevance couldn’t come at the expense of lead volume.</h3>
-              <p>Participants wanted help finding better-matched opportunities, but not if personalization narrowed the market available to them. Breadth and relevance were complementary needs: 17 of 22 respondents (77%) ranked the number of available roles among their top platform priorities, while 13 (59%) prioritized the relevance of suggested roles.</p>
-              <p>But then came the elephant in the room: where would PerformaMatch get enough job inventory to make matching useful? The concept depended on casting professionals posting directly. The team had also explored integrations with established casting platforms but couldn’t find a viable path. Without those integrations, PerformaMatch would depend heavily on building its own supply, while established platforms already held the listings and industry connections performers relied on. Research showed that performers continued returning to those platforms despite frustrations with costs, navigation, communication, and hard-to-find information. AI and better UX alone could not manufacture the listings and networks that gave those platforms their advantage.</p>
+              <p>Participants wanted help finding better-matched opportunities, but not if personalization narrowed the market available to them. Breadth and relevance were complementary needs.</p>
+              <figure class="performa-priorities performa-media--reading" aria-labelledby="priorities-title">
+                <h4 id="priorities-title">What performers prioritized</h4>
+                <p class="performa-priorities__subtitle">When choosing a casting platform, which features or values are most important to you? Select 3. · n=22</p>
+                <ol>
+                  <li><div class="performa-priorities__row" data-value="77" data-count="17"><span class="performa-priorities__label">Number of available roles</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:77%;--delay:0ms"></span></span><span class="performa-priorities__value">77% (17/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="59" data-count="13"><span class="performa-priorities__label">Relevance of suggested roles</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:59%;--delay:45ms"></span></span><span class="performa-priorities__value">59% (13/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="41" data-count="9"><span class="performa-priorities__label">Access to restricted roles</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:41%;--delay:90ms"></span></span><span class="performa-priorities__value">41% (9/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="41" data-count="9"><span class="performa-priorities__label">Simple, fast applications</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:41%;--delay:135ms"></span></span><span class="performa-priorities__value">41% (9/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="18" data-count="4"><span class="performa-priorities__label">Tools for fair access</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:18%;--delay:180ms"></span></span><span class="performa-priorities__value">18% (4/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="18" data-count="4"><span class="performa-priorities__label">Flexible payment options</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:18%;--delay:225ms"></span></span><span class="performa-priorities__value">18% (4/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="9" data-count="2"><span class="performa-priorities__label">Career insights</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:9%;--delay:270ms"></span></span><span class="performa-priorities__value">9% (2/22)</span></div></li>
+                  <li><div class="performa-priorities__row" data-value="5" data-count="1"><span class="performa-priorities__label">Other</span><span class="performa-priorities__track"><span class="performa-priorities__bar" style="--value:5%;--delay:315ms"></span></span><span class="performa-priorities__value">5% (1/22)</span></div></li>
+                </ol>
+              </figure>
+              <p>But then came the elephant in the room: where would PerformaMatch get enough job inventory to make matching useful? The concept depended on casting professionals posting directly, and the team couldn’t find a viable path to integrate established platforms. Without those integrations, PerformaMatch would have to build its own supply, while established platforms already held the listings and industry connections performers relied on. AI and better UX alone could not manufacture that advantage.</p>
+              </div></div>
+            <div class="chapter-copy performa-finding-access"><div class="reading-copy editorial-flow type-body">
               <h3>In my sample, access often meant being able to afford participation.</h3>
-              <p>Participants described the accumulated cost of staying competitive: subscriptions, paywalls, premium services, training, materials, and maintaining accounts across several platforms. 11 of 22 respondents (50%) cited difficulty affording premium subscriptions as a reason they had felt excluded or overlooked, making it the most-selected barrier in that question. Representation and discrimination still mattered, but cost, visibility, and transparency surfaced more consistently in participants’ day-to-day experiences.</p>
               <figure class="performa-story-quote"><blockquote>“To be competitive in this industry, you have to spend a lot of money. That’s completely antithetical to the idea of diversity, equity, and inclusion.”</blockquote><figcaption class="type-label">One performer</figcaption></figure>
+              <p>Participants described the accumulated cost of staying competitive: subscriptions, paywalls, premium services, training, materials, and maintaining accounts across several platforms. Eleven of 22 respondents (50%) cited difficulty affording premium subscriptions as a reason they had felt excluded or overlooked, making it the most-selected barrier in that question.</p>
+              <p>Access was also shaped by representation. Nine respondents (41%) named lack of representation among the reasons they felt excluded or overlooked, and nine (41%) prioritized access to roles typically restricted to agents or industry insiders. Five selected both.</p>
               <p>That left me with an uncomfortable question: if performers were already paying for access to opportunity, would another paid platform really redistribute it?</p>
+              </div></div>
+            <div class="chapter-copy performa-finding-workflow"><div class="reading-copy editorial-flow type-body">
               <h3>Meanwhile, the actual casting workflow was scattered everywhere.</h3>
-              <p>Even when performers found an opportunity, the work rarely stayed inside one product. 21 of 22 respondents (95%) found opportunities through social media, 18 (82%) through casting platforms, and 15 (68%) through word of mouth. Ten (45%) also named navigating multiple platforms as one of the most frustrating parts of casting.</p>
-              <p>Discovery was only the beginning. Performers were also balancing day jobs, training, self-tape deadlines, live auditions, preparation, submissions, and callbacks. Once they found a promising opportunity, they still had to keep track of what needed to happen next. For some performers, time was part of the access problem.</p>
+              <p>The 22 surveyed performers could select multiple discovery channels. Ten (45%) named navigating multiple platforms as one of the most frustrating parts of casting.</p>
+              <figure class="performa-discovery performa-media--reading">
+                <p class="performa-discovery__question">Opportunity discovery</p>
+                <svg viewBox="-32 -32 484 385" role="group" aria-labelledby="discovery-title" aria-describedby="discovery-desc">
+                  <title id="discovery-title">How 22 performers discovered opportunities</title>
+                  <desc id="discovery-desc">Channel totals: social media 21 (95%), casting platforms 18 (82%), word-of-mouth 15 (68%), agent or manager 7 (32%), email lists 6 (27%), other 2 (9%). Exact primary combinations: social only 1, platforms only 1, word-of-mouth only 0, social and platforms only 5, social and word-of-mouth only 3, platforms and word-of-mouth only 0, all three 12 (55%). Respondents in these regions may also have selected secondary channels. Circle sizes and overlaps are schematic.</desc>
+                  <!-- Circle radii are 21 × √count. Region paths use the arcs between circle crossings. -->
+                  <circle class="performa-discovery__primary" cx="210" cy="108" r="96.23409" fill="var(--color-atmosphere-pink)"/>
+                  <circle class="performa-discovery__primary" cx="157" cy="193" r="89.09545" fill="var(--color-atmosphere-blue)"/>
+                  <circle class="performa-discovery__primary" cx="263" cy="193" r="81.33265" fill="var(--color-atmosphere-butter)"/>
+                  <path id="discovery-region-1" class="performa-discovery__region" d="M114.01779 114.95815 A96.23409 96.23409 0 1 1 305.00168 123.35189 A81.33265 81.33265 0 0 0 216.24057 126.45261 A89.09545 89.09545 0 0 0 114.01779 114.95815 Z" data-discovery-target tabindex="0" role="button" aria-label="Social media only. 1 of 22 respondents" data-title="Social media only" data-detail="1 of 22 respondents"/>
+                  <path id="discovery-region-2" class="performa-discovery__region" d="M114.01779 114.95815 A96.23409 96.23409 0 0 0 181.97460 200.06290 A81.33265 81.33265 0 0 0 216.24057 259.54739 A89.09545 89.09545 0 1 1 114.01779 114.95815 Z" data-discovery-target tabindex="0" role="button" aria-label="Casting platforms only. 1 of 22 respondents" data-title="Casting platforms only" data-detail="1 of 22 respondents"/>
+                  <path id="discovery-region-4" class="performa-discovery__region" d="M245.99407 197.24924 A96.23409 96.23409 0 0 0 305.00168 123.35189 A81.33265 81.33265 0 1 1 216.24057 259.54739 A89.09545 89.09545 0 0 0 245.99407 197.24924 Z" data-discovery-target tabindex="0" role="button" aria-label="Word-of-mouth only. 0 of 22 respondents" data-title="Word-of-mouth only" data-detail="0 of 22 respondents"/>
+                  <path id="discovery-region-3" class="performa-discovery__region" d="M181.97460 200.06290 A96.23409 96.23409 0 0 1 114.01779 114.95815 A89.09545 89.09545 0 0 1 216.24057 126.45261 A81.33265 81.33265 0 0 0 181.97460 200.06290 Z" data-discovery-target tabindex="0" role="button" aria-label="Social media + casting platforms only. 5 of 22 respondents" data-title="Social media + casting platforms only" data-detail="5 of 22 respondents"/>
+                  <path id="discovery-region-5" class="performa-discovery__region" d="M305.00168 123.35189 A96.23409 96.23409 0 0 1 245.99407 197.24924 A89.09545 89.09545 0 0 0 216.24057 126.45261 A81.33265 81.33265 0 0 1 305.00168 123.35189 Z" data-discovery-target tabindex="0" role="button" aria-label="Social media + word-of-mouth only. 3 of 22 respondents" data-title="Social media + word-of-mouth only" data-detail="3 of 22 respondents"/>
+                  <path id="discovery-region-6" class="performa-discovery__region" d="M181.97460 200.06290 A96.23409 96.23409 0 0 0 245.99407 197.24924 A89.09545 89.09545 0 0 1 216.24057 259.54739 A81.33265 81.33265 0 0 1 181.97460 200.06290 Z" data-discovery-target tabindex="0" role="button" aria-label="Casting platforms + word-of-mouth only. 0 of 22 respondents" data-title="Casting platforms + word-of-mouth only" data-detail="0 of 22 respondents"/>
+                  <path id="discovery-region-7" class="performa-discovery__region" d="M245.99407 197.24924 A96.23409 96.23409 0 0 1 181.97460 200.06290 A81.33265 81.33265 0 0 1 216.24057 126.45261 A89.09545 89.09545 0 0 1 245.99407 197.24924 Z" data-discovery-target tabindex="0" role="button" aria-label="All three major channels. 12 of 22 respondents · 55%" data-title="All three major channels" data-detail="12 of 22 respondents · 55%"/>
+                  <text class="performa-discovery__center" x="213" y="178" aria-hidden="true">55%</text>
+                  <text class="performa-discovery__center-count" x="213" y="195" aria-hidden="true">12/22</text>
+                  <defs>
+                    <clipPath id="discovery-exclusive-0"><path d="M114.01779 114.95815 A96.23409 96.23409 0 1 1 305.00168 123.35189 A81.33265 81.33265 0 0 0 216.24057 126.45261 A89.09545 89.09545 0 0 0 114.01779 114.95815 Z"/></clipPath>
+                    <clipPath id="discovery-exclusive-1"><path d="M114.01779 114.95815 A96.23409 96.23409 0 0 0 181.97460 200.06290 A81.33265 81.33265 0 0 0 216.24057 259.54739 A89.09545 89.09545 0 1 1 114.01779 114.95815 Z"/></clipPath>
+                    <clipPath id="discovery-exclusive-2"><path d="M245.99407 197.24924 A96.23409 96.23409 0 0 0 305.00168 123.35189 A81.33265 81.33265 0 1 1 216.24057 259.54739 A89.09545 89.09545 0 0 0 245.99407 197.24924 Z"/></clipPath>
+                  </defs>
+                  <g class="performa-discovery__channel" data-discovery-target tabindex="0" role="button" aria-label="Social media. 95% · 21 of 22 respondents" data-title="Social media" data-detail="95% · 21 of 22 respondents">
+                    <rect class="performa-discovery__label-hit" x="136" y="43" width="148" height="49" rx="8" clip-path="url(#discovery-exclusive-0)"/>
+                    <text class="performa-discovery__label" x="210" y="63">Social media</text>
+                    <text class="performa-discovery__percent" x="210" y="88">95%</text>
+                  </g>
+                  <g class="performa-discovery__channel" data-discovery-target tabindex="0" role="button" aria-label="Casting platforms. 82% · 18 of 22 respondents" data-title="Casting platforms" data-detail="82% · 18 of 22 respondents">
+                    <rect class="performa-discovery__label-hit" x="51" y="186" width="148" height="61" rx="8" clip-path="url(#discovery-exclusive-1)"/>
+                    <text class="performa-discovery__label" x="125" y="203">Casting<tspan x="125" dy="17">platforms</tspan></text>
+                    <text class="performa-discovery__percent" x="125" y="247">82%</text>
+                  </g>
+                  <g class="performa-discovery__channel" data-discovery-target tabindex="0" role="button" aria-label="Word-of-mouth. 68% · 15 of 22 respondents" data-title="Word-of-mouth" data-detail="68% · 15 of 22 respondents">
+                    <rect class="performa-discovery__label-hit" x="219" y="184" width="148" height="61" rx="8" clip-path="url(#discovery-exclusive-2)"/>
+                    <text class="performa-discovery__label" x="293" y="201">Word-of-<tspan x="293" dy="17">mouth</tspan></text>
+                    <text class="performa-discovery__percent" x="293" y="245">68%</text>
+                  </g>
+                  <g class="performa-discovery__channel performa-discovery__satellite" data-discovery-target tabindex="0" role="button" aria-label="Agent / manager. 32% · 7 of 22 respondents" data-title="Agent / manager" data-detail="32% · 7 of 22 respondents">
+                    <circle cx="58" cy="62" r="43"/>
+                    <text class="performa-discovery__label" x="58" y="46">Agent /<tspan x="58" dy="17">manager</tspan></text>
+                    <text class="performa-discovery__percent" x="58" y="87">32%</text>
+                  </g>
+                  <g class="performa-discovery__channel performa-discovery__satellite" data-discovery-target tabindex="0" role="button" aria-label="Email lists. 27% · 6 of 22 respondents" data-title="Email lists" data-detail="27% · 6 of 22 respondents">
+                    <circle cx="361" cy="64" r="43"/>
+                    <text class="performa-discovery__label" x="361" y="60">Email lists</text>
+                    <text class="performa-discovery__percent" x="361" y="83">27%</text>
+                  </g>
+                  <g class="performa-discovery__channel performa-discovery__satellite" data-discovery-target tabindex="0" role="button" aria-label="Other. 9% · 2 of 22 respondents" data-title="Other" data-detail="9% · 2 of 22 respondents">
+                    <circle cx="210" cy="313" r="29.69848"/>
+                    <text class="performa-discovery__label" x="210" y="309">Other</text>
+                    <text class="performa-discovery__percent" x="210" y="332">9%</text>
+                  </g>
+                </svg>
+                <div class="performa-discovery__details" aria-hidden="true" hidden>
+                  <strong></strong>
+                  <span></span>
+                </div>
+              </figure>
+              <p class="performa-discovery-followup">Discovery was only the beginning. Performers were also balancing day jobs, training, self-tape deadlines, live auditions, preparation, submissions, and callbacks. Once they found a promising opportunity, they still had to keep track of what needed to happen next. For some performers, time was part of the access problem.</p>
               <figure class="performa-story-quote"><blockquote>“[…] the people who have more flexible day jobs […] will be the ones to submit first. And they will be the ones to be more likely to be cast.”</blockquote><figcaption class="type-label">One performer</figcaption></figure>
-              <p>Representation came up as well. 9 of 22 respondents (41%) named lack of representation among the reasons they felt excluded or overlooked, and 9 (41%) prioritized access to roles typically restricted to agents or industry insiders. Five selected both. Interviews added another dimension: without an agent, performers weren’t just missing access to some opportunities; they were also left to do more of the searching and managing themselves.</p>
-              <figure class="performa-story-quote"><blockquote>“Back in the day before I was represented, I was checking everything: Equity, Playbill, Actors Access, Backstage.”</blockquote><figcaption class="type-label">One performer</figcaption></figure>
-              <h3>AI matching needed more than a convincing score.</h3>
-              <p>AI could help performers compare opportunities, but I couldn’t assume they would trust its recommendations. When asked what influenced their trust in AI role matching, 10 of 22 respondents (45%) selected clear explanations of why matches happen, while 9 (41%) selected visible human oversight. That suggested a direction worth exploring: matching should make its reasoning visible and leave room for performers to disagree, rather than presenting an unexplained score as a definitive judgment.</p>
-              <h3>Not every important problem was ours to solve.</h3>
-              <p>Participants also wanted clearer submission status and feedback, but reliable casting-side updates depended on participation from casting professionals. A performer-side MVP could organize the work around a submission, but it couldn't independently show what was happening on the casting side. That distinction forced me to consider where the product could realistically create value, and where it couldn't.</p>
+              <h3 class="performa-ai-finding">AI matching needed more than a convincing score.</h3>
+              <p>AI could help performers compare opportunities, but I couldn’t assume they would trust its recommendations. When asked what influenced their trust in AI role matching, 10 of 22 respondents (45%) selected clear explanations of why matches happen, while nine (41%) selected visible human oversight.</p>
+              <figure class="performa-story-quote" hidden><blockquote>“Back in the day before I was represented, I was checking everything: Equity, Playbill, Actors Access, Backstage.”</blockquote><figcaption class="type-label">One performer</figcaption></figure>
             </div></div>
-            <figure class="performa-model-interactive performa-framing-layers">
-              <figcaption>Research Framework: Looking Beyond the Product</figcaption>
-              <iframe src="assets/interactive/performamatch-framing-layers/index.html" title="Interactive PerformaMatch problem-framing layers and research questions" loading="lazy"></iframe>
+            <div class="performa-findings-pair">
+              <div class="reading-copy editorial-flow type-body">
+              <h3>Not every important problem was ours to solve.</h3>
+              <p>Participants also wanted clearer submission status and feedback, but reliable updates depended on participation from casting professionals. A performer-side MVP couldn’t independently show what was happening on the casting side. That distinction forced me to consider where the product could realistically create value, and where it couldn’t.</p>
+              </div>
+            </div>
+            <figure class="performa-model-interactive performa-framing-layers performa-media--expanded" hidden>
+              <figcaption>Research framework: Looking beyond the product</figcaption>
+              <iframe src="assets/interactive/performamatch-framing-layers/index.html?v=content-fit-5" title="Interactive PerformaMatch problem-framing layers and research questions" loading="lazy"></iframe>
             </figure>
           </div>
         </section>
@@ -165,14 +272,15 @@
             <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
               <p>The original model assumed opportunities would start inside PerformaMatch: inventory → AI matching → application → tracking. But performers’ job searches already stretched far beyond any one platform. PerformaMatch didn’t need to own where an opportunity came from to help make sense of what happened next.</p>
               <h3>The research pointed to more than one possible pivot.</h3>
-              <p>I could have recommended abandoning the marketplace entirely, aggregating opportunities from elsewhere, or narrowing PerformaMatch into a standalone performer tool. Each solved part of the problem, but either depended on access to data we didn’t control or moved much further from the platform the founder still wanted to build.</p>
+              <p>I considered abandoning the marketplace, aggregating outside opportunities, or building a standalone performer tool. Aggregation depended on data we didn’t control, while the other two options would take us further from the founder’s broader platform vision.</p>
               <p>I was looking for something in between: a model that could create value before the marketplace had scale, fit the way performers already found work, and still leave room for that broader vision.</p>
             </div></div>
-            <figure class="performa-reframe-image">
-              <img src="assets/images/performaMatch/reframed-direction.png" width="8347" height="2871" loading="lazy" alt="Initial concept: PerformaMatch as another casting platform alongside other sources. Reframed direction: a workflow layer that helps performers evaluate, manage, and track opportunities found across existing sources.">
+            <figure class="performa-reframe-image performa-media--expanded">
+              <img src="assets/images/performaMatch/initial-concept.png" width="1253" height="863" loading="lazy" alt="Initial concept: opportunities begin in PerformaMatch, another casting platform alongside existing sources.">
+              <img src="assets/images/performaMatch/reframed-direction.png" width="1253" height="863" loading="lazy" alt="Reframed direction: performers bring opportunities from existing sources into PerformaMatch to evaluate, manage, and track them.">
             </figure>
             <div class="performa-reframe-question">
-              <p class="performa-story-question">How might we help performers understand, prioritize, and manage opportunities across the platforms they already use, without asking them to abandon those platforms?</p>
+              <p class="performa-story-question" data-text-reveal>How might we help performers understand, prioritize, and manage opportunities across the platforms they already use, without asking them to abandon those platforms?</p>
             </div>
           </div>
         </section>
@@ -202,7 +310,7 @@
               <p>Once saved, opportunities could be managed in one place. A dashboard could track them through preparation, submission, callbacks, and follow-up. Over time, that history could support deeper personalization and insight.</p>
               <p>The principle stayed simple: PerformaMatch could interpret and assist. The performer would decide.</p>
             </div></div>
-            <figure class="performa-analysis-image">
+            <figure class="performa-analysis-image performa-media--showcase">
               <img src="assets/images/performaMatch/AI-analysis.png" width="4109" height="2803" loading="lazy" alt="PerformaMatch fit analysis explains an uncertain score, compares profile details with role requirements, and lets performers correct matches and control which profile information is considered.">
             </figure>
           </div>
@@ -220,27 +328,56 @@
               <p>Given the cost pressure that surfaced in research, asking performers to pay for another platform before experiencing its value felt unrealistic. I proposed a freemium model: a free browser extension for identifying, evaluating, and saving opportunities, with deeper management tools, AI video and material analysis, and career development support reserved for subscription.</p>
               <p>While the team was working toward an MVP of the full platform, I proposed a smaller proof of concept to test the cross-platform workflow first. I worked with engineering to identify a feasible initial scope: user-triggered capture, structured opportunity records, basic profile comparison, and lightweight tracking.</p>
               <p>The business case went beyond reducing development costs. By attracting performers through a free utility and seeing whether they returned to use it regularly, we could build an initial user base and gather behavioral evidence of demand. That evidence could help us decide whether to invest in the full platform and strengthen the case for future fundraising.</p>
-              <p>For this first test, I didn't think sophisticated AI was necessary. A rules-based comparison could help us learn whether performers found matching and prioritization useful. If the concept proved valuable, we could gradually reduce capture friction and introduce more advanced AI capabilities, integrations, and management tools.</p>
+              <p>I still saw a role for AI down the line, but I didn’t think we needed it to test the workflow. A rules-based comparison could tell us whether performers found matching and prioritization useful. I also kept capture user-initiated: if performers found enough value in analyzing and managing opportunities, they might be willing to take that extra step. If the concept proved valuable, we could gradually reduce capture friction and introduce more advanced AI capabilities, platform integrations, and management tools.</p>
             </div></div>
-            <figure class="performa-extension-video">
+            <figure class="performa-extension-video performa-media--showcase">
+              <h3 class="performa-video-title">The core loop is simple.</h3>
+              <nav class="performa-video-chapters" aria-label="Walkthrough chapters">
+                <button type="button" data-time="0" aria-label="Chapter 1: Capture — Bring in opportunities through text, images, or URLs" aria-current="true"><span>01 Capture</span><small>Add text, images, or URLs.</small></button>
+                <svg class="performa-video-chapters__connector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                <button type="button" data-time="9" aria-label="Chapter 2: Analyze — Structure listing details and compare them against your Fit Profile"><span>02 Analyze</span><small>Compare with your Fit Profile.</small></button>
+                <svg class="performa-video-chapters__connector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                <button type="button" data-time="15" aria-label="Chapter 3: Understand — Review the fit reasoning and correct inaccuracies"><span>03 Understand</span><small>Review and correct the reasoning.</small></button>
+                <svg class="performa-video-chapters__connector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                <button type="button" data-time="25" aria-label="Chapter 4: Save — Collect opportunities for tracking and future management"><span>04 Save</span><small>Save for tracking and management.</small></button>
+              </nav>
+              <div class="performa-video-frame">
+                <span class="performa-video-chapters-intro">Concept prototype</span>
               <video controls playsinline preload="metadata" poster="assets/videos/PerformaMatch%20browser%20extension/performamatch-browser-extension-v2-poster.png?v=2" aria-label="PerformaMatch browser extension concept walkthrough">
                 <source src="assets/videos/PerformaMatch%20browser%20extension/performamatch-browser-extension-v2.webm" type="video/webm">
                 <source src="assets/videos/PerformaMatch%20browser%20extension/performamatch-browser-extension-v2.mp4" type="video/mp4">
                 <a href="assets/videos/PerformaMatch%20browser%20extension/performamatch-browser-extension-v2.mp4">Watch the PerformaMatch browser extension walkthrough</a>.
               </video>
+              </div>
             </figure>
-            <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
-              <h3>The core loop was simple.</h3>
-              <p>Performers could bring in a casting lead through a screenshot, pasted text, URL, or free-text entry. PerformaMatch would extract the information and structure it into a consistent opportunity record, identify requirements, materials, and deadlines, analyze the role against the performer’s profile and preferences, and let them save it for tracking through preparation, submission, and callbacks. The first version would not automatically capture opportunities or integrate with existing casting platforms.</p>
-              <p>The extra input step was intentional. I wanted to test whether the analysis and management loop was useful before investing in automatic capture or deeper integrations.</p>
-              <h3>The test I proposed needed to answer three questions:</h3>
-              <ul class="performa-story-list">
-                <li><strong>Utility:</strong> Will performers capture opportunities more than once, and from more than one source?</li>
-                <li><strong>Workflow:</strong> Will saved opportunities move from discovery into preparation and submission?</li>
-                <li><strong>Long-term value:</strong> Will performers return to review or update opportunities they have already saved?</li>
-              </ul>
-              <p>I would also look at what performers corrected in the analysis and why. Repeat use would not prove long-term adoption, improved callback or booking rates, or more equitable outcomes. Those would require a larger sample and longer observation.</p>
-            </div></div>
+            <section class="performa-validation" aria-labelledby="validation-heading">
+              <details class="performa-validation__note">
+                <summary>
+                  <span id="validation-heading" class="type-label" role="heading" aria-level="3">What I wanted to validate</span>
+                  <span class="performa-validation__footnote">I proposed this test to gather evidence about the workflow, though I don’t have visibility into whether the team ultimately ran it.</span>
+                </summary>
+              <ol class="performa-validation__grid">
+                <li class="performa-validation__panel">
+                  <h4>Utility</h4>
+                  <p class="performa-validation__question">Will performers capture opportunities more than once, and from more than one source?</p>
+                  <div class="performa-validation__evidence"><p class="performa-validation__label">Measure</p><p class="performa-validation__detail">Repeat captures across sources</p></div>
+                  <div class="performa-validation__limitation"><p class="performa-validation__label">Doesn't prove</p><p class="performa-validation__detail">Sustained adoption</p></div>
+                </li>
+                <li class="performa-validation__panel">
+                  <h4>Workflow</h4>
+                  <p class="performa-validation__question">Will saved opportunities move from discovery into preparation and submission?</p>
+                  <div class="performa-validation__evidence"><p class="performa-validation__label">Measure</p><p class="performa-validation__detail">Opportunity status progression</p></div>
+                  <div class="performa-validation__limitation"><p class="performa-validation__label">Doesn't prove</p><p class="performa-validation__detail">Improved callback or booking rates</p></div>
+                </li>
+                <li class="performa-validation__panel">
+                  <h4>Long-term value</h4>
+                  <p class="performa-validation__question">Will performers return to review or update opportunities they've already saved?</p>
+                  <div class="performa-validation__evidence"><p class="performa-validation__label">Measure</p><p class="performa-validation__detail">Return visits and updates</p></div>
+                  <div class="performa-validation__limitation"><p class="performa-validation__label">Doesn't prove</p><p class="performa-validation__detail">Long-term retention or more equitable outcomes</p></div>
+                </li>
+              </ol>
+              </details>
+            </section>
           </div>
         </section>
 
@@ -248,29 +385,49 @@
           <div class="page-grid">
             <div class="chapter-lockup chapter-standard-lockup">
               <div class="chapter-lockup__content">
-                <p class="type-label">EPILOGUE · CURTAIN CALLS</p>
+                <p class="type-label">EPILOGUE</p>
                 <h2 class="chapter-lockup__headline heading" id="curtain-calls-heading">The founder agreed with the research, but the production timeline didn’t.</h2>
               </div>
             </div>
             <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
-              <p>The team adopted the cross-platform workflow direction and is continuing to develop it. The browser extension now sits within the product as a core feature, following the staged approach I had proposed. The original marketplace also continued toward launch, so the result was not a full pivot, but the workflow strategy became part of PerformaMatch’s product direction.</p>
+              <p>The team adopted the cross-platform workflow direction and is developing the browser extension as a core product feature, following the staged approach I proposed. My work concluded with the research and strategy handoff, while the original marketplace continued toward launch. The result wasn’t a full pivot, but the workflow strategy became part of PerformaMatch’s product direction.</p>
             </div></div>
             <p class="accent-note performa-story-aside">Just another messy start-up origin story.</p>
             <div class="chapter-copy"><div class="reading-copy editorial-flow type-body">
               <h3>What I learned</h3>
-              <p>I came into PerformaMatch wanting to understand whether AI and a new marketplace were really the strongest path toward the equity the founder envisioned. I still believe AI can help narrow the access gap, but as a management layer instead of a new marketplace. It could save performers time on administrative work, give those without representation some of what an agent provides, and give every performer more time to develop their artistry. Eventually, it could serve as a digital career coach or manager.</p>
+              <p>I came into PerformaMatch wanting to understand whether AI and a new marketplace were really the strongest path toward the equity the founder envisioned. I still believe AI can help narrow the access gap, but as a management layer instead of a new marketplace. If performers were already paying for access, a free tool could take one more cost off the table while helping them manage the time and work that came after finding an opportunity. It could save performers time on administrative work, give those without representation some of what an agent provides, and give every performer more time to develop their artistry.</p>
               <p>The project also cemented how I think about business timing and strategy. Foundational research has the most leverage while strategic decisions are still reversible. When joining a product already in motion, I’d first map what has already been committed, what is still flexible, and where research can realistically change direction. Maybe next time, I can be in the room where it happens from the beginning.</p>
             </div></div>
           </div>
         </section>
       </div>
+      </div>
 
     </main>
     <footer class="case-study-footer">
-      <nav class="case-study-footer__nav" aria-label="More case studies">
-        <a class="case-study-footer__link" href="summer-quest.html">&lt; PREVIOUS: NYC Summer Quest</a>
-        <a class="case-study-footer__link" href="prism.html">NEXT: CoachCare Prism &gt;</a>
-      </nav>
+      <div class="page-grid performa-contact">
+        <section class="contact-content" aria-labelledby="performa-contact-heading">
+          <div class="performa-contact__topline"><p class="type-label">Get in touch</p>
+          <span class="site-nav__contacts" aria-label="Contact links">
+          <a class="site-nav__icon site-nav__icon--linkedin" href="https://www.linkedin.com/in/hoapnguyen/" target="_blank" rel="noopener noreferrer" aria-label="Hoa Nguyen on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45H16.9v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0h.01Z" /></svg>
+          </a>
+          <a class="site-nav__icon site-nav__icon--email" href="mailto:hoa.p.nguyen48@gmail.com" aria-label="Email Hoa Nguyen">
+            <img src="https://cdn.vectorstock.com/i/500p/05/58/gmail-logo-icon-google-email-vector-50150558.jpg" alt="" />
+          </a>
+        </span></div>
+          <h2 id="performa-contact-heading">Xin chào!</h2>
+          <p class="contact-intro type-subtitle-sm">Ideas, questions, strange little observations. Send them my way.</p>
+          <form class="contact-form" action="mailto:hoa.p.nguyen@gmail.com" method="post" enctype="text/plain">
+            <div class="contact-field"><label for="pm-name">NAME</label><input id="pm-name" name="name" autocomplete="name" placeholder="Jane Smith" required></div>
+            <div class="contact-field"><label for="pm-email">EMAIL</label><input id="pm-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required></div>
+            <div class="contact-field"><label for="pm-company">COMPANY <span>(optional)</span></label><input id="pm-company" name="company" autocomplete="organization" placeholder="Company name"></div>
+            <div class="contact-field"><label for="pm-subject">WHAT’S THIS ABOUT?</label><select id="pm-subject" name="subject"><option>A product design role</option><option>A project or collaboration</option><option>Portfolio / design talk</option><option>Something else entirely</option></select></div>
+            <div class="contact-field"><label for="pm-message">YOUR MESSAGE</label><textarea id="pm-message" name="message" rows="4" placeholder="What’s on your mind?" required></textarea></div>
+            <div><button class="contact-submit" type="submit">Send message</button></div>
+          </form>
+        </section>
+      </div>
     </footer>
     <div class="master-grid-debug" aria-hidden="true">
       <span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span>

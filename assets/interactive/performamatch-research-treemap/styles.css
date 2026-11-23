@@ -125,3 +125,26 @@ h1{margin:0;font-family:Figtree,Arial,sans-serif;font-size:var(--type-heading-xx
 @media(prefers-reduced-motion:reduce){
  .research-tile__toggle,.research-tile__details{transition:none}
 }
+/* Keep the embedded research labels aligned with portfolio body copy. */
+.research-tile__name, .research-tile__child, .research-tile--compact .research-tile__child { font-size:var(--type-body); line-height:var(--type-body-line-height); }
+.research-tile__name { font-size:var(--type-body); line-height:var(--type-body-line-height); }
+.research-tile__child, .research-tile--compact .research-tile__child { font-size:var(--type-metadata); line-height:1.15; }
+.research-tile__name { font-size:var(--type-label); line-height:var(--type-label-line-height); }
+
+/* Preserve whole words in the compact casting-side breakdown. */
+.research-tile__child--casting { overflow:hidden; padding:var(--space-4); letter-spacing:-.025em; line-height:1.05; }
+.research-tile__child--casting .research-tile__child-name { overflow-wrap:normal; word-break:normal; hyphens:none; text-wrap:wrap; }
+/* Keep chart labels readable as whole words throughout the visual. */
+.is-embedded :is(.research-tile__name,.research-tile__child-name) {
+  letter-spacing:-.025em;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+  text-wrap:wrap;
+}
+
+/* Expanded breakdowns use the chart area so labels never compete for tiny tiles. */
+.is-embedded .research-tile.is-active { z-index:3; overflow:visible; }
+.is-embedded .research-tile.is-active .research-tile__details { left:calc(-1 * var(--tile-x)); top:calc(-1 * var(--tile-y)); right:auto; bottom:auto; width:var(--map-width); height:var(--map-height); display:flex; flex-direction:column; }
+.is-embedded .research-tile.is-active .research-tile__child { position:static !important; width:auto !important; height:auto !important; min-height:0; flex:1 1 0; align-items:center; padding:var(--space-4) var(--space-8); }
+.is-embedded .research-tile.is-active .research-tile__toggle { z-index:0; }

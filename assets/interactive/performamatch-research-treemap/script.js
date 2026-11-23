@@ -70,7 +70,7 @@
 
   for (const [id, text] of Object.entries({
     'research-title': RESEARCH.headline.replace('{total}', total),
-    'interaction-note': isEmbedded ? 'Directional sample, not statistically representative. Hover to explore.' : RESEARCH.interaction
+    'interaction-note': isEmbedded ? 'Directional sample, not statistically representative. Tap or hover to explore.' : RESEARCH.interaction
   })) document.getElementById(id).textContent = text;
 
   function tone(hex, index) {
@@ -148,11 +148,11 @@
 
   if (isEmbedded) {
     const labelBreaks = {
-      secondary: 'SECONDARY RESEARCH\nSOURCES',
-      survey: 'PERFORMER SURVEY\nRESPONSES',
-      competitors: 'COMPETITOR\nREVIEWS',
-      interviews: 'TARGET PERFORMER\nINTERVIEWS',
-      supplemental: 'CASTING-SIDE\nINPUTS'
+      secondary: 'SECONDARY RESEARCH SOURCES',
+      survey: 'PERFORMER SURVEY RESPONSES',
+      competitors: 'COMPETITOR REVIEWS',
+      interviews: 'TARGET PERFORMER INTERVIEWS',
+      supplemental: 'CASTING-SIDE INPUTS'
     };
     const tiles = new Map();
     let activeId = null;
@@ -194,6 +194,7 @@
       const childCells = method.children.map((child, index) => {
         const cell = document.createElement('div');
         cell.className = 'research-tile__child';
+        if (method.id === 'supplemental') cell.classList.add('research-tile__child--casting');
         cell.style.setProperty('--tone', tone(method.color, index));
         const childName = document.createElement('span');
         childName.className = 'research-tile__child-name';
@@ -226,10 +227,10 @@
       if (event.key === 'Escape') setEmbeddedActive(null);
     });
 
-    // A small drawing floor keeps the two rare categories' full labels inside
-    // their rectangles; the factual counts displayed in the tiles are unchanged.
+    // Give the smallest categories enough space for their labels while keeping
+    // their areas closer to their actual counts.
     const root = d3.hierarchy({ children: RESEARCH.children }, data => data.children === RESEARCH.children ? data.children : null)
-      .sum(data => data.count ? Math.max(data.count, 7) : 0).sort((a, b) => a.data.layoutOrder - b.data.layoutOrder);
+      .sum(data => data.count ? Math.max(data.count, 8) : 0).sort((a, b) => a.data.layoutOrder - b.data.layoutOrder);
     let previousWidth = -1;
     let previousHeight = -1;
     function layoutEmbedded(width, height) {
@@ -237,10 +238,21 @@
       previousWidth = width;
       previousHeight = height;
       d3.treemap().size([width, height]).paddingInner(4)(root);
-      root.children.forEach(node => {
+      root.children.forEach((node, index) => {
+        // At narrow widths, two equal columns provide room for whole labels.
+        if (width < 400) {
+          const gap = 4, column = (width - gap) / 2, rowHeight = (height - 2 * gap) / 3;
+          node.x0 = (index % 2) * (column + gap); node.x1 = node.x0 + column;
+          node.y0 = Math.floor(index / 2) * (rowHeight + gap); node.y1 = node.y0 + rowHeight;
+          if (index === 4) { node.x0 = 0; node.x1 = width; }
+        }
         const entry = tiles.get(node.data.id);
         const tileWidth = node.x1 - node.x0;
         const tileHeight = node.y1 - node.y0;
+        entry.tile.style.setProperty('--tile-x', `${node.x0}px`);
+        entry.tile.style.setProperty('--tile-y', `${node.y0}px`);
+        entry.tile.style.setProperty('--map-width', `${width}px`);
+        entry.tile.style.setProperty('--map-height', `${height}px`);
         Object.assign(entry.tile.style, {
           left: `${node.x0}px`, top: `${node.y0}px`,
           width: `${tileWidth}px`, height: `${tileHeight}px`
